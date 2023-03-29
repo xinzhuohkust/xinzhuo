@@ -1,0 +1,30 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Xinzhuo Huang",
+    "section": "",
+    "text": "Hi, I’m Xinzhuo. I am currently a MPhil student at the Hong Kong University of Science and Technology. My research endeavors center on the field of Chinese government and politics, which I approach through the utilization of R and Python for data analysis."
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Xinzhuo Huang",
+    "section": "Education",
+    "text": "Education\n\nMPhil in Social Science, currently enrolled\nHong Kong University of Science and Technology, HongKong\nFull Scholarships\nMSc in Global China Studies, 2022\nHong Kong University of Science and Technology, HongKong\nDean’s Award\nLLB in Political Science and Law, 2020\nEast China University of Political Science and Law, China\nOutstanding Graduation Thesis Award\nOutstanding Graduate Award"
+  },
+  {
+    "objectID": "index.html#interests",
+    "href": "index.html#interests",
+    "title": "Xinzhuo Huang",
+    "section": "Interests",
+    "text": "Interests\n\nChinese Politics\n\nresponsiveness\nsocial protest\n\nApplication of ML\n\ntext analysis\ncausal inference\n\nData Engineering\n\nweb crawling\ndata visualization"
+  }
+]
