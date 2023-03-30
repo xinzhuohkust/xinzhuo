@@ -2,10 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://xinzhuo.work/about.html</loc>
-    <lastmod>2023-03-29T16:38:10.510Z</lastmod>
+    <lastmod>2023-03-30T23:26:08.066Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xinzhuo.work/blog/index.html</loc>
+    <lastmod>2023-03-30T23:26:08.610Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xinzhuo.work/blog/sentiment analysis/index.html</loc>
+    <lastmod>2023-03-30T23:26:12.533Z</lastmod>
   </url>
   <url>
     <loc>https://xinzhuo.work/index.html</loc>
-    <lastmod>2023-03-29T16:38:11.022Z</lastmod>
+    <lastmod>2023-03-30T23:26:13.012Z</lastmod>
   </url>
 </urlset>

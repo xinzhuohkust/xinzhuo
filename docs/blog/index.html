@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="">
 
-<title>Xinzhuo Huang - Xinzhuo Huang</title>
+<title>Xinzhuo Huang - Projects</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,27 +24,27 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<link href="./icon.png" rel="icon" type="image/png">
-<script src="site_libs/quarto-listing/list.min.js"></script>
-<script src="site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script src="site_libs/quarto-contrib/iconify-1.0.0-beta.2/iconify-icon.min.js"></script>
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../icon.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,9 +74,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: [{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-image','listing-date','listing-title','listing-reading-time','listing-description','listing-file-modified',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -96,26 +97,24 @@ ul.task-list li input[type="checkbox"] {
 
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="scss/styles.css">
-<link rel="alternate" type="application/rss+xml" title="Xinzhuo Huang" href="index.xml"><meta property="og:title" content="Xinzhuo Huang - Xinzhuo Huang">
-<meta property="og:description" content="Hi, I’m Xinzhuo. I am currently a MPhil student at the Hong Kong University of Science and Technology.">
-<meta property="og:image" content="https://xinzhuo.work/photo.jpg">
+<link rel="stylesheet" href="../scss/styles.css">
+<link rel="alternate" type="application/rss+xml" title="Xinzhuo Huang" href="index.xml"><meta property="og:title" content="Xinzhuo Huang - Projects">
+<meta property="og:description" content="With R, Python and Julia">
 <meta property="og:site-name" content="Xinzhuo Huang">
-<meta name="twitter:title" content="Xinzhuo Huang - Xinzhuo Huang">
-<meta name="twitter:description" content="Hi, I’m Xinzhuo. I am currently a MPhil student at the Hong Kong University of Science and Technology.">
-<meta name="twitter:image" content="https://xinzhuo.work/photo.jpg">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Xinzhuo Huang - Projects">
+<meta name="twitter:description" content="With R, Python and Julia">
+<meta name="twitter:card" content="summary">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./icon.png" alt="" class="navbar-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../icon.png" alt="" class="navbar-logo">
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -124,19 +123,19 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./cv/index.qmd">
+    <a class="nav-link" href="../cv/index.qmd">
  <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog/index.html">
+    <a class="nav-link active" href="../blog/index.html" aria-current="page">
  <span class="menu-text">BLOG</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./project/index.qmd">
+    <a class="nav-link" href="../project/index.qmd">
  <span class="menu-text">PROJECT</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="./index.xml"><i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../index.xml"><i class="bi bi-rss" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
@@ -167,98 +166,98 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Projects</h1>
+            <p class="subtitle lead">With R, Python and Julia</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Python">Python <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R">R <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Reticulate">Reticulate <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Sentiment Analysis">Sentiment Analysis <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content page-columns page-full" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
-<div class="quarto-about-solana column-body">
-  <div class="about-entity">
-    <div class="entity-contents">
-      <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title"><strong>Xinzhuo Huang</strong></h1>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header> <div class="about-links">
-  <a href="mailto:xhuangcb@connect.ust.hk" class="about-link">
-     <span class="about-link-text"><iconify-icon inline="" icon="fa6-solid:envelope"></iconify-icon></span>
-  </a>
-  <a href="https://github.com/xinzhuohkust" class="about-link">
-     <span class="about-link-text"><iconify-icon inline="" icon="fa6-brands:github"></iconify-icon></span>
-  </a>
-  <a href="https://twitter.com/HsinchoH" class="about-link">
-     <span class="about-link-text"><iconify-icon inline="" icon="fa6-brands:twitter"></iconify-icon></span>
-  </a>
-  <a href="https://www.linkedin.com/in/xinzhuo-huang-5161011ba/" class="about-link">
-     <span class="about-link-text"><iconify-icon inline="" icon="fa6-brands:linkedin"></iconify-icon></span>
-  </a>
-</div>
-      <div class="about-contents"><div id="edu-exp">
-</div></div>
-    </div>
-    <img src="photo.jpg" class="about-image
-  round " style="height: 9em; width: 9em;">
+
+<div id="listing-listing" class="quarto-listing quarto-listing-container-grid">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+       <option value="" disabled="" selected="" hidden="">Order By</option>
+       <option value="index" data-direction="asc">Default</option>
+         <option value="listing-date-sort" data-direction="asc">
+          Date - Oldest
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Date - Newest
+        </option>
+         <option value="listing-file-modified-sort" data-direction="asc">
+          Updated - Oldest
+        </option>
+         <option value="listing-file-modified-sort" data-direction="desc">
+          Updated - Newest
+        </option>
+     </select>
   </div>
 </div>
-
-<p>Hi, I’m Xinzhuo. I am currently a MPhil student at the <a href="https://sosc.hkust.edu.hk/node/613">Hong Kong University of Science and Technology</a>. My research endeavors center on the field of Chinese government and politics, which I approach through the utilization of <code>R</code> and <code>Python</code> for data analysis.</p>
-<div class="grid">
-<section id="education" class="level2 g-col-12 g-col-md-8" style="text-align: left;">
-<h2 data-anchor-id="education">Education</h2>
-<ul>
-<li><p><strong><em>MPhil</em> in Social Science</strong>, <strong>currently enrolled</strong><br>
-<img src="university.png" class="img-fluid" style="width:5.5%"><em>Hong Kong University of Science and Technology, HongKong</em><br>
-<img src="award.png" class="img-fluid" style="width:6.0%"><em>Full Scholarships</em></p></li>
-<li><p><strong><em>MSc</em> in Global China Studies</strong>, <strong>2022</strong><br>
-<img src="university.png" class="img-fluid" style="width:5.5%"><em>Hong Kong University of Science and Technology, HongKong</em><br>
-<img src="award.png" class="img-fluid" style="width:6.0%"><em>Dean’s Award</em></p></li>
-<li><p><strong><em>LLB</em> in Political Science and Law</strong>, <strong>2020</strong><br>
-<img src="university.png" class="img-fluid" style="width:5.5%"><em>East China University of Political Science and Law, China</em><br>
-<img src="award.png" class="img-fluid" style="width:6.0%"><em>Outstanding Graduation Thesis Award</em><br>
-<img src="award.png" class="img-fluid" style="width:6.0%"><em>Outstanding Graduate Award</em><br>
-</p></li>
-</ul>
-</section>
-<section id="interests" class="level2 g-col-12 g-col-md-4" style="text-align: left;">
-<h2 data-anchor-id="interests">Interests</h2>
-<ul>
-<li><strong>Chinese Politics</strong>
-<ul>
-<li><em>responsiveness</em></li>
-<li><em>social protest</em></li>
-</ul></li>
-<li><strong>Application of ML</strong>
-<ul>
-<li><em>text analysis</em></li>
-<li><em>causal inference</em></li>
-</ul></li>
-<li><strong>Data Engineering</strong>
-<ul>
-<li><em>web crawling</em></li>
-<li><em>data visualization</em></li>
-</ul></li>
-</ul>
-</section>
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="R,Python,Sentiment Analysis,Reticulate" data-listing-date-sort="1680218670000" data-listing-file-modified-sort="1680218670343" data-listing-reading-time-sort="3.405">
+<a href="../blog/sentiment analysis/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="../blog/sentiment analysis/images/sentiment.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Sentiment Analysis
+</h5>
+<div class="listing-reading-time card-text text-muted">
+3 min
 </div>
-
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-
+<div class="card-text listing-description">
+Text analysis with Python and R
+</div>
+<div class="card-attribution card-text-small end">
+<div class="listing-date">
+Mar 31, 2023
+</div>
+</div>
+</div>
+<div class="card-footer">
+<div class="card-file-modified listing-file-modified">
+<p>Mar 31, 2023</p>
+</div>
+</div>
+</div>
+</a>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div></main> <!-- /main -->
+</div>
+
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -394,6 +393,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   } else {
     toggleColorMode(false);
   }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const clipboard = new window.ClipboardJS('.code-copy-button', {
     target: function(trigger) {
       return trigger.previousElementSibling;
@@ -519,11 +525,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-      <div class="nav-footer-center">Powered by <a href="https://quarto.org">Quarto</a> | © 2023 <a href="./CV">Xinzhuo Huang</a></div>
+      <div class="nav-footer-center">Powered by <a href="https://quarto.org">Quarto</a> | © 2023 <a href="../CV">Xinzhuo Huang</a></div>
   </div>
 </footer>
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
