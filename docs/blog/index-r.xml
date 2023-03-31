@@ -10,17 +10,21 @@
 <atom:link href="https://xinzhuo.work/blog/index-r.xml" rel="self" type="application/rss+xml"/>
 <description>Xinzhuo&#39;s Personal Website</description>
 <generator>quarto-1.2.335</generator>
-<lastBuildDate>Thu, 30 Mar 2023 23:24:30 GMT</lastBuildDate>
+<lastBuildDate>Fri, 31 Mar 2023 14:51:31 GMT</lastBuildDate>
 <item>
-  <title>Sentiment Analysis</title>
+  <title>Sentence Level Sentiment Analysis</title>
+  <dc:creator>Xinzhuo HUANG</dc:creator>
   <link>https://xinzhuo.work/blog/sentiment analysis/index.html</link>
-  <description><![CDATA[ <p><img src="https://xinzhuo.work/blog/sentiment analysis/images/sentiment.png" class="img-fluid"></p>
+  <description><![CDATA[ <style>
+body {text-align: justify}
+</style>
+<p><img src="https://xinzhuo.work/blog/sentiment analysis/images/sentiment.png" class="img-fluid"></p>
 <p>Text analysis enables the identification and extraction of sentiment information from text. By leveraging tools such as <code>asent</code>, <code>sentimentr</code>, and basic sentiment lexicons, it is possible to construct a sentiment classifier that can estimate whether the underlying sentiment of a given text is positive, negative, or neutral.</p>
 <section id="pacakage-management" class="level1"><h1>Pacakage Management</h1>
 <p>Using <code>pacman</code> to manage package dependencies.</p>
 <div class="cell">
 <details open=""><summary>Code</summary><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw" style="color: #003B4F;"><a href="https://rdrr.io/r/base/library.html">require</a></span><span class="op" style="color: #5E5E5E;">(</span><span class="va" style="color: #111111;"><a href="https://github.com/trinker/pacman">pacman</a></span><span class="op" style="color: #5E5E5E;">)</span></span>
-<span><span class="fu" style="color: #4758AB;"><a href="https://rdrr.io/pkg/pacman/man/p_load.html">p_load</a></span><span class="op" style="color: #5E5E5E;">(</span><span class="va" style="color: #111111;">dplyr</span>, <span class="va" style="color: #111111;">magrittr</span>, <span class="va" style="color: #111111;">furrr</span>, <span class="va" style="color: #111111;">purrr</span>, <span class="va" style="color: #111111;">DT</span>, <span class="va" style="color: #111111;">readr</span>, <span class="va" style="color: #111111;">stringr</span>, <span class="va" style="color: #111111;">furrr</span>, <span class="va" style="color: #111111;">purrr</span>, <span class="va" style="color: #111111;">sentimentr</span>, <span class="va" style="color: #111111;">tidyfst</span>, <span class="va" style="color: #111111;">tidyr</span>, <span class="va" style="color: #111111;">textclean</span>, <span class="va" style="color: #111111;">tidytext</span><span class="op" style="color: #5E5E5E;">)</span></span></code></pre></div>
+<span><span class="fu" style="color: #4758AB;"><a href="https://rdrr.io/pkg/pacman/man/p_load.html">p_load</a></span><span class="op" style="color: #5E5E5E;">(</span><span class="va" style="color: #111111;">dplyr</span>, <span class="va" style="color: #111111;">magrittr</span>, <span class="va" style="color: #111111;">furrr</span>, <span class="va" style="color: #111111;">purrr</span>, <span class="va" style="color: #111111;">DT</span>, <span class="va" style="color: #111111;">readr</span>, <span class="va" style="color: #111111;">stringr</span>, <span class="va" style="color: #111111;">furrr</span>, <span class="va" style="color: #111111;">purrr</span>, <span class="va" style="color: #111111;">sentimentr</span>, <span class="va" style="color: #111111;">tidyfst</span>, <span class="va" style="color: #111111;">tidyr</span>, <span class="va" style="color: #111111;">textclean</span>, <span class="va" style="color: #111111;">tidytext</span>, <span class="va" style="color: #111111;">tibble</span>, <span class="va" style="color: #111111;">kableExtra</span><span class="op" style="color: #5E5E5E;">)</span></span></code></pre></div>
 </details>
 </div>
 </section><section id="load-data" class="level1"><h1>Load Data</h1>
@@ -44,7 +48,32 @@ $ cleaned_text &lt;chr&gt; "the head of the women tennis association says that h
 <details open=""><summary>Code</summary><div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu" style="color: #4758AB;">reticulate</span><span class="fu" style="color: #4758AB;">::</span><span class="fu" style="color: #4758AB;"><a href="https://rstudio.github.io/reticulate/reference/use_python.html">use_python</a></span><span class="op" style="color: #5E5E5E;">(</span><span class="st" style="color: #20794D;">"C:\\Users\\xhuangcb\\anaconda3\\envs\\pytorch_gpu\\python.exe"</span><span class="op" style="color: #5E5E5E;">)</span> <span class="co" style="color: #5E5E5E;"># call python in R</span></span></code></pre></div>
 </details>
 </div>
-<p>Typing<code>!pip install spacy</code> to install <code>spacy</code>. Typing <code>!pip install asent"</code> to install <code>asent</code>. Lastly, typing <code>!pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.5.0/en_core_web_lg-3.5.0-py3-none-any.whl</code> to install pre-trained model.</p>
+<p>Then:</p>
+<div class="cell">
+<div class="cell-output-display">
+
+<table class="table" style="margin-left: auto; margin-right: auto;">
+<thead><tr>
+<th style="text-align:left;"> Tpying </th>
+   <th style="text-align:left;"> To install </th>
+  </tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;"> !pip install spacy </td>
+   <td style="text-align:left;"> spacy </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> !pip install asent </td>
+   <td style="text-align:left;"> asent </td>
+  </tr>
+<tr>
+<td style="text-align:left;"> !pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.5.0/en_core_web_lg-3.5.0-py3-none-any.whl </td>
+   <td style="text-align:left;"> pre-trained model </td>
+  </tr>
+</tbody>
+</table>
+</div>
+</div>
 <p><img src="https://xinzhuo.work/blog/sentiment analysis/images/callpythoninr.png" class="img-fluid" width="550"></p>
 </section><section id="from-oop-to-fp" class="level2"><h2 class="anchored" data-anchor-id="from-oop-to-fp">from OOP to FP</h2>
 <p>Python is an object-oriented programming (OOP) language, and it is possible to convert Python classes into functions in R, which mainly support functional programming (FP) language.</p>
@@ -54,7 +83,7 @@ $ cleaned_text &lt;chr&gt; "the head of the women tennis association says that h
 <span><span class="va" style="color: #111111;">nlp</span> <span class="op" style="color: #5E5E5E;">&lt;-</span> <span class="va" style="color: #111111;">spacy</span><span class="op" style="color: #5E5E5E;">$</span><span class="fu" style="color: #4758AB;">load</span><span class="op" style="color: #5E5E5E;">(</span><span class="st" style="color: #20794D;">"en_core_web_lg"</span><span class="op" style="color: #5E5E5E;">)</span> <span class="co" style="color: #5E5E5E;"># load pre-trained model</span></span>
 <span><span class="va" style="color: #111111;">nlp</span><span class="op" style="color: #5E5E5E;">$</span><span class="fu" style="color: #4758AB;">add_pipe</span><span class="op" style="color: #5E5E5E;">(</span><span class="st" style="color: #20794D;">"asent_en_v1"</span><span class="op" style="color: #5E5E5E;">)</span> <span class="co" style="color: #5E5E5E;"># add asent pipe</span></span></code></pre></div>
 </details><div class="cell-output cell-output-stdout">
-<pre><code>&lt;asent.component.Asent object at 0x00000168525BA9D0&gt;</code></pre>
+<pre><code>&lt;asent.component.Asent object at 0x00000233B1ABA9D0&gt;</code></pre>
 </div>
 <details open=""><summary>Code</summary><div class="sourceCode" id="cb7" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va" style="color: #111111;">nlp_safe</span> <span class="op" style="color: #5E5E5E;">&lt;-</span> <span class="fu" style="color: #4758AB;">possibly</span><span class="op" style="color: #5E5E5E;">(</span>.f <span class="op" style="color: #5E5E5E;">=</span> <span class="va" style="color: #111111;">nlp</span>, otherwise <span class="op" style="color: #5E5E5E;">=</span> <span class="st" style="color: #20794D;">"error!"</span><span class="op" style="color: #5E5E5E;">)</span> <span class="co" style="color: #5E5E5E;"># error handling</span></span>
 <span><span class="va" style="color: #111111;">get_polarity</span> <span class="op" style="color: #5E5E5E;">&lt;-</span> <span class="fu" style="color: #4758AB;">nlp_safe</span><span class="op" style="color: #5E5E5E;">(</span><span class="st" style="color: #20794D;">"sentiment"</span><span class="op" style="color: #5E5E5E;">)</span><span class="op" style="color: #5E5E5E;">$</span><span class="fu" style="color: #4758AB;">get_extension</span><span class="op" style="color: #5E5E5E;">(</span><span class="st" style="color: #20794D;">"polarity"</span><span class="op" style="color: #5E5E5E;">)</span><span class="op" style="color: #5E5E5E;">[[</span><span class="fl" style="color: #AD0000;">3</span><span class="op" style="color: #5E5E5E;">]</span><span class="op" style="color: #5E5E5E;">]</span> <span class="co" style="color: #5E5E5E;"># load python function</span></span>
@@ -151,7 +180,7 @@ $ cleaned_text &lt;chr&gt; "the head of the women tennis association says that h
 138  18 -12 </code></pre>
 </div>
 </div>
-</section><section id="use-these-functions-in-loop" class="level1"><h1>Use these functions in loop</h1>
+</section><section id="using-these-functions-in-loop" class="level1"><h1>Using these functions in loop</h1>
 <p>You can use these function with <code>for</code> loop or just use <code>map</code>to apply a them to each element of a vector or list in tibble.</p>
 <div class="cell">
 <details open=""><summary>Code</summary><div class="sourceCode" id="cb16" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va" style="color: #111111;">data</span> <span class="op" style="color: #5E5E5E;">&lt;-</span> <span class="va" style="color: #111111;">data</span> <span class="op" style="color: #5E5E5E;">%&gt;%</span></span>
@@ -166,8 +195,8 @@ $ cleaned_text &lt;chr&gt; "the head of the women tennis association says that h
   <category>Sentiment Analysis</category>
   <category>Reticulate</category>
   <guid>https://xinzhuo.work/blog/sentiment analysis/index.html</guid>
-  <pubDate>Thu, 30 Mar 2023 23:24:30 GMT</pubDate>
-  <media:content url="https://xinzhuo.work/blog/sentiment analysis/images/sentiment.png" medium="image" type="image/png"/>
+  <pubDate>Fri, 31 Mar 2023 14:51:31 GMT</pubDate>
+  <media:content url="https://xinzhuo.work/blog/sentiment analysis/images/sentiment.png" medium="image" type="image/png" height="50" width="144"/>
 </item>
 </channel>
 </rss>
