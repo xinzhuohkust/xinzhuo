@@ -44,7 +44,7 @@ I am proficient in utilizing `R` and `Python` throughout all stages of data anal
 
 I have collected over one hundred million data points pertaining to China by web crawling from various websites and apps, including the largest collection of Chinese police administrative penalty documents to date, as well as petition and legal document data. 
 
-Welcome to browse my [resume](/CV), recent [blog posts](/BLOG), [datasets](/DATA), [research projects, and R packages](/project).</div>
+Welcome to browse my [resume](/cv/), recent [blog posts](/blog/), [datasets](/data/), [research projects](/project), and [R packages](/project).</div>
 
 
 :::: {.grid}
@@ -85,4 +85,4 @@ Welcome to browse my [resume](/CV), recent [blog posts](/BLOG), [datasets](/DATA
 ::::
 
 
-<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=4682b4&w=688&t=n&d=xZ5N7O41jb8FCtvQIiC0y_H6QbZgte9z9WlfHIbXC9w&co=ffffff&cmo=ff7f50&cmn=ffa500&ct=ffffff'></script>
+<script href="javascript:void(0);" type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=4682b4&w=688&t=n&d=xZ5N7O41jb8FCtvQIiC0y_H6QbZgte9z9WlfHIbXC9w&co=ffffff&cmo=ff7f50&cmn=ffa500&ct=ffffff'></script>
