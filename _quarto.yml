@@ -20,6 +20,8 @@ website:
         href: cv/index.qmd
       - text: BLOG
         href: blog/index.qmd
+      - text: DATA
+        href: data/index.qmd
       - text: PROJECT
         href: project/index.qmd
       - icon: rss
@@ -32,7 +34,7 @@ website:
             url:  https://github.com/xinzhuohkust/xinzhuo/issues
   page-footer:
     border: false
-    center: "Powered by [Quarto](https://quarto.org) | © 2023 [Xinzhuo Huang](/CV)"  
+    center: "Powered by [Quarto](https://quarto.org) | © 2023 [Xinzhuo Huang](/index)"  
 
 format:
   html:
@@ -41,11 +43,11 @@ format:
       dark: [darkly, scss/dark.scss]
     css: scss/styles.css
     code-link: true
-    link-external-icon: true
+    link-external-icon: false
     link-external-newwindow: true
     smooth-scroll: true
     highlight-style: gruvbox
-    df-print: kable
+    df-print: paged
     code-fold: true
     code-block-bg: true
     toc: true

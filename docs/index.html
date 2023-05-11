@@ -98,11 +98,9 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="scss/styles.css">
 <link rel="alternate" type="application/rss+xml" title="Xinzhuo Huang" href="index.xml"><meta property="og:title" content="Xinzhuo Huang - Xinzhuo Huang">
-<meta property="og:description" content="Hi, I’m Xinzhuo. I am currently a MPhil student at the Hong Kong University of Science and Technology.">
 <meta property="og:image" content="https://xinzhuo.work/photo.jpg">
 <meta property="og:site-name" content="Xinzhuo Huang">
 <meta name="twitter:title" content="Xinzhuo Huang - Xinzhuo Huang">
-<meta name="twitter:description" content="Hi, I’m Xinzhuo. I am currently a MPhil student at the Hong Kong University of Science and Technology.">
 <meta name="twitter:image" content="https://xinzhuo.work/photo.jpg">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -130,6 +128,10 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="./blog/index.html">
  <span class="menu-text">BLOG</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./data/index.qmd">
+ <span class="menu-text">DATA</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./project/index.qmd">
@@ -207,7 +209,22 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </div>
 
-<p>Hi, I’m Xinzhuo. I am currently a MPhil student at the <a href="https://sosc.hkust.edu.hk/node/613">Hong Kong University of Science and Technology</a>. My research endeavors center on the field of Chinese government and politics, which I approach through the utilization of <code>R</code> and <code>Python</code> for data analysis.</p>
+<!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-7HHBQV7LX3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7HHBQV7LX3');
+</script>
+<div style="text-align: justify;">
+<p>Hi, I’m Xinzhuo. I am currently a MPhil student at the <a href="https://sosc.hkust.edu.hk/node/613">Hong Kong University of Science and Technology</a>, under the guidance of <a href="https://sosc.hkust.edu.hk/people/yongshun-cai">Prof.&nbsp;Cai Yongshun</a> and <a href="https://sosc.hkust.edu.hk/people/han-zhang">Prof.&nbsp;Zhang Han</a>.</p>
+<p>My research interests lie in the Chinese government and politics. I have worked in multiple levels of the Chinese government, providing me with a firsthand understanding of its operations.</p>
+<p>I am proficient in utilizing <code>R</code> and <code>Python</code> throughout all stages of data analysis, which is attributed to my participation and leadership in several real-world research projects. I am currently in the process of learning <code>JavaScript</code>.</p>
+<p>I have collected over one hundred million data points pertaining to China by web crawling from various websites and apps, including the largest collection of Chinese police administrative penalty documents to date, as well as petition and legal document data.</p>
+Welcome to browse my <a href="./CV">resume</a>, recent <a href="./BLOG">blog posts</a>, <a href="./DATA">datasets</a>, <a href="./project">research projects, and R packages</a>.
+</div>
 <div class="grid">
 <section id="education" class="level2 g-col-12 g-col-md-8" style="text-align: left;">
 <h2 data-anchor-id="education">Education</h2>
@@ -246,6 +263,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 </div>
+<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=4682b4&amp;w=688&amp;t=n&amp;d=xZ5N7O41jb8FCtvQIiC0y_H6QbZgte9z9WlfHIbXC9w&amp;co=ffffff&amp;cmo=ff7f50&amp;cmn=ffa500&amp;ct=ffffff"></script>
 
 
 
@@ -510,8 +528,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       if (!isInternal(link.href)) {
           // target, if specified
           link.setAttribute("target", "_blank");
-          // default icon
-          link.classList.add("external");
       }
     }
 });
@@ -519,7 +535,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-      <div class="nav-footer-center">Powered by <a href="https://quarto.org">Quarto</a> | © 2023 <a href="./CV">Xinzhuo Huang</a></div>
+      <div class="nav-footer-center">Powered by <a href="https://quarto.org">Quarto</a> | © 2023 <a href="./index">Xinzhuo Huang</a></div>
   </div>
 </footer>
 

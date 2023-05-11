@@ -1,5 +1,5 @@
 ---
-title: "Projects"
+title: "Social Science"
 subtitle: "With R, Python and Julia"
 listing:
   id: listing

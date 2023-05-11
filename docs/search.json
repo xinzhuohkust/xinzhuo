@@ -9,37 +9,37 @@
   {
     "objectID": "blog/index.html",
     "href": "blog/index.html",
-    "title": "Projects",
+    "title": "Social Science",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Updated - Oldest\n        \n         \n          Updated - Newest\n        \n     \n  \n\n\n\n\n\n\n\n\n\n\nSentiment Analysis\n\n\n3 min\n\n\nText analysis with Python and R\n\n\n\nMar 31, 2023\n\n\n\n\n\nMar 31, 2023\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Updated - Oldest\n        \n         \n          Updated - Newest\n        \n     \n  \n\n\n\n\n\n\n\n\n\n\nSentence Level Sentiment Analysis\n\n\n3 min\n\n\nby calling Python in R\n\n\n\nMay 12, 2023\n\n\n\n\n\nMay 12, 2023\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/sentiment analysis/index.html",
     "href": "blog/sentiment analysis/index.html",
-    "title": "Sentiment Analysis",
+    "title": "Sentence Level Sentiment Analysis",
     "section": "",
     "text": "Text analysis enables the identification and extraction of sentiment information from text. By leveraging tools such as asent, sentimentr, and basic sentiment lexicons, it is possible to construct a sentiment classifier that can estimate whether the underlying sentiment of a given text is positive, negative, or neutral."
   },
   {
     "objectID": "blog/sentiment analysis/index.html#install-python-packages",
     "href": "blog/sentiment analysis/index.html#install-python-packages",
-    "title": "Sentiment Analysis",
+    "title": "Sentence Level Sentiment Analysis",
     "section": "install python packages:",
-    "text": "install python packages:\nCall python in R.\n\nCodereticulate::use_python(\"C:\\\\Users\\\\xhuangcb\\\\anaconda3\\\\envs\\\\pytorch_gpu\\\\python.exe\") # call python in R\n\n\nTyping!pip install spacy to install spacy. Typing !pip install asent\" to install asent. Lastly, typing !pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.5.0/en_core_web_lg-3.5.0-py3-none-any.whl to install pre-trained model."
+    "text": "install python packages:\nCall python in R.\n\nCodereticulate::use_python(\"C:\\\\Users\\\\xhuangcb\\\\anaconda3\\\\envs\\\\pytorch_gpu\\\\python.exe\") # call python in R\n\n\nThen:\n\n\n\n\n\n Tpying \n    To install \n  \n\n\n !pip install spacy \n    spacy \n  \n\n !pip install asent \n    asent \n  \n\n !pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.5.0/en_core_web_lg-3.5.0-py3-none-any.whl \n    pre-trained model"
   },
   {
     "objectID": "blog/sentiment analysis/index.html#from-oop-to-fp",
     "href": "blog/sentiment analysis/index.html#from-oop-to-fp",
-    "title": "Sentiment Analysis",
+    "title": "Sentence Level Sentiment Analysis",
     "section": "from OOP to FP",
-    "text": "from OOP to FP\nPython is an object-oriented programming (OOP) language, and it is possible to convert Python classes into functions in R, which mainly support functional programming (FP) language.\n\nCodespacy <- reticulate::import(\"spacy\") # load spacy\nasent <- reticulate::import(\"asent\") # load asent\nnlp <- spacy$load(\"en_core_web_lg\") # load pre-trained model\nnlp$add_pipe(\"asent_en_v1\") # add asent pipe\n\n<asent.component.Asent object at 0x00000168525BA9D0>\n\nCodenlp_safe <- possibly(.f = nlp, otherwise = \"error!\") # error handling\nget_polarity <- nlp_safe(\"sentiment\")$get_extension(\"polarity\")[[3]] # load python function\nget_sentiment_asent <- function(x) {\n    result <- nlp_safe(x) %>%\n        get_polarity() %>%\n        print() %>%\n        capture.output() %>%\n        str_extract_all(\"-?0\\\\.\\\\d+\") %>%\n        unlist() %>%\n        as.numeric()\n\n    names(result) <- c(\"neg\", \"neu\", \"pos\", \"compound\")\n\n    return(result)\n}\n\n\nTry our function:\n\nCodeget_sentiment_asent(data$cleaned_text[1])\n\n     neg      neu      pos compound \n  0.0440   0.6350   0.0710   0.1235 \n\n\nIt is an analytical process of asent:"
+    "text": "from OOP to FP\nPython is an object-oriented programming (OOP) language, and it is possible to convert Python classes into functions in R, which mainly support functional programming (FP).\n\nCodespacy <- reticulate::import(\"spacy\") # load spacy\n\nasent <- reticulate::import(\"asent\") # load asent\n\nnlp <- spacy$load(\"en_core_web_lg\") # load pre-trained model\n\nnlp$add_pipe(\"asent_en_v1\") # add asent pipe\n\n<asent.component.Asent object at 0x000002306EFBD5E0>\n\nCodenlp_safe <- possibly(.f = nlp, otherwise = \"error!\") # error handling\n\nget_polarity <- nlp_safe(\"sentiment\")$get_extension(\"polarity\")[[3]] # load python function\n\nget_sentiment_asent <- \\(x) {\n    result <- nlp_safe(x) %>%\n        get_polarity() %>%\n        print() %>%\n        capture.output() %>%\n        str_extract_all(\"-?0\\\\.\\\\d+\") %>%\n        unlist() %>%\n        as.numeric()\n\n    names(result) <- c(\"neg\", \"neu\", \"pos\", \"compound\")\n\n    return(result)\n}\n\n\nTry our function:\n\nCodeget_sentiment_asent(data$cleaned_text[1])\n\n     neg      neu      pos compound \n  0.0440   0.6350   0.0710   0.1235 \n\n\nIt is an analytical process of asent:"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Xinzhuo Huang",
     "section": "",
-    "text": "Hi, I’m Xinzhuo. I am currently a MPhil student at the Hong Kong University of Science and Technology. My research endeavors center on the field of Chinese government and politics, which I approach through the utilization of R and Python for data analysis."
+    "text": "Welcome to browse my resume, recent blog posts, datasets, research projects, and R packages."
   },
   {
     "objectID": "index.html#education",
