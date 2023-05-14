@@ -1,0 +1,128 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Social Science",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Updated - Oldest\n        \n         \n          Updated - Newest\n        \n     \n  \n\n\n\n\n\n\n\n\nSentence Level Sentiment Analysis\n\n\n4 min\n\n\nby calling Python in R\n\n\n\nMay 12, 2023\n\n\n\n\n\nMay 12, 2023\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blog/sentiment analysis/index.html",
+    "href": "blog/sentiment analysis/index.html",
+    "title": "Sentence Level Sentiment Analysis",
+    "section": "",
+    "text": "Text analysis enables the identification and extraction of sentiment information from text. By leveraging tools such as asent, sentimentr, and basic sentiment lexicons, it is possible to construct a sentiment classifier that can estimate whether the underlying sentiment of a given text is positive, negative, or neutral."
+  },
+  {
+    "objectID": "blog/sentiment analysis/index.html#install-python-packages",
+    "href": "blog/sentiment analysis/index.html#install-python-packages",
+    "title": "Sentence Level Sentiment Analysis",
+    "section": "install python packages:",
+    "text": "install python packages:\nCall python in R.\n\nCodereticulate::use_python(\"C:\\\\Users\\\\xhuangcb\\\\anaconda3\\\\envs\\\\pytorch_gpu\\\\python.exe\") # call python in R\n\n\nThen:\n\n\n\n\n\n Tpying \n    To install \n  \n\n\n !pip install spacy \n    spacy \n  \n\n !pip install asent \n    asent \n  \n\n !pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.5.0/en_core_web_lg-3.5.0-py3-none-any.whl \n    pre-trained model"
+  },
+  {
+    "objectID": "blog/sentiment analysis/index.html#from-oop-to-fp",
+    "href": "blog/sentiment analysis/index.html#from-oop-to-fp",
+    "title": "Sentence Level Sentiment Analysis",
+    "section": "from OOP to FP",
+    "text": "from OOP to FP\nPython is an object-oriented programming (OOP) language, and it is possible to convert Python classes into functions in R, which mainly support functional programming (FP).\n\nCodespacy <- reticulate::import(\"spacy\") # load spacy\n\nasent <- reticulate::import(\"asent\") # load asent\n\nnlp <- spacy$load(\"en_core_web_lg\") # load pre-trained model\n\nnlp$add_pipe(\"asent_en_v1\") # add asent pipe\n\n<asent.component.Asent object at 0x000002306EFBD5E0>\n\nCodenlp_safe <- possibly(.f = nlp, otherwise = \"error!\") # error handling\n\nget_polarity <- nlp_safe(\"sentiment\")$get_extension(\"polarity\")[[3]] # load python function\n\nget_sentiment_asent <- \\(x) {\n    result <- nlp_safe(x) %>%\n        get_polarity() %>%\n        print() %>%\n        capture.output() %>%\n        str_extract_all(\"-?0\\\\.\\\\d+\") %>%\n        unlist() %>%\n        as.numeric()\n\n    names(result) <- c(\"neg\", \"neu\", \"pos\", \"compound\")\n\n    return(result)\n}\n\n\nTry our function:\n\nCodeget_sentiment_asent(data$cleaned_text[1])\n\n     neg      neu      pos compound \n  0.0440   0.6350   0.0710   0.1235 \n\n\nIt is an analytical process of asent:"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Xinzhuo Huang",
+    "section": "",
+    "text": "Welcome to browse my resume, recent blog posts, datasets, research projects, and R packages."
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Xinzhuo Huang",
+    "section": "Education",
+    "text": "Education\n\nMPhil in Social Science, currently enrolled\nHong Kong University of Science and Technology, HongKong\nFull Scholarships\nMSc in Global China Studies, 2022\nHong Kong University of Science and Technology, HongKong\nDean’s Award\nLLB in Political Science and Law, 2020\nEast China University of Political Science and Law, China\nOutstanding Graduation Thesis Award\nOutstanding Graduate Award"
+  },
+  {
+    "objectID": "index.html#interests",
+    "href": "index.html#interests",
+    "title": "Xinzhuo Huang",
+    "section": "Interests",
+    "text": "Interests\n\nChinese Politics\n\nresponsiveness\nsocial protest\n\nApplication of ML\n\ntext analysis\ncausal inference\n\nData Engineering\n\nweb crawling\ndata visualization"
+  },
+  {
+    "objectID": "cv_rmd/curriculum-vitae.html",
+    "href": "cv_rmd/curriculum-vitae.html",
+    "title": "Mickaël Canouil - Curriculum Vitæ",
+    "section": "",
+    "text": "Consulting Senior Biostatistician\n\nIT&M Stats\n\n\n\nLille, France\n\npro[at]mickael[dot]canouil[dot]dev\n\n\nmickael.canouil.fr\n\n\n0000-0002-3396-4549\n\n\nmickaelcanouil\n\n\nmcanouil\n\n\nMickaelCanouil\n\n\n@MickaelCanouil@fosstodon.org\n\n\nR Lille - R User Group (rlille.fr)\n\n\n\n\nAdvanced: R (Shiny, Rmarkdown, S3, S4, etc.), Git, HTML, CSS, LATEX and Markdown\n\nIntermediate: Docker, bash/shell, Perl and Python\n\nBasic: C/C++, SQL, NoSQL, Lua, Julia and SAS\n\nLast updated on 2023-05-12."
+  },
+  {
+    "objectID": "cv_rmd/curriculum-vitae.html#title",
+    "href": "cv_rmd/curriculum-vitae.html#title",
+    "title": "Mickaël Canouil - Curriculum Vitæ",
+    "section": "Mickaël Canouil",
+    "text": "Mickaël Canouil\nCurriculum Vitæ\nI am currently working as a consultant in Biostatistics in the field of genetics, i.e., proteomics, metabolomics, transcriptomics, etc. in Lille & Paris, France."
+  },
+  {
+    "objectID": "cv_rmd/curriculum-vitae.html#education",
+    "href": "cv_rmd/curriculum-vitae.html#education",
+    "title": "Mickaël Canouil - Curriculum Vitæ",
+    "section": "Education",
+    "text": "Education\nDoctor of Philosophy (Ph.D.) in Biostatistics\nUniversity of Lille\nLille, France\nOct. 2014 - Sep. 2017\nMaster’s Degree in Biostatistics, Bioinformatics and Genomics (Specialised in Biostatistics)\nUniversity Claude Bernard Lyon 1\nLyon, France\nSep. 2009 - Jul. 2011\nBachelor’s Degree in Biology (Specialised in Biostatistics)\nUniversity Claude Bernard Lyon 1\nLyon, France\nSep. 2006 - Jul. 2009"
+  },
+  {
+    "objectID": "cv_rmd/curriculum-vitae.html#professional-experience",
+    "href": "cv_rmd/curriculum-vitae.html#professional-experience",
+    "title": "Mickaël Canouil - Curriculum Vitæ",
+    "section": "Professional Experience",
+    "text": "Professional Experience\nConsulting Senior Biostatistician (IT&M Stats)\nL’Oréal\nLille, France\nNov. 2022 - Present\nActivities: Statistical analyses of lipidomics and microbiome data\nHead of Biostatistics (Institut Pasteur de Lille)\nFunctional (Epi)genomics and Molecular\nPhysiology of Diabetes and Related Diseases\nInserm U1283 / CNRS UMR 8199 - EGID\n(European Genomics Institute for Diabetes)\nLille, France\nJan. 2020 - Oct. 2022\nActivities: Genome-wide association studies, experimental design, -omics data analysis, methodological developments, team management\nHead of Biostatistics (Institut Pasteur de Lille)\nLaboratory of Integrated Genomics\nand Metabolic Diseases Modeling\nCNRS UMR 8199 - EGID\n(European Genomics Institute for Diabetes)\nLille, France\nOct. 2017 - Dec. 2019\nActivities: Genome-wide association studies, experimental design, -omics data analysis, methodological developments, team management\nHead of Biostatistics (CNRS)\nLaboratory of Integrated Genomics\nand Metabolic Diseases Modeling\nCNRS UMR 8199 - EGID\n(European Genomics Institute for Diabetes)\nLille, France\nJan. 2016 - Sep. 2017\nActivities: Genome-wide association studies, experimental design, -omics data analysis, methodological developments, team management\nBiostatistician (CNRS)\nLaboratory of Integrated Genomics\nand Metabolic Diseases Modeling\nCNRS UMR 8199 - EGID\n(European Genomics Institute for Diabetes)\nLille, France\nSep. 2012 - Dec. 2015\nActivities: Genome-wide association studies, experimental design, -omics data analysis, methodological developments\nBiostatistician\nFrench Institute of Science and Technology for\nTransport, Development and Networks\n(IFSTTAR)\nUMRESTTE - UMR T9405\nBron, France\nNov. 2011 - Dec. 2011\nActivities: Analysis of a mobility and accident study in secondary-school pupils\nBiostatistician (Internship)\nHospices Civiles de Lyon\nBiostatistics Unit\nCNRS UMR 5558\nLyon, France\nJan. 2011 - Jun. 2011\nActivities: Development of a Non-Parametric (on Time) Clustering Algorithm for Longitudinal Data\nBiostatistician (Internship)\nBiometry and Evolutionary Biology laboratory\n(LBBE)\nCNRS UMR 5558\nLyon, France\nMar. 2010 - Jun. 2010\nActivities: Mathematical Modelling of Nosocomial Rotavirus Infections in Pediatric Ward"
+  },
+  {
+    "objectID": "cv_rmd/curriculum-vitae.html#workshop-experience-7",
+    "href": "cv_rmd/curriculum-vitae.html#workshop-experience-7",
+    "title": "Mickaël Canouil - Curriculum Vitæ",
+    "section": "Workshop Experience (7)",
+    "text": "Workshop Experience (7)\nR Advanced\nSix-hours Master course/workshop (in French)\nLille, France\nOct. 2021\n\n\n GitHub\nShiny: First Steps\nOne-day workshop (in French)\nAix en Provence, France\nOct. 2021\n\n\n GitHub\nR Advanced\nSix-hours Master course/workshop (in French)\nLille, France\nNov. 2020\n\n\n GitHub\nggplot2\nHalf-day workshop (in French)\nLille, France\nOct. 2020\n\n\n GitHub\nR Packages\nThirty minutes overview (in English)\nLille, France\nFeb. 2020\n\n\n GitHub\nShiny: First Steps\nOne-day workshop (in French)\nLille, France\nNov. 2019\n\n\n GitHub\nR and Databases\nTwo-days workshop (in French)\nLille, France\nMay 2018\n\n\n GitHub"
+  },
+  {
+    "objectID": "cv_rmd/curriculum-vitae.html#awards-1",
+    "href": "cv_rmd/curriculum-vitae.html#awards-1",
+    "title": "Mickaël Canouil - Curriculum Vitæ",
+    "section": "Awards (1)",
+    "text": "Awards (1)\nFunding Allocation SFD-Lilly\n“Société Francophone du Diabète”\n(SFD)\nBordeaux, France\nMar. 2015\nProject: Detection of new genomic variants associated with fasting blood glucose and incidence of type 2 diabetes simultaneously\n\n\nsfdiabete.org"
+  },
+  {
+    "objectID": "cv_rmd/curriculum-vitae.html#oral-communications-6",
+    "href": "cv_rmd/curriculum-vitae.html#oral-communications-6",
+    "title": "Mickaël Canouil - Curriculum Vitæ",
+    "section": "Oral communications (6)",
+    "text": "Oral communications (6)\nMy Journey To Transparency And Reproducibility\nR Lille (rlille.fr)\nOnline (Lille, France)\nApr. 2021\n\n\nmickael.canouil.fr\nMy Journey To Transparency And Reproducibility (French)\nMin2Rien (www.min2rien.fr)\nOnline (Lille, France)\nApr. 2021\n\n\nmickael.canouil.fr\n“Débuter” avec R en Commençant par le Début … (French)\nR Lille (rlille.fr)\nLille, France\nJan. 2021\n\n\nmickael.canouil.fr\nJointly Modelling SNPs With Survival & Longitudinal Trait\nA Statistical Seminar Applied on Type 2 Diabetes\n(Host: Pr. Paul Franks)\nLund, Sweden\nJan. 2019\n\n\nmickael.canouil.fr\nJointly Modelling SNPs With Survival & Longitudinal Trait\nThematic Day “Statistic & Genomic”\nof the “Réseau Interdisciplinaire\nautour de la Statistique”\n(RIS) (ris.cnrs.fr)\nParis, France\nOct. 2018\n\n\n\nLongitudinal Genetic Modelling: Revisiting Associations of SNPs Associated With Blood Fasting Glucose in Normoglycemic Individuals\nStatistical Methods for Post Genomic Data\n(SMPGD) (math.univ-lille1.fr/~celisse/SMPGD)\nLille, France\nFeb. 2016"
+  },
+  {
+    "objectID": "cv_rmd/curriculum-vitae.html#poster-communications-4",
+    "href": "cv_rmd/curriculum-vitae.html#poster-communications-4",
+    "title": "Mickaël Canouil - Curriculum Vitæ",
+    "section": "Poster communications (4)",
+    "text": "Poster communications (4)\n“Variants Génétiques Associés à la Trajectoire de la Glycémie à Jeun et à l’Incidence du Diabète de Type 2: Une Approche par Modèle Joint” (CA-075)\nAnnual Congress of\n“Société Francophone du Diabète”\n(SFD)\nLille, France\nMar. 2017\n\n\n\nSingle Nucleotide Polymorphisms Associated With Fasting Blood Glucose Trajectory And Type 2 Diabetes Incidence: A Joint Modelling Approach\n4th Symposium\nEuropean Genomic Institute for Diabetes\n(EGID)\nLille, France\nNov. 2016\n\n\n\nSingle Nucleotide Polymorphisms Associated With Fasting Blood Glucose Trajectory And Type 2 Diabetes Incidence: A Joint Modelling Approach\nInternational Genetic Epidemiology Society\n(IGES)\nToronto, Canada\nOct. 2016\n\n\n\nApplication of Joint Models in Genetic Association Studies\nInternational Genetic Epidemiology Society\n(IGES)\nBaltimore, United-States\nOct. 2015"
+  },
+  {
+    "objectID": "cv_rmd/curriculum-vitae.html#r-packages-6",
+    "href": "cv_rmd/curriculum-vitae.html#r-packages-6",
+    "title": "Mickaël Canouil - Curriculum Vitæ",
+    "section": "R Packages (6)",
+    "text": "R Packages (6)\ninsane: An Interactive Web Application for Quality Control and Analysis of Insulin Secretion from Pancreatic Beta Cells\n(As author / creator)\nCRAN\nNov. 2020\nhttps://cran.r-project.org/package=insanehttps://github.com/mcanouil/insane/\n\n\n\nggpacman: A ‘ggplot2’ and ‘gganimate’ Version of Pac-Man\n(As author / creator)\nCRAN\nMay 2020\nhttps://cran.r-project.org/package=ggpacmanhttps://github.com/mcanouil/ggpacman/\n\n\n\nggnetwork: Geometries to Plot Networks with ‘ggplot2’\n(As contributor)\nCRAN\nFeb. 2020\nhttps://cran.r-project.org/package=ggnetworkhttps://github.com/briatte/ggnetwork/\n\n\n\nNACHO: NanoString Quality Control Dashboard\n(As author / creator)\nCRAN\nJun. 2018\nhttps://cran.r-project.org/package=NACHOhttps://github.com/mcanouil/NACHO/\n\n\n\nclere: Simultaneous Variables Clustering and Regression\n(As author)\nCRAN\nFeb. 2014\nhttps://cran.r-project.org/package=clerehttps://github.com/mcanouil/clere/\n\n\n\nsnpEnrichment: SNPs Enrichment Analysis\n(As author / creator)\nCRAN\nApr. 2013\nhttps://cran.r-project.org/package=snpEnrichmenthttps://github.com/mcanouil/snpEnrichment/"
+  },
+  {
+    "objectID": "cv_rmd/curriculum-vitae.html#publications-7-36",
+    "href": "cv_rmd/curriculum-vitae.html#publications-7-36",
+    "title": "Mickaël Canouil - Curriculum Vitæ",
+    "section": "Publications (7 + 36)",
+    "text": "Publications (7 + 36)\nEpigenome-Wide Association Study Reveals Methylation Loci Associated With Offspring Gestational Diabetes Mellitus Exposure and Maternal Methylome\nMickaël Canouil†, Amna Khamis, Elina Keikkala, Sandra Hummel, Stephane Lobbens, […], Marjo-Riitta Jarvelin, Sylvain Sebert, Eero Kajantie, Philippe Froguel and Toby Andrew\nN/A\nSep. 2021\n\n\nDiabetes Care\n\n† As first or co-first author.\n\n: an R package for quality control of NanoString nCounter data\nMickaël Canouil†, Gerard A Bouland, Amélie Bonnefond, Philippe Froguel, Leen M ’t Hart and Roderick C Slieker\nN/A\nFeb. 2020\n\n\nBioinformatics\n\n† As first or co-first author.\n\nLaser capture microdissection of human pancreatic islets reveals novel eQTLs associated with type 2 diabetes\nAmna Khamis, Mickaël Canouil†, Afshan Siddiq, Hutokshi Crouch, Mario Falchi, […], Mark Ibberson, Amelie Bonnefond, Piero Marchetti, Michele Solimena and Philippe Froguel\nN/A\nJun. 2019\n\n\nMolecular Metabolism\n\n† As first or co-first author.\n\nIncreased Hepatic PDGF-AA Signaling Mediates Liver Insulin Resistance in Obesity-Associated Type 2 Diabetes\nAmar Abderrahmani, Loïc Yengo, Robert Caiazzo, Mickaël Canouil†, Stéphane Cauchi, […], Clemens Schafmayer, Jochen Hampe, Amélie Bonnefond, François Pattou and Philippe Froguel\nN/A\nJul. 2018\n\n\nDiabetes\n\n† As first or co-first author.\n\nJointly Modelling Single Nucleotide Polymorphisms With Longitudinal and Time-to-Event Trait: An Application to Type 2 Diabetes and Fasting Plasma Glucose\nMickaël Canouil†, Beverley Balkau, Ronan Roussel, Philippe Froguel and Ghislain Rocheleau\nN/A\nJun. 2018\n\n\nFrontiers in Genetics\n\n† As first or co-first author.\n\nLow-dose exposure to bisphenols A, F and S of human primary adipocyte impacts coding and non-coding RNA profiles\nMarie Verbanck, Mickaël Canouil†, Audrey Leloire, Véronique Dhennin, Xavier Coumoul, Loïc Yengo, Philippe Froguel and Odile Poulain-Godefroy\nN/A\nJun. 2017\n\n\nPLOS ONE\n\n† As first or co-first author.\n\nExpression and functional assessment of candidate type 2 diabetes susceptibility genes identify four new genes contributing to human insulin secretion\nFatou K. Ndiaye, Ana Ortalli, Mickaël Canouil†, Marlène Huyvaert, Clara Salazar-Cardozo, […], Piero Marchetti, François Pattou, Amar Abderrahmani, Philippe Froguel and Amélie Bonnefond\nN/A\nJun. 2017\n\n\n\n\nMolecular Metabolism\n\n† As first or co-first author."
+  }
+]
