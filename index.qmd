@@ -85,4 +85,4 @@ Welcome to browse my [resume](/cv/), recent [blog posts](/blog/), [datasets](/da
 ::::
 
 
-<script href="javascript:void(0);" type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=4682b4&w=688&t=n&d=xZ5N7O41jb8FCtvQIiC0y_H6QbZgte9z9WlfHIbXC9w&co=ffffff&cmo=ff7f50&cmn=ffa500&ct=ffffff'></script>
+

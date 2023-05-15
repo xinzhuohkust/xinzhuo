@@ -6,7 +6,10 @@ execute:
   freeze: auto
 
 website:
+  cookie-consent: true
   title: "Xinzhuo Huang"
+  google-analytics:
+    tracking-id: "G-7HHBQV7LX3"
   favicon: icon.png
   site-url: https://xinzhuo.work
   description: "Xinzhuo's Personal Website"
@@ -17,15 +20,15 @@ website:
     title: false
     right:
       - text: CV
-        href: cv/index.qmd
+        href: cv/index.html
       - text: BLOG
-        href: blog/index.qmd
+        href: blog/index.html
       - text: DATA
-        href: data/index.qmd
+        href: data/index.html
       - text: PROJECT
-        href: project/index.qmd
+        href: project/index.html
       - icon: rss
-        href: index.xml
+        href: blog/index.xml
       - icon: github
         menu:
           - text: Source Code
@@ -34,7 +37,7 @@ website:
             url:  https://github.com/xinzhuohkust/xinzhuo/issues
   page-footer:
     border: false
-    center: "Powered by [Quarto](https://quarto.org) | © 2023 [Xinzhuo Huang](/index)"  
+    center: "Powered by [Quarto](https://quarto.org) | © 2023 [Xinzhuo Huang](/cv/)"  
 
 format:
   html:
@@ -49,7 +52,8 @@ format:
     highlight-style: gruvbox
     df-print: paged
     code-fold: true
-    code-block-bg: true
+    code-block-bg: "#f5f5f5"
+    code-block-border-left: "#E0E0E0"
     toc: true
     toc-depth: 3
     toc-location: right
