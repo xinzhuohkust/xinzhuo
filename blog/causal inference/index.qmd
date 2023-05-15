@@ -53,8 +53,6 @@ fatality <- import(
     setclass = "tibble"
 )
 
-opts_current$append(list(label = "dummy"))
-
 fatality %>% 
     ggplot(aes(x = beertax, y = fatality_rate)) +
     geom_point(aes(color = state)) +
