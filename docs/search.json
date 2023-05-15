@@ -11,7 +11,7 @@
     "href": "blog/index.html",
     "title": "Social Science",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Updated - Oldest\n        \n         \n          Updated - Newest\n        \n     \n  \n\n\n\n\n\n\n\n\nSentence Level Sentiment Analysis\n\n\n4 min\n\n\nby calling Python in R\n\n\n\nMay 12, 2023\n\n\n\n\n\nMay 12, 2023\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Updated - Oldest\n        \n         \n          Updated - Newest\n        \n     \n  \n\n\n\n\n\n\n\n\nCausal Inference Practical Methods\n\n\n16 min\n\n\nwith R\n\n\n\nMay 15, 2023\n\n\n\n\n\nMay 15, 2023\n\n\n\n\n\n\n\n\n\n\n\nSentence Level Sentiment Analysis\n\n\n4 min\n\n\nby calling Python in R\n\n\n\nMay 12, 2023\n\n\n\n\n\nMay 12, 2023\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/sentiment analysis/index.html",
@@ -25,14 +25,14 @@
     "href": "blog/sentiment analysis/index.html#install-python-packages",
     "title": "Sentence Level Sentiment Analysis",
     "section": "install python packages:",
-    "text": "install python packages:\nCall python in R.\n\nCodereticulate::use_python(\"C:\\\\Users\\\\xhuangcb\\\\anaconda3\\\\envs\\\\pytorch_gpu\\\\python.exe\") # call python in R\n\n\nThen:\n\n\n\n\n\n Tpying \n    To install \n  \n\n\n !pip install spacy \n    spacy \n  \n\n !pip install asent \n    asent \n  \n\n !pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.5.0/en_core_web_lg-3.5.0-py3-none-any.whl \n    pre-trained model"
+    "text": "install python packages:\nCall python in R.\n\nCodereticulate::use_python(\"C:\\\\Users\\\\xhuangcb\\\\anaconda3\\\\envs\\\\pytorch_gpu\\\\python.exe\") # call python in R\n\n\nThen:\n\n\n\n\nTpying\nTo install\n\n\n\n!pip install spacy\nspacy\n\n\n!pip install asent\nasent\n\n\n!pip install https://github.com/explosion/spacy-models/releases/download/en_core_web_lg-3.5.0/en_core_web_lg-3.5.0-py3-none-any.whl\npre-trained model"
   },
   {
     "objectID": "blog/sentiment analysis/index.html#from-oop-to-fp",
     "href": "blog/sentiment analysis/index.html#from-oop-to-fp",
     "title": "Sentence Level Sentiment Analysis",
     "section": "from OOP to FP",
-    "text": "from OOP to FP\nPython is an object-oriented programming (OOP) language, and it is possible to convert Python classes into functions in R, which mainly support functional programming (FP).\n\nCodespacy <- reticulate::import(\"spacy\") # load spacy\n\nasent <- reticulate::import(\"asent\") # load asent\n\nnlp <- spacy$load(\"en_core_web_lg\") # load pre-trained model\n\nnlp$add_pipe(\"asent_en_v1\") # add asent pipe\n\n<asent.component.Asent object at 0x000002306EFBD5E0>\n\nCodenlp_safe <- possibly(.f = nlp, otherwise = \"error!\") # error handling\n\nget_polarity <- nlp_safe(\"sentiment\")$get_extension(\"polarity\")[[3]] # load python function\n\nget_sentiment_asent <- \\(x) {\n    result <- nlp_safe(x) %>%\n        get_polarity() %>%\n        print() %>%\n        capture.output() %>%\n        str_extract_all(\"-?0\\\\.\\\\d+\") %>%\n        unlist() %>%\n        as.numeric()\n\n    names(result) <- c(\"neg\", \"neu\", \"pos\", \"compound\")\n\n    return(result)\n}\n\n\nTry our function:\n\nCodeget_sentiment_asent(data$cleaned_text[1])\n\n     neg      neu      pos compound \n  0.0440   0.6350   0.0710   0.1235 \n\n\nIt is an analytical process of asent:"
+    "text": "from OOP to FP\nPython is an object-oriented programming (OOP) language, and it is possible to convert Python classes into functions in R, which mainly support functional programming (FP).\n\nCodespacy &lt;- reticulate::import(\"spacy\") # load spacy\n\nasent &lt;- reticulate::import(\"asent\") # load asent\n\nnlp &lt;- spacy$load(\"en_core_web_lg\") # load pre-trained model\n\nnlp$add_pipe(\"asent_en_v1\") # add asent pipe\n\n&lt;asent.component.Asent object at 0x000002306EFBD5E0&gt;\n\nCodenlp_safe &lt;- possibly(.f = nlp, otherwise = \"error!\") # error handling\n\nget_polarity &lt;- nlp_safe(\"sentiment\")$get_extension(\"polarity\")[[3]] # load python function\n\nget_sentiment_asent &lt;- \\(x) {\n    result &lt;- nlp_safe(x) %&gt;%\n        get_polarity() %&gt;%\n        print() %&gt;%\n        capture.output() %&gt;%\n        str_extract_all(\"-?0\\\\.\\\\d+\") %&gt;%\n        unlist() %&gt;%\n        as.numeric()\n\n    names(result) &lt;- c(\"neg\", \"neu\", \"pos\", \"compound\")\n\n    return(result)\n}\n\n\nTry our function:\n\nCodeget_sentiment_asent(data$cleaned_text[1])\n\n     neg      neu      pos compound \n  0.0440   0.6350   0.0710   0.1235 \n\n\nIt is an analytical process of asent:"
   },
   {
     "objectID": "index.html",
@@ -124,5 +124,173 @@
     "title": "Mickaël Canouil - Curriculum Vitæ",
     "section": "Publications (7 + 36)",
     "text": "Publications (7 + 36)\nEpigenome-Wide Association Study Reveals Methylation Loci Associated With Offspring Gestational Diabetes Mellitus Exposure and Maternal Methylome\nMickaël Canouil†, Amna Khamis, Elina Keikkala, Sandra Hummel, Stephane Lobbens, […], Marjo-Riitta Jarvelin, Sylvain Sebert, Eero Kajantie, Philippe Froguel and Toby Andrew\nN/A\nSep. 2021\n\n\nDiabetes Care\n\n† As first or co-first author.\n\n: an R package for quality control of NanoString nCounter data\nMickaël Canouil†, Gerard A Bouland, Amélie Bonnefond, Philippe Froguel, Leen M ’t Hart and Roderick C Slieker\nN/A\nFeb. 2020\n\n\nBioinformatics\n\n† As first or co-first author.\n\nLaser capture microdissection of human pancreatic islets reveals novel eQTLs associated with type 2 diabetes\nAmna Khamis, Mickaël Canouil†, Afshan Siddiq, Hutokshi Crouch, Mario Falchi, […], Mark Ibberson, Amelie Bonnefond, Piero Marchetti, Michele Solimena and Philippe Froguel\nN/A\nJun. 2019\n\n\nMolecular Metabolism\n\n† As first or co-first author.\n\nIncreased Hepatic PDGF-AA Signaling Mediates Liver Insulin Resistance in Obesity-Associated Type 2 Diabetes\nAmar Abderrahmani, Loïc Yengo, Robert Caiazzo, Mickaël Canouil†, Stéphane Cauchi, […], Clemens Schafmayer, Jochen Hampe, Amélie Bonnefond, François Pattou and Philippe Froguel\nN/A\nJul. 2018\n\n\nDiabetes\n\n† As first or co-first author.\n\nJointly Modelling Single Nucleotide Polymorphisms With Longitudinal and Time-to-Event Trait: An Application to Type 2 Diabetes and Fasting Plasma Glucose\nMickaël Canouil†, Beverley Balkau, Ronan Roussel, Philippe Froguel and Ghislain Rocheleau\nN/A\nJun. 2018\n\n\nFrontiers in Genetics\n\n† As first or co-first author.\n\nLow-dose exposure to bisphenols A, F and S of human primary adipocyte impacts coding and non-coding RNA profiles\nMarie Verbanck, Mickaël Canouil†, Audrey Leloire, Véronique Dhennin, Xavier Coumoul, Loïc Yengo, Philippe Froguel and Odile Poulain-Godefroy\nN/A\nJun. 2017\n\n\nPLOS ONE\n\n† As first or co-first author.\n\nExpression and functional assessment of candidate type 2 diabetes susceptibility genes identify four new genes contributing to human insulin secretion\nFatou K. Ndiaye, Ana Ortalli, Mickaël Canouil†, Marlène Huyvaert, Clara Salazar-Cardozo, […], Piero Marchetti, François Pattou, Amar Abderrahmani, Philippe Froguel and Amélie Bonnefond\nN/A\nJun. 2017\n\n\n\n\nMolecular Metabolism\n\n† As first or co-first author."
+  },
+  {
+    "objectID": "blog/causal inference/index.html",
+    "href": "blog/causal inference/index.html",
+    "title": "Causal Inference Practical Methods",
+    "section": "",
+    "text": "Coderequire(\"pacman\")\n\np_load(\n    tibble, dplyr, furrr, purrr, tidyr, stringr, rio, ggplot2, knitr,\n    broom, kableExtra, lfe, plm, ggthemes, skimr, ggpmisc, sysfonts, \n    extrafont, AER, dagitty, ggdag, rdrobust, rddensity, did\n)\n\nprint_kable &lt;- \\(result, title) {\n    kable(\n        result,\n        digits = 3,\n        caption = title,\n        booktabs = TRUE\n    )\n}"
+  },
+  {
+    "objectID": "blog/causal inference/index.html#linear-dummy-variabel-model",
+    "href": "blog/causal inference/index.html#linear-dummy-variabel-model",
+    "title": "Causal Inference Practical Methods",
+    "section": "Linear Dummy Variabel Model",
+    "text": "Linear Dummy Variabel Model\nFixed effects model shows that the beer tax does reduce fatalities.\n\nCodefatality &lt;- import(\n    \"E:/OneDrive - HKUST Connect/assignment/assignment3/fatality.csv\",\n    setclass = \"tibble\"\n)\n\nopts_current$append(list(label = \"dummy\"))\n\nfatality %&gt;% \n    ggplot(aes(x = beertax, y = fatality_rate)) +\n    geom_point(aes(color = state)) +\n    geom_smooth(\n        aes(group = state, color = state),\n        method = \"lm\", \n        se = FALSE\n    ) +\n    geom_smooth(method = \"lm\", linetype = \"dashed\", color = \"#8E8E93\") +\n    xlab(\"Beer Tax\") +\n    ylab(\"Fatalities\") +\n    theme_clean() +\n    theme(\n        panel.border = element_blank(),\n        legend.position = \"none\"\n    )\n\n\n\nThe relationship between the beer tax and fatality\n\n\n\n\nCodelinear_dummy_formula &lt;- fatality %&gt;% \n    pull(state) %&gt;% \n    sprintf(\"`%s`\", .) %&gt;% \n    unique() %&gt;% \n    str_c(collapse = \" + \") %&gt;% \n    str_c(\"fatality_rate ~ 0 + beertax + \", ., collapse = \" + \") %&gt;% \n    as.formula()\n\nlinear_dummy &lt;- fatality %&gt;% \n    pivot_wider(\n        names_from = state,\n        values_from = state\n    ) %&gt;% \n    mutate(\n        across(3:50, ~ str_replace(., \"\\\\w+\", \"1\")),\n        across(3:50, ~ replace_na(., \"0\")),\n        across(3:50, as.numeric) \n    ) %&gt;% \n    lm(\n        linear_dummy_formula,\n        data = .\n    ) \n\nlinear_dummy %&gt;% \n    tidy() %&gt;% \n    slice(1) %&gt;% \n    print_kable(title = \"Linear dummy variable model\")\n\n\nLinear dummy variable model\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\nbeertax\n-0.656\n0.188\n-3.491\n0.001"
+  },
+  {
+    "objectID": "blog/causal inference/index.html#fixed-effect-in-standard-packages",
+    "href": "blog/causal inference/index.html#fixed-effect-in-standard-packages",
+    "title": "Causal Inference Practical Methods",
+    "section": "Fixed effect in standard packages",
+    "text": "Fixed effect in standard packages\n\nCodefixed_effect_plm &lt;- fatality %&gt;% \n    pdata.frame(index = c(\"state\")) %&gt;% \n    plm(\n        fatality_rate ~ beertax, \n        data = ., \n        model = \"within\", \n        effect = \"individual\"\n    ) \n\nfixed_clustered_plm &lt;- fixed_effect_plm %&gt;% \n    tidy() %&gt;% \n    mutate(\n        category = \"fixed effects with plm\",\n        `std.error` = vcovHC(\n            fixed_effect_plm, \n            type = \"HC1\", \n            cluster = \"group\"\n        ) |&gt; \n        diag() |&gt;\n        sqrt(),\n        statistic = coef(fixed_effect_plm) / `std.error`,\n        `p.value` = 2 * pt(\n            abs(statistic), \n            df = fixed_effect_plm$df.residual, \n            lower.tail = FALSE\n        )\n    ) \n\nfixed_clustered_lfe &lt;- fatality %&gt;% \n    felm(\n        fatality_rate ~ beertax | state,\n        cluster = \"state\",\n        data = .\n    ) %&gt;% \n    tidy() %&gt;% \n    mutate(category = \"fixed effects with lfe\")\n\nfixed_clustered_lfe %&gt;% \n    bind_rows(fixed_clustered_plm) %&gt;% \n    print_kable(title = \"Fixed effect in standard packages\")\n\n\nFixed effect in standard packages\n\nterm\nestimate\nstd.error\nstatistic\np.value\ncategory\n\n\n\nbeertax\n-0.656\n0.292\n-2.247\n0.029\nfixed effects with lfe\n\n\nbeertax\n-0.656\n0.289\n-2.271\n0.024\nfixed effects with plm"
+  },
+  {
+    "objectID": "blog/causal inference/index.html#pre-trends",
+    "href": "blog/causal inference/index.html#pre-trends",
+    "title": "Causal Inference Practical Methods",
+    "section": "Pre-trends",
+    "text": "Pre-trends\nBased on the figure, the parallel trend assumption may not hold, as we can see that the crime rates in Muslim/Jewish neighborhoods experienced two episodes of first decreasing, then increasing again, before increasing prior to the intervention. However, the Non Muslim/Jewish only experienced one episodes.\n\nCodecartheft &lt;- import(\n    \"E:/OneDrive - HKUST Connect/assignment/assignment3/cartheft.dta\",\n    setclass = \"tibble\"\n    ) %&gt;% \n    mutate(treatment = if_else(distance &gt; 0, 0, 1)) \n\ncartheft %&gt;% \n    group_by(month, treatment, postattack) %&gt;% \n    summarise(mean = mean(cartheft)) %&gt;% \n    ggplot(\n        aes(x = month, y = mean)\n    ) + \n    geom_line(\n        aes(group = treatment, color = as.factor(treatment)),\n        linewidth = 1.2,\n        linetype = \"twodash\"\n    ) + \n    geom_vline(\n        xintercept = 8, \n        linetype = \"dotdash\",\n        linewidth = 1,\n        color = \"#8E8E93\"\n    ) + \n    theme_clean() + \n    xlab(\"Month\") +\n    ylab(\"Mean crime rates\") +\n    theme(\n        legend.position = \"none\"\n    ) +\n    geom_text(\n        x = 10,\n        y = 0.064,\n        label = \"Muslim/Jewish\",\n        size = 3.6,\n        fontface = \"italic\"\n    ) +\n    geom_text(\n        x = 10,\n        y = 0.112,\n        label = \"Non Muslim/Jewish\",\n        size = 3.6, \n        fontface = \"italic\"\n    ) \n\n\n\nPre-trends test"
+  },
+  {
+    "objectID": "blog/causal inference/index.html#did-as-a-linear-regression-with-interaction",
+    "href": "blog/causal inference/index.html#did-as-a-linear-regression-with-interaction",
+    "title": "Causal Inference Practical Methods",
+    "section": "DiD as a linear regression with interaction",
+    "text": "DiD as a linear regression with interaction\n\nCodedid_interaction &lt;- cartheft %&gt;% \n    lm(\n        cartheft ~ treatment + postattack + treatment * postattack,\n        data = .\n    ) %&gt;% \n    tidy() %&gt;% \n    slice(4) %&gt;% \n    mutate(term = \"Same-Block Police\") \n\ndid_interaction %&gt;%\n    print_kable(., title = \"linear regression with interaction\")\n\n\nlinear regression with interaction\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\nSame-Block Police\n-0.078\n0.027\n-2.847\n0.004"
+  },
+  {
+    "objectID": "blog/causal inference/index.html#did-asd-fixed-effect",
+    "href": "blog/causal inference/index.html#did-asd-fixed-effect",
+    "title": "Causal Inference Practical Methods",
+    "section": "DiD asd fixed effect",
+    "text": "DiD asd fixed effect\n\nCodedid_fixed &lt;- cartheft %&gt;% \n    felm(\n        cartheft ~ treatment * postattack | blockid + month,\n        data = .\n    ) %&gt;% \n    tidy() %&gt;% \n    slice(3) %&gt;% \n    mutate(term = \"Same-Block * Postattack\") \n\ndid_fixed %&gt;%\n    print_kable(title = \"Two way fixed effect model\")\n\n\nTwo way fixed effect model\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\nSame-Block * Postattack\n-0.078\n0.026\n-2.992\n0.003"
+  },
+  {
+    "objectID": "blog/causal inference/index.html#time-invariant-variables-in-fixed-effect-regressions",
+    "href": "blog/causal inference/index.html#time-invariant-variables-in-fixed-effect-regressions",
+    "title": "Causal Inference Practical Methods",
+    "section": "Time-invariant variables in fixed effect regressions",
+    "text": "Time-invariant variables in fixed effect regressions\nWe cannot estimate the coefficient for time-invariant variables since they are absorbed by the individual fixed effects.\n\nCodedid_fixed_invariant &lt;- cartheft %&gt;% \n    felm(\n        cartheft ~ treatment * postattack + bank | blockid + month,\n        data = .\n    ) %&gt;% \n    tidy() %&gt;% \n    slice(3:4) %&gt;% \n    mutate(term = c(\"Bank\", \"Same-Block * Postattack\"))\n\ndid_fixed_invariant %&gt;%  \n    print_kable(title = \"Time-invariant variables in regression\")\n\n\nTime-invariant variables in regression\n\nterm\nestimate\nstd.error\nstatistic\np.value\n\n\n\nBank\nNaN\nNA\nNaN\nNaN\n\n\nSame-Block * Postattack\n-0.078\n0.026\n-2.992\n0.003"
+  },
+  {
+    "objectID": "blog/causal inference/index.html#iv-estimate",
+    "href": "blog/causal inference/index.html#iv-estimate",
+    "title": "Causal Inference Practical Methods",
+    "section": "IV estimate",
+    "text": "IV estimate\nThe IV estimator is larger than the OLS estimator. Since in this study, IV is used to address endogeneity by providing a source of variation in the predictor variable that is independent of the error term. In that case, IV estimate accounts for endogeneity and provides a more reliable estimate of the true causal effect of the predictor variable on the outcome variable. The OLS estimate, on the other hand, may be biased and inconsistent in the presence of endogeneity, leading to an underestimate of the true effect size.\n\nCodedag &lt;- tribble(\n    ~name, ~label, ~x, ~y,\n    \"educ\", \"Educ\", 4, 1,\n    \"wage\", \"Wage\", 5, 1,\n    \"e\", \"Confounders\", 4.5, 1.5,\n    \"Z\", \"Instrumental Variable\", 3, 1\n)\n\nnode_labels &lt;- dag$label\nnames(node_labels) &lt;- dag$name\n\nstatus_colors &lt;- c(\n    exposure = \"#00BFFF\", \n    outcome = \"#FF7F50\", \n    latent = \"#D3D3D3\"\n    )\n\ndagify(\n    wage ~ educ + e,\n    educ ~ e,\n    educ ~ Z,\n    exposure = \"educ\",\n    outcome = \"wage\",\n    latent = \"e\",\n    coords = dag,\n    labels = node_labels\n) %&gt;% \ntidy_dagitty() %&gt;% \nnode_status() %&gt;% \nggplot(aes(x = x, y = y, xend = xend, yend = yend)) + \ngeom_dag_edges() +\ngeom_dag_point(aes(color = status)) +\ngeom_dag_label_repel(\n    aes(label = label, fill = status), \n    color = \"white\", \n    fontface = \"bold\"\n) +\nscale_color_manual(values = status_colors, na.value = \"grey20\") +\nscale_fill_manual(values = status_colors, na.value = \"grey20\") +\nguides(color = FALSE, fill = FALSE) + \ntheme_dag()\n\n\n\nDirected Acyclic Graphs\n\n\n\n\nCodecard &lt;- import(\n    \"E:/OneDrive - HKUST Connect/assignment/assignment3/card.csv\",\n    setclass = \"tibble\"\n    )\n\nols &lt;- card %&gt;% \n    lm(\n        lwage ~ educ,\n        data = . \n    ) %&gt;% \n    coeftest(vcovHC, \"HC1\") %&gt;% \n    tidy() %&gt;% \n    slice(2) %&gt;% \n    mutate(method = \"OLS with robust std.error\")\n\niv &lt;- card %&gt;% \n    ivreg(\n        lwage ~ educ | nearc4,\n        data = .\n    ) %&gt;% \n    coeftest(vcovHC, \"HC1\") %&gt;% \n    tidy() %&gt;% \n    slice(2) %&gt;% \n    mutate(method = \"IV with robust std.error\")\n\nbind_rows(ols, iv) %&gt;%  \n    print_kable(title = \"Comparison between OLS and IV\") \n\n\nComparison between OLS and IV\n\nterm\nestimate\nstd.error\nstatistic\np.value\nmethod\n\n\n\neduc\n0.052\n0.003\n17.902\n0\nOLS with robust std.error\n\n\neduc\n0.188\n0.026\n7.189\n0\nIV with robust std.error"
+  },
+  {
+    "objectID": "blog/causal inference/index.html#manual-2sls",
+    "href": "blog/causal inference/index.html#manual-2sls",
+    "title": "Causal Inference Practical Methods",
+    "section": "Manual 2SLS",
+    "text": "Manual 2SLS\n\nCodefirst_stage &lt;- card %&gt;% \n    lm(\n        educ ~ nearc4,\n        data = . \n    ) \n\nmanual &lt;- card %&gt;% \n    mutate(educ = predict(first_stage)) %&gt;% \n    lm(\n        lwage ~ educ,\n        data = .\n    ) %&gt;% \n    coeftest(vcovHC, \"HC1\") %&gt;% \n    tidy() %&gt;% \n    slice(2) %&gt;% \n    mutate(method = \"Manual 2SLS with robust std.error\")\n\nbind_rows(manual, iv, ols) %&gt;% \n    print_kable(title = \"Comparison between OLS, IV and manual 2SLS\") \n\n\nComparison between OLS, IV and manual 2SLS\n\nterm\nestimate\nstd.error\nstatistic\np.value\nmethod\n\n\n\neduc\n0.188\n0.021\n9.149\n0\nManual 2SLS with robust std.error\n\n\neduc\n0.188\n0.026\n7.189\n0\nIV with robust std.error\n\n\neduc\n0.052\n0.003\n17.902\n0\nOLS with robust std.error"
+  },
+  {
+    "objectID": "blog/causal inference/index.html#weak-instrument",
+    "href": "blog/causal inference/index.html#weak-instrument",
+    "title": "Causal Inference Practical Methods",
+    "section": "Weak instrument",
+    "text": "Weak instrument\nThe F statistics from the first-stage regression is larger than 10.\n\nCodewaldtest(\n    lm(lwage ~ educ + nearc4, card),\n    lm(lwage ~ educ, card)\n) %&gt;% \ntidy %&gt;% \nrename(F.statistic = statistic) %&gt;% \nprint_kable(title = \"Weak instrument test\")\n\n\nWeak instrument test\n\nterm\ndf.residual\ndf\nF.statistic\np.value\n\n\n\nlwage ~ educ + nearc4\n3007\nNA\nNA\nNA\n\n\nlwage ~ educ\n3008\n-1\n48.451\n0"
+  },
+  {
+    "objectID": "blog/causal inference/index.html#interpretation-of-effect",
+    "href": "blog/causal inference/index.html#interpretation-of-effect",
+    "title": "Causal Inference Practical Methods",
+    "section": "Interpretation of effect",
+    "text": "Interpretation of effect\n\nCompliers are the individuals whose decision to attend college is influenced by the instrumental variable. In this study, compliers are the students who would attend college if they lived close to one and would not attend college if they lived far away. These students’ decisions are directly impacted by the geographical distance to college.\nAlways-takers are the individuals who would attend college regardless of the geographical distance. These students would pursue higher education even if they lived far away from a college."
+  },
+  {
+    "objectID": "blog/causal inference/index.html#rd-plot",
+    "href": "blog/causal inference/index.html#rd-plot",
+    "title": "Causal Inference Practical Methods",
+    "section": "RD plot",
+    "text": "RD plot\nWe can observe a clear difference around the cutoff.\n\nCodesenate &lt;- import(\n    \"E:/OneDrive - HKUST Connect/assignment/assignment3/senate.csv\",\n    setclass = \"tibble\"\n    ) %&gt;% \n    mutate(cutoff = if_else(margin &gt; 0, 1, 0))\n\nsenate %&gt;% \n    ggplot(aes(x = margin, y = vote, color = as.factor(cutoff))) +\n    geom_point(\n        size = 1, \n        alpha = 0.5,\n        position = position_jitter(\n            width = 0, \n            height = 0.25\n        )\n    ) + \n    geom_smooth(\n        data = filter(senate, margin &gt; 0),\n        aes(x = margin, y = vote),\n        method = \"lm\",\n        color = \"#8E8E93\"\n    ) +\n    geom_smooth(\n        data = filter(senate, margin &lt; 0),\n        aes(x = margin, y = vote),\n        method = \"lm\",\n        color = \"#8E8E93\"\n    ) +\n    scale_color_manual(values = c(\"#FF7F50\", \"#00BFFF\")) +\n    geom_vline(\n        xintercept = 0,\n        linetype = \"dotdash\",\n        linewidth = 1\n    ) +\n    theme_clean() +\n    theme(\n        legend.position = \"none\"\n    ) +\n    xlab(\"Winning margin of a Democratic party senator\") +\n    ylab(\"Share of vote of the senator in election\")      \n\n\n\nRaw RD plot\n\n\n\n\nCoderdplot(\n    y = senate$vote, \n    x = senate$margin, \n    nbins = 10,\n    x.label = \"Winning margin of a Democratic party senator\",\n    y.label = \"Share of vote of the senator in election\",\n    title = \"\"\n)\n\n\n\nBinned RD plot"
+  },
+  {
+    "objectID": "blog/causal inference/index.html#density-test",
+    "href": "blog/causal inference/index.html#density-test",
+    "title": "Causal Inference Practical Methods",
+    "section": "Density Test",
+    "text": "Density Test\n\nCodedensity_plot &lt;- rddensity(\n    senate$margin,\n    c = 0\n) %&gt;% \nrdplotdensity(\n    rdd = .,\n    X = senate$margin,\n    type = \"both\"\n) %&gt;% \npluck(\"Estplot\")\n\n\n\nDensity Test"
+  },
+  {
+    "objectID": "blog/causal inference/index.html#rd-bandwidth-selection",
+    "href": "blog/causal inference/index.html#rd-bandwidth-selection",
+    "title": "Causal Inference Practical Methods",
+    "section": "RD bandwidth selection",
+    "text": "RD bandwidth selection\nThe obtained bandwidth is 24.969. We estimate the RD effect using three different bandwidth values (ideal, twice the ideal, and half of the ideal) to determine if the value is appropriate. As we can see, the coefficients change substantially. It is considered a big bandwidth since it includes more observations in our analysis.\n\nCoderdbwselect(\n    y = senate$vote,\n    x = senate$margin,\n    c = 0,\n    p = 3,\n    kernel = \"triangular\",\n    bwselect = \"mserd\"\n) %&gt;% \npluck(\"bws\") %&gt;% \nas_tibble() %&gt;% \nset_names(\n    c(\"BW est left\", \"BW est right\", \"BW bias left\", \"BW bias right\")\n) %&gt;% \nprint_kable(title = \"RD bandwidth selection\")\n\n\nRD bandwidth selection\n\nBW est left\nBW est right\nBW bias left\nBW bias right\n\n\n24.969\n24.969\n37.221\n37.221\n\n\n\n\n\nCoderd_models &lt;- c(24.969, 24.969 * 2, 24.969 / 2) %&gt;% \n    map(~ rdrobust(\n        y = senate$vote,\n        x = senate$margin,\n        p = 3,\n        h = .\n        )\n    )\n\nextract_se_es &lt;- \\(x) {\n    tibble(\n        \"Estimate\" = pluck(x, \"Estimate\")[1],\n        \"Se\" = pluck(x, \"se\")[1],\n        \"P-Value\" = pluck(x, \"pv\")[1]\n    )\n}\n\nrd_models %&gt;% \n    map_dfr(extract_se_es) %&gt;% \n    mutate(\n        Bandwidth = c(\n            \"24.969 (ideal)\", \n            \"49.938 (twice)\", \n            \"12.485 (half)\"\n        ),\n        .before = 1\n    ) %&gt;% \n    print_kable(title = \"Sensitivity analysis using different bandwidths\")\n\n\nSensitivity analysis using different bandwidths\n\nBandwidth\nEstimate\nSe\nP-Value\n\n\n\n24.969 (ideal)\n9.126\n2.314\n0\n\n\n49.938 (twice)\n7.676\n1.781\n0\n\n\n12.485 (half)\n13.872\n3.126\n0"
+  },
+  {
+    "objectID": "blog/causal inference/index.html#estimate-sharp-rd-treatment-effect",
+    "href": "blog/causal inference/index.html#estimate-sharp-rd-treatment-effect",
+    "title": "Causal Inference Practical Methods",
+    "section": "Estimate Sharp RD treatment effect",
+    "text": "Estimate Sharp RD treatment effect\nThe model result shows that there is an incumbency advantage.\n\nCodesharp_rd &lt;- rdrobust(\n    y = senate$vote,\n    x = senate$margin,\n    h = 24.96899,\n    p = 3\n) \n\ntibble(\n    \"Estimate\" = pluck(sharp_rd, \"Estimate\")[1],\n    \"Se\" = pluck(sharp_rd, \"se\")[1],\n    \"P-Value\" = pluck(sharp_rd, \"pv\")[1]\n) %&gt;% \nprint_kable(title = \"Sharp RD treatment effect\")\n\n\nSharp RD treatment effect\n\nEstimate\nSe\nP-Value\n\n\n9.126\n2.314\n0"
+  },
+  {
+    "objectID": "blog/causal inference/index.html#varying-orders-of-polynomial-regression",
+    "href": "blog/causal inference/index.html#varying-orders-of-polynomial-regression",
+    "title": "Causal Inference Practical Methods",
+    "section": "Varying orders of polynomial regression",
+    "text": "Varying orders of polynomial regression\nModels with different bandwidth all support the same conclusion.\n\nCodec(1:4) %&gt;% \n    map(~ rdrobust(\n        y = senate$vote,\n        x = senate$margin,\n        p = .,\n        h = 24.96899\n        )   \n    ) %&gt;% \n    map_dfr(extract_se_es) %&gt;% \n    mutate(\n        `Local-polynomial` = 1:4,\n        .before = 1 \n    ) %&gt;% \n    print_kable(\"Varying orders of polynomial regression\")\n\n\nVarying orders of polynomial regression\n\nLocal-polynomial\nEstimate\nSe\nP-Value\n\n\n\n1\n7.103\n1.264\n0\n\n\n2\n7.854\n1.797\n0\n\n\n3\n9.126\n2.314\n0\n\n\n4\n11.556\n2.882\n0"
+  },
+  {
+    "objectID": "cv/index.html",
+    "href": "cv/index.html",
+    "title": "Xinzhuo Huang",
+    "section": "",
+    "text": "Xinzhuo Huang"
+  },
+  {
+    "objectID": "cv/index.html#education",
+    "href": "cv/index.html#education",
+    "title": "Xinzhuo Huang",
+    "section": "Education",
+    "text": "Education\n\nMPhil in Social Science, currently enrolled\nHong Kong University of Science and Technology, HongKong\nFull Scholarships\nMSc in Global China Studies, 2022\nHong Kong University of Science and Technology, HongKong\nDean’s Award\nLLB in Political Science and Law, 2020\nEast China University of Political Science and Law, China\nOutstanding Graduation Thesis Award\nOutstanding Graduate Award"
+  },
+  {
+    "objectID": "cv/index.html#research",
+    "href": "cv/index.html#research",
+    "title": "Xinzhuo Huang",
+    "section": "Research",
+    "text": "Research\n\nDisappeared Champion and World News: How Global Media React to Human-Right-Related Scandal in China, In Progress\n\nCo-author with Prof Jean Hong from University of Michigan and Prof Yusaku Horiuch from Dartmouth College.\n\n\nPropaganda and Petition in China’s Zero-Covid Campaign, In Progress\n\nCo-author with Dr Hongshen Zhu from University of Pennsylvania and Prof Haibing Yan from ECUPL."
+  },
+  {
+    "objectID": "cv/index.html#programming-language",
+    "href": "cv/index.html#programming-language",
+    "title": "Xinzhuo Huang",
+    "section": "Programming Language",
+    "text": "Programming Language"
+  },
+  {
+    "objectID": "cv/index.html#experience",
+    "href": "cv/index.html#experience",
+    "title": "Xinzhuo Huang",
+    "section": "Experience",
+    "text": "Experience\n\nReseach Assistant for Prof Jean Hong from University of Michigan, 2022 \nReseach Assistant for Prof Yimin Lin from HKUST, 2022"
+  },
+  {
+    "objectID": "cv/index.html#programming",
+    "href": "cv/index.html#programming",
+    "title": "Xinzhuo Huang",
+    "section": "Programming",
+    "text": "Programming\n  - R, Advanced - Quarto/Rmarkdown, Advanced - Python, Advanced - SQL, Beginner - Julia, Beginner - Javascript, Beginner"
+  },
+  {
+    "objectID": "cv/index copy.html",
+    "href": "cv/index copy.html",
+    "title": "Xinzhuo Huang",
+    "section": "",
+    "text": "MPhil in Social Science, currently enrolled\nHong Kong University of Science and Technology, HongKong\nFull Scholarships\nMSc in Global China Studies, 2022\nHong Kong University of Science and Technology, HongKong\nDean’s Award\nLLB in Political Science and Law, 2020\nEast China University of Political Science and Law, China\nOutstanding Graduation Thesis Award\nOutstanding Graduate Award"
+  },
+  {
+    "objectID": "cv/index copy.html#education",
+    "href": "cv/index copy.html#education",
+    "title": "Xinzhuo Huang",
+    "section": "",
+    "text": "MPhil in Social Science, currently enrolled\nHong Kong University of Science and Technology, HongKong\nFull Scholarships\nMSc in Global China Studies, 2022\nHong Kong University of Science and Technology, HongKong\nDean’s Award\nLLB in Political Science and Law, 2020\nEast China University of Political Science and Law, China\nOutstanding Graduation Thesis Award\nOutstanding Graduate Award"
   }
 ]

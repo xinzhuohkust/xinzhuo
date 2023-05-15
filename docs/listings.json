@@ -2,6 +2,7 @@
   {
     "listing": "/blog/index.html",
     "items": [
+      "/blog/causal inference/index.html",
       "/blog/sentiment analysis/index.html"
     ]
   },
