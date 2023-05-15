@@ -6,11 +6,11 @@
       version="2.0">
 <channel>
 <title>Xinzhuo Huang</title>
-<link>https://xinzhuo.work/blog/index.html#category=R</link>
-<atom:link href="https://xinzhuo.work/blog/index-r.xml" rel="self" type="application/rss+xml"/>
+<link>https://xinzhuo.work/blog/index.html</link>
+<atom:link href="https://xinzhuo.work/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description>Xinzhuo&#39;s Personal Website</description>
 <generator>quarto-1.4.58</generator>
-<lastBuildDate>Mon, 15 May 2023 14:00:47 GMT</lastBuildDate>
+<lastBuildDate>Mon, 15 May 2023 03:13:57 GMT</lastBuildDate>
 <item>
   <title>Causal Inference Practical Methods</title>
   <dc:creator>Xinzhuo HUANG</dc:creator>
@@ -158,6 +158,28 @@ font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"tibble"</span></span>
 <span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span></span>
+<span></span>
+<span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">opts_current</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">$</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">append</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">(</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">(</span>label <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"dummy"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span></span>
 <span></span>
@@ -3605,7 +3627,7 @@ font-style: inherit;">)</span></span></code></pre></div>
   <category>IV</category>
   <category>Causal Inference</category>
   <guid>https://xinzhuo.work/blog/causal inference/index.html</guid>
-  <pubDate>Mon, 15 May 2023 14:00:47 GMT</pubDate>
+  <pubDate>Mon, 15 May 2023 03:13:57 GMT</pubDate>
 </item>
 <item>
   <title>Sentence Level Sentiment Analysis</title>
