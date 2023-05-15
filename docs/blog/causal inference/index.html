@@ -64,6 +64,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../icon.png" rel="icon" type="image/png">
+<script src="../../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -92,7 +94,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit"
   }
-}</script><style>html{ scroll-behavior: smooth; }</style>
+}</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-7HHBQV7LX3"></script><script type="text/plain" cookie-consent="tracking">
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-7HHBQV7LX3', { 'anonymize_ip': true});
+</script><script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"simple",
+  "consent_type":"implied",
+  "palette":"light",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary","functionality","tracking","targeting"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":""
+  });
+});
+</script><style>html{ scroll-behavior: smooth; }</style>
 <script type="application/json" class="js-hypothesis-config">
 {
   "theme": "clean"
@@ -127,7 +148,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
 <li class="nav-item">
-    <a class="nav-link" href="../../cv/index.qmd" rel="" target="">
+    <a class="nav-link" href="../../cv/index.html" rel="" target="">
  <span class="menu-text">CV</span></a>
   </li>  
   <li class="nav-item">
@@ -135,15 +156,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  <span class="menu-text">BLOG</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../data/index.qmd" rel="" target="">
+    <a class="nav-link" href="../../data/index.html" rel="" target="">
  <span class="menu-text">DATA</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../project/index.qmd" rel="" target="">
+    <a class="nav-link" href="../../project/index.html" rel="" target="">
  <span class="menu-text">PROJECT</span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="../../index.xml" rel="" target=""><i class="bi bi-rss" role="img">
+    <a class="nav-link" href="../../blog/index.xml" rel="" target=""><i class="bi bi-rss" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
@@ -285,8 +306,6 @@ body {text-align: justify}
 <span>    <span class="st">"E:/OneDrive - HKUST Connect/assignment/assignment3/fatality.csv"</span>,</span>
 <span>    setclass <span class="op">=</span> <span class="st">"tibble"</span></span>
 <span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">opts_current</span><span class="op">$</span><span class="fu">append</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span>label <span class="op">=</span> <span class="st">"dummy"</span><span class="op">)</span><span class="op">)</span></span>
 <span></span>
 <span><span class="va">fatality</span> <span class="op">%&gt;%</span> </span>
 <span>    <span class="fu">ggplot</span><span class="op">(</span><span class="fu">aes</span><span class="op">(</span>x <span class="op">=</span> <span class="va">beertax</span>, y <span class="op">=</span> <span class="va">fatality_rate</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
@@ -1514,7 +1533,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center">Powered by <a href="https://quarto.org">Quarto</a> | © 2023 <a href="../../index">Xinzhuo Huang</a></div>
+    <div class="nav-footer-center">Powered by <a href="https://quarto.org">Quarto</a> | © 2023 <a href="../../cv/">Xinzhuo Huang</a><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
