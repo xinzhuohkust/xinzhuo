@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Xinzhuo Huang</title>
+<link>https://xinzhuo.work/project/index.html</link>
+<atom:link href="https://xinzhuo.work/project/index.xml" rel="self" type="application/rss+xml"/>
+<description>Xinzhuo&#39;s Personal Website</description>
+<generator>quarto-1.4.58</generator>
+<lastBuildDate>Tue, 16 May 2023 06:02:32 GMT</lastBuildDate>
+<item>
+  <title>Geocoding R Package</title>
+  <dc:creator>Xinzhuo HUANG</dc:creator>
+  <link>https://xinzhuo.work/project/Geocoding/index.html</link>
+  <description><![CDATA[ 
+
+
+
+<style>
+body {text-align: justify}
+</style>
+<div class="grid">
+<section id="introduction" class="level2 unnumbered unlisted g-col-12 g-col-md-8" style="text-align: left;">
+<h2 class="unnumbered unlisted anchored" data-anchor-id="introduction">Introduction</h2>
+<p>The Geocoding package provides functions for geocoding Chinese addresses and returning administrative information and other socio-economic information.</p>
+<p>The package is designed for researchers, analysts, and other users who need to work with Chinese address data.</p>
+</section>
+<div class="g-col-15 g-col-md-4" style="text-align: center;">
+<p><img src="https://xinzhuo.work/project/Geocoding/geo_icon.png" width="180"></p>
+</div>
+</div>
+
+
+
+ ]]></description>
+  <category>R Package</category>
+  <category>Geocoding</category>
+  <guid>https://xinzhuo.work/project/Geocoding/index.html</guid>
+  <pubDate>Tue, 16 May 2023 06:02:32 GMT</pubDate>
+</item>
+</channel>
+</rss>

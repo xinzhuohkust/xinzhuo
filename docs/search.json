@@ -11,7 +11,7 @@
     "href": "blog/index.html",
     "title": "Social Science",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Updated - Oldest\n        \n         \n          Updated - Newest\n        \n     \n  \n\n\n\n\n\n\n\n\nCausal Inference Practical Methods\n\n\n16 min\n\n\nwith R\n\n\n\nMay 15, 2023\n\n\n\n\n\nMay 15, 2023\n\n\n\n\n\n\n\n\n\n\n\nSentence Level Sentiment Analysis\n\n\n4 min\n\n\nby calling Python in R\n\n\n\nMay 12, 2023\n\n\n\n\n\nMay 12, 2023\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Updated - Oldest\n        \n         \n          Updated - Newest\n        \n     \n  \n\n\n\n\n\n\n\n\nSentence Level Sentiment Analysis\n\n\n4 min\n\n\nby calling Python in R\n\n\n\nMay 16, 2023\n\n\n\n\n\nMay 16, 2023\n\n\n\n\n\n\n\n\n\n\n\nCausal Inference Practical Methods\n\n\n16 min\n\n\nwith R\n\n\n\nMay 15, 2023\n\n\n\n\n\nMay 15, 2023\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/sentiment analysis/index.html",
@@ -32,7 +32,7 @@
     "href": "blog/sentiment analysis/index.html#from-oop-to-fp",
     "title": "Sentence Level Sentiment Analysis",
     "section": "from OOP to FP",
-    "text": "from OOP to FP\nPython is an object-oriented programming (OOP) language, and it is possible to convert Python classes into functions in R, which mainly support functional programming (FP).\n\nCodespacy &lt;- reticulate::import(\"spacy\") # load spacy\n\nasent &lt;- reticulate::import(\"asent\") # load asent\n\nnlp &lt;- spacy$load(\"en_core_web_lg\") # load pre-trained model\n\nnlp$add_pipe(\"asent_en_v1\") # add asent pipe\n\n&lt;asent.component.Asent object at 0x000002306EFBD5E0&gt;\n\nCodenlp_safe &lt;- possibly(.f = nlp, otherwise = \"error!\") # error handling\n\nget_polarity &lt;- nlp_safe(\"sentiment\")$get_extension(\"polarity\")[[3]] # load python function\n\nget_sentiment_asent &lt;- \\(x) {\n    result &lt;- nlp_safe(x) %&gt;%\n        get_polarity() %&gt;%\n        print() %&gt;%\n        capture.output() %&gt;%\n        str_extract_all(\"-?0\\\\.\\\\d+\") %&gt;%\n        unlist() %&gt;%\n        as.numeric()\n\n    names(result) &lt;- c(\"neg\", \"neu\", \"pos\", \"compound\")\n\n    return(result)\n}\n\n\nTry our function:\n\nCodeget_sentiment_asent(data$cleaned_text[1])\n\n     neg      neu      pos compound \n  0.0440   0.6350   0.0710   0.1235 \n\n\nIt is an analytical process of asent:"
+    "text": "from OOP to FP\nPython is an object-oriented programming (OOP) language, and it is possible to convert Python classes into functions in R, which mainly support functional programming (FP).\n\nCodespacy &lt;- reticulate::import(\"spacy\") # load spacy\n\nasent &lt;- reticulate::import(\"asent\") # load asent\n\nnlp &lt;- spacy$load(\"en_core_web_lg\") # load pre-trained model\n\nnlp$add_pipe(\"asent_en_v1\") # add asent pipe\n\n&lt;asent.component.Asent object at 0x000002A1F941D5E0&gt;\n\nCodenlp_safe &lt;- possibly(.f = nlp, otherwise = \"error!\") # error handling\n\nget_polarity &lt;- nlp_safe(\"sentiment\")$get_extension(\"polarity\")[[3]] # load python function\n\nget_sentiment_asent &lt;- \\(x) {\n    result &lt;- nlp_safe(x) %&gt;%\n        get_polarity() %&gt;%\n        print() %&gt;%\n        capture.output() %&gt;%\n        str_extract_all(\"-?0\\\\.\\\\d+\") %&gt;%\n        unlist() %&gt;%\n        as.numeric()\n\n    names(result) &lt;- c(\"neg\", \"neu\", \"pos\", \"compound\")\n\n    return(result)\n}\n\n\nTry our function:\n\nCodeget_sentiment_asent(data$cleaned_text[1])\n\n     neg      neu      pos compound \n  0.0440   0.6350   0.0710   0.1235 \n\n\nIt is an analytical process of asent:"
   },
   {
     "objectID": "index.html",
@@ -292,5 +292,68 @@
     "title": "Xinzhuo Huang",
     "section": "",
     "text": "MPhil in Social Science, currently enrolled\nHong Kong University of Science and Technology, HongKong\nFull Scholarships\nMSc in Global China Studies, 2022\nHong Kong University of Science and Technology, HongKong\nDean’s Award\nLLB in Political Science and Law, 2020\nEast China University of Political Science and Law, China\nOutstanding Graduation Thesis Award\nOutstanding Graduate Award"
+  },
+  {
+    "objectID": "data/index.html",
+    "href": "data/index.html",
+    "title": "China Dataverse",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Modified - Oldest\n        \n         \n          Modified - Newest\n        \n     \n  \n\n\n\n\n\n\n\n\nTitle\n\n\nVolume\n\n\nModified\n\n\n\n\n\n\n\n\n\nAdministrative Penalties Imposed by Chinese Police\n\n\n100 Million (2017 ~ 2023)\n\n\nMay 16, 2023\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "data/penality/index.html",
+    "href": "data/penality/index.html",
+    "title": "Administrative Penalties Imposed by Chinese Police",
+    "section": "",
+    "text": "China has the most hierarchical government system in the world, granting local governments an informational advantage when facing the central government, and lower-level governments when facing higher-level authorities. In China’s judicial system, the police have a dominant role as the coercive force that local and lower-level governments can directly mobilize and rely on. If unchecked, this could pose a serious challenge to the authoritarian regime. Furthermore, unbridled police behavior, as the direct manifestation of state power experienced by ordinary citizens, could severely damage the state’s legitimacy.\nAs a result, China has been promoting “police transparency” by disclosing the processes and outcomes of various administrative actions to the public. A representative example is the public documentation of administrative penalties. However, there is significant heterogeneity within China, and the platforms used by each province differ. Some use websites, while others use apps, posing a significant challenge to data collection.\nBy combining R and JavaScript, I developed web scrapers and decryption functions for each province, ultimately obtaining over 10 million records of administrative penalties imposed by Chinese police, making it the largest dataset of its kind to date."
+  },
+  {
+    "objectID": "data/penality/index.html#data-distribution",
+    "href": "data/penality/index.html#data-distribution",
+    "title": "Administrative Penalties Imposed by Chinese Police",
+    "section": "Data distribution",
+    "text": "Data distribution\n\nCodehchinamap(\n  name = c(\"吉林\", \"辽宁\", \"湖南\", \"重庆\", \"广东\", \"江苏\", \"广西\", \"云南\", \"湖北\", \"山东\", \"浙江\", \"河北\", \"青海\", \"北京\", \"上海\", \"陕西\", \"宁夏\"),\n  value = c(237537, 376848, 1104600, 82265, 1945643, 623432, 824542, 733935, 536745, 795689, 1876714, 739280, 61968, 325531, 85425, 223478, 123043),\n  width = \"100%\",\n  height = \"788px\",\n  title = \"Distribution of the number of administrative penalty documents\",\n  region = \"China\",\n  minColor = \"#f1eef6\",\n  maxColor = \"#980043\",\n  itermName = \"Count\",\n  hoverColor = \"#f6acf5\",\n  theme = \"gridlight\"\n)"
+  },
+  {
+    "objectID": "data/penality/index.html#co-author",
+    "href": "data/penality/index.html#co-author",
+    "title": "Administrative Penalties Imposed by Chinese Police",
+    "section": "",
+    "text": "Yusaku Horiuchi Ji Yeon (Jean) HongXinzhuo Huang"
+  },
+  {
+    "objectID": "data/penality/index.html#background",
+    "href": "data/penality/index.html#background",
+    "title": "Administrative Penalties Imposed by Chinese Police",
+    "section": "",
+    "text": "China has the most hierarchical government system in the world, granting local governments an informational advantage when facing the central government, and lower-level governments when facing higher-level authorities. In China’s judicial system, the police have a dominant role as the coercive force that local and lower-level governments can directly mobilize and rely on. If unchecked, this could pose a serious challenge to the authoritarian regime. Furthermore, unbridled police behavior, as the direct manifestation of state power experienced by ordinary citizens, could severely damage the state’s legitimacy.\nAs a result, China has been promoting “police transparency” by disclosing the processes and outcomes of various administrative actions to the public. A representative example is the public documentation of administrative penalties. However, there is significant heterogeneity within China, and the platforms used by each province differ. Some use websites, while others use apps, posing a significant challenge to data collection.\nBy combining R and JavaScript, I developed web scrapers and decryption functions for each province, ultimately obtaining over 10 million records of administrative penalties imposed by Chinese police, making it the largest dataset of its kind to date."
+  },
+  {
+    "objectID": "project/index.html",
+    "href": "project/index.html",
+    "title": "Research",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n\n\n\n\n  \n\n\n\n\nGeocoding R Package\n\n\n\n\n\nThe Geocoding package provides functions for geocoding Chinese addresses and returning administrative information and other socio-economic information. The package is designed for researchers, analysts, and other users who need to work with Chinese address data.\n\n\n\n\n\n\nMay 16, 2023\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "project/Geocoding/index.html",
+    "href": "project/Geocoding/index.html",
+    "title": "Geocoding R Package",
+    "section": "",
+    "text": "The Geocoding package provides functions for geocoding Chinese addresses and returning administrative information and other socio-economic information.\nThe package is designed for researchers, analysts, and other users who need to work with Chinese address data."
+  },
+  {
+    "objectID": "project/Geocoding/index.html#background",
+    "href": "project/Geocoding/index.html#background",
+    "title": "Geocoding R package",
+    "section": "",
+    "text": "The Geocoding package provides functions for geocoding Chinese addresses and returning administrative information and other socio-economic information.\nThe package is designed for researchers, analysts, and other users who need to work with Chinese address data."
+  },
+  {
+    "objectID": "project/Geocoding/index.html#introduction",
+    "href": "project/Geocoding/index.html#introduction",
+    "title": "Geocoding R Package",
+    "section": "",
+    "text": "The Geocoding package provides functions for geocoding Chinese addresses and returning administrative information and other socio-economic information.\nThe package is designed for researchers, analysts, and other users who need to work with Chinese address data."
   }
 ]
