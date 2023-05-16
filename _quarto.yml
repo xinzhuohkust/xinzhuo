@@ -20,7 +20,7 @@ website:
     title: false
     right:
       - text: CV
-        href: cv/index.html
+        href: cv/
       - text: BLOG
         href: blog/index.html
       - text: DATA
