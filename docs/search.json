@@ -256,7 +256,7 @@
     "href": "cv/index.html#research",
     "title": "Xinzhuo Huang",
     "section": "Research",
-    "text": "Research\n\nDisappeared Champion and World News: How Global Media React to Human-Right-Related Scandal in China, In Progress\n\nCo-author with Prof Jean Hong from University of Michigan and Prof Yusaku Horiuchi from Dartmouth College.\n\n\nPropaganda and Petition in China’s Zero-Covid Campaign, In Progress\n\nCo-author with Dr Hongshen Zhu from University of Pennsylvania and Prof Haibing Yan from ECUPL."
+    "text": "Research\n\nHow Global Media React to Scandal in China, In Progress\n\nCo-author with Prof Jean Hong from University of Michigan and Prof Yusaku Horiuchi from Dartmouth College.\n\n\nPropaganda and Petition in China’s Zero-Covid Campaign, In Progress\n\nCo-author with Dr Hongshen Zhu from University of Pennsylvania and Prof Haibing Yan from ECUPL."
   },
   {
     "objectID": "cv/index.html#programming-language",
@@ -333,14 +333,14 @@
     "href": "project/index.html",
     "title": "Research",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n\n\n\n\n  \n\n\n\n\nGeocoding R Package\n\n\n\n\n\nThe Geocoding package provides functions for geocoding Chinese addresses and returning administrative information and other socio-economic information. The package is designed for researchers, analysts, and other users who need to work with Chinese address data.\n\n\n\n\n\n\nMay 16, 2023\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n\n\n\n\n  \n\n\n\n\nGeocoding R Package\n\n\n\n\n\nA R package that provides geocoding, reverse geocoding, route planning, and advanced geographic visualization. Moreover, this package provides economic and social information such as nighttime lights and population based on geographic coding.\n\n\n\n\n\n\nMay 23, 2023\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "project/Geocoding/index.html",
     "href": "project/Geocoding/index.html",
     "title": "Geocoding R Package",
     "section": "",
-    "text": "The Geocoding package provides functions for geocoding Chinese addresses and returning administrative information and other socio-economic information.\nThe package is designed for researchers, analysts, and other users who need to work with Chinese address data."
+    "text": "The Geocoding package provides functions for geocoding Chinese addresses.\nThe package is designed for researchers, analysts, and other users who need to work with Chinese address data."
   },
   {
     "objectID": "project/Geocoding/index.html#background",
@@ -354,6 +354,55 @@
     "href": "project/Geocoding/index.html#introduction",
     "title": "Geocoding R Package",
     "section": "",
-    "text": "The Geocoding package provides functions for geocoding Chinese addresses and returning administrative information and other socio-economic information.\nThe package is designed for researchers, analysts, and other users who need to work with Chinese address data."
+    "text": "The Geocoding package provides functions for geocoding Chinese addresses.\nThe package is designed for researchers, analysts, and other users who need to work with Chinese address data."
+  },
+  {
+    "objectID": "cv/index.html#coding",
+    "href": "cv/index.html#coding",
+    "title": "Xinzhuo Huang",
+    "section": "Coding",
+    "text": "Coding"
+  },
+  {
+    "objectID": "project/Geocoding/index.html#install-this-package",
+    "href": "project/Geocoding/index.html#install-this-package",
+    "title": "Geocoding R Package",
+    "section": "Install this package",
+    "text": "Install this package\n\nremotes::install_github(\"xinzhuohkust/Geocoding\")"
+  },
+  {
+    "objectID": "project/Geocoding/index.html#usage",
+    "href": "project/Geocoding/index.html#usage",
+    "title": "Geocoding R Package",
+    "section": "Usage",
+    "text": "Usage\ngeocoding\n\nGeocoding::get_MCT(\"国家信访局\") |&gt;\n  Geocoding::convert_MCT()\n\n\n\n\n\nlongitude\nlatitude\n\n\n116.358\n39.919\n\n\n\n\nreverse geocoding\n\nGeocoding::get_MCT(\"国家信访局\") |&gt;\n  Geocoding::get_admin_info(uid = TRUE)\n\n\n\n\n\ndistrict\ncity\nprovince\nuid\n\n\n西城区\n北京市\n北京市\n871eebeac92224a8336212da\n\n\n\n\ntrain planning\n\nGeocoding::train_plan(\n  origin = Geocoding::get_MCT(\"安徽省六安市裕安区\") |&gt; Geocoding::convert_MCT(),\n  destination = Geocoding::get_MCT(\"国家信访局\") |&gt; Geocoding::convert_MCT(),\n  sleep = 0.5,\n  ak = \"your ak\"\n)\n\n\n\n\n\nstarting city\ndestination city\nduration\nprice\n\n\n\n六安市\n北京市\n7.850\n483.5\n\n\n六安市\n北京市\n6.467\n457.0\n\n\n六安市\n北京市\n11.117\n222.5"
+  },
+  {
+    "objectID": "project/Geocoding/index.html#visualization-coming-soon",
+    "href": "project/Geocoding/index.html#visualization-coming-soon",
+    "title": "Geocoding R Package",
+    "section": "Visualization (coming soon)",
+    "text": "Visualization (coming soon)\ninteractive map and 3D map"
+  },
+  {
+    "objectID": "project/Geocoding/index.html#overview",
+    "href": "project/Geocoding/index.html#overview",
+    "title": "Geocoding R Package",
+    "section": "",
+    "text": "The Geocoding package provides functions for geocoding Chinese addresses.\nThe package is designed for researchers, analysts, and other users who need to work with Chinese address data."
+  },
+  {
+    "objectID": "project/Geocoding/index.html#installation",
+    "href": "project/Geocoding/index.html#installation",
+    "title": "Geocoding R Package",
+    "section": "Installation",
+    "text": "Installation\n\nremotes::install_github(\"xinzhuohkust/Geocoding\")"
+  },
+  {
+    "objectID": "project/Geocoding/index.html#visualization",
+    "href": "project/Geocoding/index.html#visualization",
+    "title": "Geocoding R Package",
+    "section": "Visualization",
+    "text": "Visualization\nggplot2 integration\n\nGeocoding::plot_geocoding(\n  data = \"night\",\n  label = \"jilin\",\n  year = \"2022\"\n)\n\n\ninteractive map and 3D map (coming soon)"
   }
 ]
