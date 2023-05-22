@@ -10,36 +10,200 @@
 <atom:link href="https://xinzhuo.work/project/index.xml" rel="self" type="application/rss+xml"/>
 <description>Xinzhuo&#39;s Personal Website</description>
 <generator>quarto-1.4.58</generator>
-<lastBuildDate>Tue, 16 May 2023 06:02:32 GMT</lastBuildDate>
+<lastBuildDate>Mon, 22 May 2023 20:47:05 GMT</lastBuildDate>
 <item>
   <title>Geocoding R Package</title>
   <dc:creator>Xinzhuo HUANG</dc:creator>
   <link>https://xinzhuo.work/project/Geocoding/index.html</link>
-  <description><![CDATA[ 
-
-
-
-<style>
+  <description><![CDATA[ <style>
 body {text-align: justify}
 </style>
 <div class="grid">
-<section id="introduction" class="level2 unnumbered unlisted g-col-12 g-col-md-8" style="text-align: left;">
-<h2 class="unnumbered unlisted anchored" data-anchor-id="introduction">Introduction</h2>
-<p>The Geocoding package provides functions for geocoding Chinese addresses and returning administrative information and other socio-economic information.</p>
+<section id="introduction" class="level2 unnumbered unlisted g-col-12 g-col-md-8" style="text-align: left;"><h2 class="unnumbered unlisted anchored" data-anchor-id="introduction">Introduction</h2>
+<p>The Geocoding package provides functions for geocoding Chinese addresses.</p>
 <p>The package is designed for researchers, analysts, and other users who need to work with Chinese address data.</p>
-</section>
-<div class="g-col-15 g-col-md-4" style="text-align: center;">
-<p><img src="https://xinzhuo.work/project/Geocoding/geo_icon.png" width="180"></p>
+</section><div class="g-col-15 g-col-md-4" style="text-align: center;">
+<p><br><br><img src="https://xinzhuo.work/project/Geocoding/geo_icon.png" width="180"></p>
 </div>
 </div>
+<section id="install-this-package" class="level2"><h2 class="anchored" data-anchor-id="install-this-package">Install this package</h2>
+<div class="cell">
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">remotes</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">(</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"xinzhuohkust/Geocoding"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span></span></code></pre></div>
+</div>
+</section><section id="usage" class="level2"><h2 class="anchored" data-anchor-id="usage">Usage</h2>
+<section id="geocoding" class="level3"><h3 class="anchored" data-anchor-id="geocoding">geocoding</h3>
+<div class="cell">
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">Geocoding</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;"><a href="https://rdrr.io/pkg/Geocoding/man/get_MCT.html">get_MCT</a></span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">(</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"国家信访局"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span>  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">Geocoding</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;"><a href="https://rdrr.io/pkg/Geocoding/man/convert_MCT.html">convert_MCT</a></span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span></span></code></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 116.35760  39.91913</code></pre>
+</div>
+</div>
+</section><section id="reverse-geocoding" class="level3"><h3 class="anchored" data-anchor-id="reverse-geocoding">reverse geocoding</h3>
+<div class="cell">
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">Geocoding</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;"><a href="https://rdrr.io/pkg/Geocoding/man/get_MCT.html">get_MCT</a></span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">(</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"国家信访局"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span></span>
+<span>  <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">Geocoding</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;"><a href="https://rdrr.io/pkg/Geocoding/man/get_admin_info.html">get_admin_info</a></span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">(</span>uid <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="cn" style="color: #8f5902;
+background-color: null;
+font-style: inherit;">TRUE</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span></span></code></pre></div>
+<div class="cell-output-display">
+
+<div data-pagedtable="false">
+  <script data-pagedtable-source="" type="application/json">
+{"columns":[{"label":["district"],"name":[1],"type":["chr"],"align":["left"]},{"label":["city"],"name":[2],"type":["chr"],"align":["left"]},{"label":["province"],"name":[3],"type":["chr"],"align":["left"]},{"label":["uid"],"name":[4],"type":["chr"],"align":["left"]}],"data":[{"1":"西城区","2":"北京市","3":"北京市","4":"871eebeac92224a8336212da"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+</div>
+</section><section id="train-planning" class="level3"><h3 class="anchored" data-anchor-id="train-planning">train planning</h3>
+<div class="cell">
+<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">Geocoding</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;"><a href="https://rdrr.io/pkg/Geocoding/man/train_plan.html">train_plan</a></span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">(</span></span>
+<span>  origin <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">Geocoding</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;"><a href="https://rdrr.io/pkg/Geocoding/man/get_MCT.html">get_MCT</a></span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">(</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"安徽省六安市裕安区"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">Geocoding</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;"><a href="https://rdrr.io/pkg/Geocoding/man/convert_MCT.html">convert_MCT</a></span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span>,</span>
+<span>  destination <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">Geocoding</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;"><a href="https://rdrr.io/pkg/Geocoding/man/get_MCT.html">get_MCT</a></span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">(</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"国家信访局"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">|&gt;</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">Geocoding</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;"><a href="https://rdrr.io/pkg/Geocoding/man/convert_MCT.html">convert_MCT</a></span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span>,</span>
+<span>  sleep <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="fl" style="color: #AD0000;
+background-color: null;
+font-style: inherit;">0.5</span>,</span>
+<span>  ak <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"your ak"</span></span>
+<span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span></span></code></pre></div>
+</div>
+</section></section><section id="visualization-coming-soon" class="level2"><h2 class="anchored" data-anchor-id="visualization-coming-soon">Visualization (coming soon)</h2>
+<p>interactive map and 3D map</p>
 
 
-
- ]]></description>
+</section> ]]></description>
   <category>R Package</category>
   <category>Geocoding</category>
   <guid>https://xinzhuo.work/project/Geocoding/index.html</guid>
-  <pubDate>Tue, 16 May 2023 06:02:32 GMT</pubDate>
+  <pubDate>Mon, 22 May 2023 20:47:05 GMT</pubDate>
 </item>
 </channel>
 </rss>
