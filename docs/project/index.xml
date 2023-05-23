@@ -10,7 +10,98 @@
 <atom:link href="https://xinzhuo.work/project/index.xml" rel="self" type="application/rss+xml"/>
 <description>Xinzhuo&#39;s Personal Website</description>
 <generator>quarto-1.4.58</generator>
-<lastBuildDate>Mon, 22 May 2023 20:47:05 GMT</lastBuildDate>
+<lastBuildDate>Tue, 23 May 2023 10:01:52 GMT</lastBuildDate>
+<item>
+  <title>RconnectPy Package</title>
+  <dc:creator>Xinzhuo HUANG</dc:creator>
+  <link>https://xinzhuo.work/project/RconnectPy/index.html</link>
+  <description><![CDATA[ <style>
+body {text-align: justify}
+</style>
+<div class="grid">
+<section id="overview" class="level2 unnumbered unlisted g-col-12 g-col-md-8" style="text-align: left;"><h2 class="unnumbered unlisted anchored" data-anchor-id="overview">Overview</h2>
+<p>An R package for easy installation and importing of python modules.</p>
+</section><div class="g-col-15 g-col-md-4" style="text-align: center;">
+<p><br><br><img src="https://xinzhuo.work/project/RconnectPy/RconnectPy.png" width="180"></p>
+</div>
+</div>
+<section id="installation" class="level2"><h2 class="anchored" data-anchor-id="installation">Installation</h2>
+<div class="cell">
+<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">remotes</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">(</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"xinzhuohkust/RconnectPy"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span></span></code></pre></div>
+</div>
+</section><section id="usage" class="level2"><h2 class="anchored" data-anchor-id="usage">Usage</h2>
+<div class="cell">
+<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">RconnectPy</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;"><a href="https://rdrr.io/pkg/RconnectPy/man/where_py.html">where_py</a></span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span></span></code></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">RconnectPy</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;"><a href="https://rdrr.io/pkg/RconnectPy/man/install_py_packages.html">install_py_packages</a></span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">(</span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">python</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"pandas"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span></span></code></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va" style="color: #111111;
+background-color: null;
+font-style: inherit;">packages</span> <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">&lt;-</span> <span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">RconnectPy</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;"><a href="https://rdrr.io/pkg/RconnectPy/man/import_py_packages.html">import_py_packages</a></span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">(</span><span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"pandas"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"selenium"</span>, <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"asent"</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span></span></code></pre></div>
+</div>
+
+
+</section> ]]></description>
+  <category>R Package</category>
+  <guid>https://xinzhuo.work/project/RconnectPy/index.html</guid>
+  <pubDate>Tue, 23 May 2023 10:01:52 GMT</pubDate>
+</item>
 <item>
   <title>Geocoding R Package</title>
   <dc:creator>Xinzhuo HUANG</dc:creator>
@@ -19,14 +110,14 @@
 body {text-align: justify}
 </style>
 <div class="grid">
-<section id="introduction" class="level2 unnumbered unlisted g-col-12 g-col-md-8" style="text-align: left;"><h2 class="unnumbered unlisted anchored" data-anchor-id="introduction">Introduction</h2>
+<section id="overview" class="level2 unnumbered unlisted g-col-12 g-col-md-8" style="text-align: left;"><h2 class="unnumbered unlisted anchored" data-anchor-id="overview">Overview</h2>
 <p>The Geocoding package provides functions for geocoding Chinese addresses.</p>
 <p>The package is designed for researchers, analysts, and other users who need to work with Chinese address data.</p>
 </section><div class="g-col-15 g-col-md-4" style="text-align: center;">
 <p><br><br><img src="https://xinzhuo.work/project/Geocoding/geo_icon.png" width="180"></p>
 </div>
 </div>
-<section id="install-this-package" class="level2"><h2 class="anchored" data-anchor-id="install-this-package">Install this package</h2>
+<section id="installation" class="level2"><h2 class="anchored" data-anchor-id="installation">Installation</h2>
 <div class="cell">
 <div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -71,13 +162,24 @@ background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 116.35760  39.91913</code></pre>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<table class="lightable-paper lightable-hover table table-sm table-striped small" data-quarto-postprocess="true">
+<thead><tr class="header">
+<th style="text-align: right;" data-quarto-table-cell-role="th">longitude</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">latitude</th>
+</tr></thead>
+<tbody><tr class="odd">
+<td style="text-align: right;">116.358</td>
+<td style="text-align: right;">39.919</td>
+</tr></tbody>
+</table>
 </div>
 </div>
 </section><section id="reverse-geocoding" class="level3"><h3 class="anchored" data-anchor-id="reverse-geocoding">reverse geocoding</h3>
 <div class="cell">
-<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu" style="color: #4758AB;
+<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">Geocoding</span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -107,18 +209,28 @@ background-color: null;
 font-style: inherit;">TRUE</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
-<div class="cell-output-display">
-
-<div data-pagedtable="false">
-  <script data-pagedtable-source="" type="application/json">
-{"columns":[{"label":["district"],"name":[1],"type":["chr"],"align":["left"]},{"label":["city"],"name":[2],"type":["chr"],"align":["left"]},{"label":["province"],"name":[3],"type":["chr"],"align":["left"]},{"label":["uid"],"name":[4],"type":["chr"],"align":["left"]}],"data":[{"1":"西城区","2":"北京市","3":"北京市","4":"871eebeac92224a8336212da"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  </script>
 </div>
+<div class="cell">
+<div class="cell-output-display">
+<table class="lightable-paper lightable-hover table table-sm table-striped small" data-quarto-postprocess="true">
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">district</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">city</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">province</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">uid</th>
+</tr></thead>
+<tbody><tr class="odd">
+<td style="text-align: left;">西城区</td>
+<td style="text-align: left;">北京市</td>
+<td style="text-align: left;">北京市</td>
+<td style="text-align: left;">871eebeac92224a8336212da</td>
+</tr></tbody>
+</table>
 </div>
 </div>
 </section><section id="train-planning" class="level3"><h3 class="anchored" data-anchor-id="train-planning">train planning</h3>
 <div class="cell">
-<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu" style="color: #4758AB;
+<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">Geocoding</span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -195,15 +307,78 @@ font-style: inherit;">"your ak"</span></span>
 background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 </div>
-</section></section><section id="visualization-coming-soon" class="level2"><h2 class="anchored" data-anchor-id="visualization-coming-soon">Visualization (coming soon)</h2>
-<p>interactive map and 3D map</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="lightable-paper lightable-hover table table-sm table-striped small" data-quarto-postprocess="true">
+<thead><tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">starting city</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">destination city</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">duration</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">price</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">六安市</td>
+<td style="text-align: left;">北京市</td>
+<td style="text-align: right;">7.850</td>
+<td style="text-align: right;">483.5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">六安市</td>
+<td style="text-align: left;">北京市</td>
+<td style="text-align: right;">6.467</td>
+<td style="text-align: right;">457.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">六安市</td>
+<td style="text-align: left;">北京市</td>
+<td style="text-align: right;">11.117</td>
+<td style="text-align: right;">222.5</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section></section><section id="visualization" class="level2"><h2 class="anchored" data-anchor-id="visualization">Visualization</h2>
+<section id="ggplot2-integration" class="level3"><h3 class="anchored" data-anchor-id="ggplot2-integration">ggplot2 integration</h3>
+<div class="cell">
+<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">Geocoding</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
+background-color: null;
+font-style: inherit;">plot_geocoding</span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">(</span></span>
+<span>  data <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"night"</span>,</span>
+<span>  label <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"jilin"</span>,</span>
+<span>  year <span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">=</span> <span class="st" style="color: #20794D;
+background-color: null;
+font-style: inherit;">"2022"</span></span>
+<span><span class="op" style="color: #5E5E5E;
+background-color: null;
+font-style: inherit;">)</span></span></code></pre></div>
+</div>
+<p><img src="https://xinzhuo.work/project/Geocoding/light.png" width="1000"></p>
+</section><section id="interactive-map-and-3d-map-coming-soon" class="level3"><h3 class="anchored" data-anchor-id="interactive-map-and-3d-map-coming-soon">interactive map and 3D map (coming soon)</h3>
+<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=fdfdfd&amp;w=70&amp;t=n&amp;d=xZ5N7O41jb8FCtvQIiC0y_H6QbZgte9z9WlfHIbXC9w&amp;co=fdfdfd&amp;ct=fdfdfd&amp;cmo=fdfdfd&amp;cmn=fdfdfd"></script>
 
-
-</section> ]]></description>
+</section></section> ]]></description>
   <category>R Package</category>
   <category>Geocoding</category>
   <guid>https://xinzhuo.work/project/Geocoding/index.html</guid>
-  <pubDate>Mon, 22 May 2023 20:47:05 GMT</pubDate>
+  <pubDate>Tue, 23 May 2023 10:01:26 GMT</pubDate>
 </item>
 </channel>
 </rss>

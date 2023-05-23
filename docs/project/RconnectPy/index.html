@@ -6,8 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="author" content="Xinzhuo HUANG">
 <meta name="dcterms.date" content="2023-05-23">
-<meta name="description" content="An R package that provides geocoding, reverse geocoding, route planning, and advanced geographic visualization. Moreover, this package provides economic and social information such as nighttime lights and population based on geographic coding.">
-<title>Xinzhuo Huang - Geocoding R Package</title>
+<meta name="description" content="An R package for easy installation and importing of python modules.">
+<title>Xinzhuo Huang - RconnectPy Package</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -118,18 +118,17 @@ cookieconsent.run({
 {
   "theme": "clean"
 }
-</script><script async="" src="https://hypothes.is/embed.js"></script><script src="../../site_libs/kePrint-0.0.1/kePrint.js"></script><link href="../../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
-<link href="../../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
+</script><script async="" src="https://hypothes.is/embed.js"></script><link href="../../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
 <script src="../../site_libs/pagedtable-1.1/js/pagedtable.js"></script><link rel="stylesheet" href="../../scss/styles.css">
-<meta property="og:title" content="Xinzhuo Huang - Geocoding R Package">
-<meta property="og:description" content="An R package that provides geocoding, reverse geocoding, route planning, and advanced geographic visualization. Moreover, this package provides economic and social information such as nighttime lights and population based on geographic coding.">
-<meta property="og:image" content="https://xinzhuo.work/project/Geocoding/geo_icon.png">
+<meta property="og:title" content="Xinzhuo Huang - RconnectPy Package">
+<meta property="og:description" content="An R package for easy installation and importing of python modules.">
+<meta property="og:image" content="https://xinzhuo.work/project/RconnectPy/RconnectPy.png">
 <meta property="og:site-name" content="Xinzhuo Huang">
 <meta property="og:image:height" content="800">
 <meta property="og:image:width" content="691">
-<meta name="twitter:title" content="Xinzhuo Huang - Geocoding R Package">
-<meta name="twitter:description" content="An R package that provides geocoding, reverse geocoding, route planning, and advanced geographic visualization. Moreover, this package provides economic and social information such as nighttime lights and population based on geographic coding.">
-<meta name="twitter:image" content="https://xinzhuo.work/project/Geocoding/geo_icon.png">
+<meta name="twitter:title" content="Xinzhuo Huang - RconnectPy Package">
+<meta name="twitter:description" content="An R package for easy installation and importing of python modules.">
+<meta name="twitter:image" content="https://xinzhuo.work/project/RconnectPy/RconnectPy.png">
 <meta name="twitter:image-height" content="800">
 <meta name="twitter:image-width" content="691">
 <meta name="twitter:card" content="summary_large_image">
@@ -200,35 +199,20 @@ cookieconsent.run({
    
   <ul>
 <li><a href="#installation" id="toc-installation" class="nav-link active" data-scroll-target="#installation">Installation</a></li>
-  <li>
-<a href="#usage" id="toc-usage" class="nav-link" data-scroll-target="#usage">Usage</a>
-  <ul class="collapse">
-<li><a href="#geocoding" id="toc-geocoding" class="nav-link" data-scroll-target="#geocoding">geocoding</a></li>
-  <li><a href="#reverse-geocoding" id="toc-reverse-geocoding" class="nav-link" data-scroll-target="#reverse-geocoding">reverse geocoding</a></li>
-  <li><a href="#train-planning" id="toc-train-planning" class="nav-link" data-scroll-target="#train-planning">train planning</a></li>
-  </ul>
-</li>
-  <li>
-<a href="#visualization" id="toc-visualization" class="nav-link" data-scroll-target="#visualization">Visualization</a>
-  <ul class="collapse">
-<li><a href="#ggplot2-integration" id="toc-ggplot2-integration" class="nav-link" data-scroll-target="#ggplot2-integration">ggplot2 integration</a></li>
-  <li><a href="#interactive-map-and-3d-map-coming-soon" id="toc-interactive-map-and-3d-map-coming-soon" class="nav-link" data-scroll-target="#interactive-map-and-3d-map-coming-soon">interactive map and 3D map (coming soon)</a></li>
-  </ul>
-</li>
+  <li><a href="#usage" id="toc-usage" class="nav-link" data-scroll-target="#usage">Usage</a></li>
   </ul></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
-<h1 class="title">Geocoding R Package</h1>
+<h1 class="title">RconnectPy Package</h1>
   <div class="quarto-categories">
     <div class="quarto-category">R Package</div>
-    <div class="quarto-category">Geocoding</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    An R package that provides geocoding, reverse geocoding, route planning, and advanced geographic visualization. Moreover, this package provides economic and social information such as nighttime lights and population based on geographic coding.
+    An R package for easy installation and importing of python modules.
   </div>
 </div>
 
@@ -258,114 +242,28 @@ body {text-align: justify}
 </style>
 <div class="grid">
 <section id="overview" class="level2 unnumbered unlisted g-col-12 g-col-md-8" style="text-align: left;"><h2 class="unnumbered unlisted anchored" data-anchor-id="overview">Overview</h2>
-<p>The Geocoding package provides functions for geocoding Chinese addresses.</p>
-<p>The package is designed for researchers, analysts, and other users who need to work with Chinese address data.</p>
+<p>An R package for easy installation and importing of python modules.</p>
 </section><div class="g-col-15 g-col-md-4" style="text-align: center;">
-<p><br><br><img src="geo_icon.png" width="180"></p>
+<p><br><br><img src="RconnectPy.png" width="180"></p>
 </div>
 </div>
 <section id="installation" class="level2"><h2 class="anchored" data-anchor-id="installation">Installation</h2>
 <div class="cell">
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op">(</span><span class="st">"xinzhuohkust/Geocoding"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">remotes</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op">(</span><span class="st">"xinzhuohkust/RconnectPy"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section><section id="usage" class="level2"><h2 class="anchored" data-anchor-id="usage">Usage</h2>
-<section id="geocoding" class="level3"><h3 class="anchored" data-anchor-id="geocoding">geocoding</h3>
 <div class="cell">
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">Geocoding</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/Geocoding/man/get_MCT.html">get_MCT</a></span><span class="op">(</span><span class="st">"国家信访局"</span><span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu">Geocoding</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/Geocoding/man/convert_MCT.html">convert_MCT</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">RconnectPy</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/RconnectPy/man/where_py.html">where_py</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="cell-output-display">
-<table class="lightable-paper lightable-hover table table-sm table-striped small" data-quarto-postprocess="true">
-<thead><tr class="header">
-<th style="text-align: right;" data-quarto-table-cell-role="th">longitude</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">latitude</th>
-</tr></thead>
-<tbody><tr class="odd">
-<td style="text-align: right;">116.358</td>
-<td style="text-align: right;">39.919</td>
-</tr></tbody>
-</table>
-</div>
-</div>
-</section><section id="reverse-geocoding" class="level3"><h3 class="anchored" data-anchor-id="reverse-geocoding">reverse geocoding</h3>
-<div class="cell">
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">Geocoding</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/Geocoding/man/get_MCT.html">get_MCT</a></span><span class="op">(</span><span class="st">"国家信访局"</span><span class="op">)</span> <span class="op">|&gt;</span></span>
-<span>  <span class="fu">Geocoding</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/Geocoding/man/get_admin_info.html">get_admin_info</a></span><span class="op">(</span>uid <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">RconnectPy</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/RconnectPy/man/install_py_packages.html">install_py_packages</a></span><span class="op">(</span><span class="va">python</span>, <span class="st">"pandas"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="cell-output-display">
-<table class="lightable-paper lightable-hover table table-sm table-striped small" data-quarto-postprocess="true">
-<thead><tr class="header">
-<th style="text-align: left;" data-quarto-table-cell-role="th">district</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">city</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">province</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">uid</th>
-</tr></thead>
-<tbody><tr class="odd">
-<td style="text-align: left;">西城区</td>
-<td style="text-align: left;">北京市</td>
-<td style="text-align: left;">北京市</td>
-<td style="text-align: left;">871eebeac92224a8336212da</td>
-</tr></tbody>
-</table>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">packages</span> <span class="op">&lt;-</span> <span class="fu">RconnectPy</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/RconnectPy/man/import_py_packages.html">import_py_packages</a></span><span class="op">(</span><span class="st">"pandas"</span>, <span class="st">"selenium"</span>, <span class="st">"asent"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-</section><section id="train-planning" class="level3"><h3 class="anchored" data-anchor-id="train-planning">train planning</h3>
-<div class="cell">
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">Geocoding</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/Geocoding/man/train_plan.html">train_plan</a></span><span class="op">(</span></span>
-<span>  origin <span class="op">=</span> <span class="fu">Geocoding</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/Geocoding/man/get_MCT.html">get_MCT</a></span><span class="op">(</span><span class="st">"安徽省六安市裕安区"</span><span class="op">)</span> <span class="op">|&gt;</span> <span class="fu">Geocoding</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/Geocoding/man/convert_MCT.html">convert_MCT</a></span><span class="op">(</span><span class="op">)</span>,</span>
-<span>  destination <span class="op">=</span> <span class="fu">Geocoding</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/Geocoding/man/get_MCT.html">get_MCT</a></span><span class="op">(</span><span class="st">"国家信访局"</span><span class="op">)</span> <span class="op">|&gt;</span> <span class="fu">Geocoding</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/Geocoding/man/convert_MCT.html">convert_MCT</a></span><span class="op">(</span><span class="op">)</span>,</span>
-<span>  sleep <span class="op">=</span> <span class="fl">0.5</span>,</span>
-<span>  ak <span class="op">=</span> <span class="st">"your ak"</span></span>
-<span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="cell-output-display">
-<table class="lightable-paper lightable-hover table table-sm table-striped small" data-quarto-postprocess="true">
-<thead><tr class="header">
-<th style="text-align: left;" data-quarto-table-cell-role="th">starting city</th>
-<th style="text-align: left;" data-quarto-table-cell-role="th">destination city</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">duration</th>
-<th style="text-align: right;" data-quarto-table-cell-role="th">price</th>
-</tr></thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">六安市</td>
-<td style="text-align: left;">北京市</td>
-<td style="text-align: right;">7.850</td>
-<td style="text-align: right;">483.5</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">六安市</td>
-<td style="text-align: left;">北京市</td>
-<td style="text-align: right;">6.467</td>
-<td style="text-align: right;">457.0</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">六安市</td>
-<td style="text-align: left;">北京市</td>
-<td style="text-align: right;">11.117</td>
-<td style="text-align: right;">222.5</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</section></section><section id="visualization" class="level2"><h2 class="anchored" data-anchor-id="visualization">Visualization</h2>
-<section id="ggplot2-integration" class="level3"><h3 class="anchored" data-anchor-id="ggplot2-integration">ggplot2 integration</h3>
-<div class="cell">
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">Geocoding</span><span class="fu">::</span><span class="fu">plot_geocoding</span><span class="op">(</span></span>
-<span>  data <span class="op">=</span> <span class="st">"night"</span>,</span>
-<span>  label <span class="op">=</span> <span class="st">"jilin"</span>,</span>
-<span>  year <span class="op">=</span> <span class="st">"2022"</span></span>
-<span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p><img src="light.png" width="1000"></p>
-</section><section id="interactive-map-and-3d-map-coming-soon" class="level3"><h3 class="anchored" data-anchor-id="interactive-map-and-3d-map-coming-soon">interactive map and 3D map (coming soon)</h3>
-<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=fdfdfd&amp;w=70&amp;t=n&amp;d=xZ5N7O41jb8FCtvQIiC0y_H6QbZgte9z9WlfHIbXC9w&amp;co=fdfdfd&amp;ct=fdfdfd&amp;cmo=fdfdfd&amp;cmn=fdfdfd"></script>
 
-</section></section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+
+</section></main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
     const mode = bsSheetEl.getAttribute("data-mode");
