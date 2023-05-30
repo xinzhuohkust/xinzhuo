@@ -5,7 +5,7 @@
 <meta name="generator" content="quarto-1.4.58">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="author" content="Xinzhuo HUANG">
-<meta name="dcterms.date" content="2023-05-16">
+<meta name="dcterms.date" content="2023-05-31">
 <meta name="description" content="100 Million (2017 ~ 2023)">
 <title>Xinzhuo Huang - Administrative Penalties Imposed by Chinese Police</title>
 <style>
@@ -229,7 +229,7 @@ cookieconsent.run({
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 16, 2023</p>
+      <p class="date">May 31, 2023</p>
     </div>
   </div>
   
@@ -237,14 +237,25 @@ cookieconsent.run({
   </div>
   
 
-</header><style>
+</header><div class="callout callout-style-default callout-warning callout-titled" title="Data Compliance">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Data Compliance
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>All of the data is publicly available and any sensitive personal inforamtion has been removed. This data is solely for my research purposes.</p>
+</div>
+</div>
+<style>
 body {text-align: justify}
 </style>
 <div class="grid">
-<section id="background" class="level2 unnumbered unlisted g-col-12 g-col-md-8" style="text-align: left;"><h2 class="unnumbered unlisted anchored" data-anchor-id="background">Background</h2>
-<p>China has the most hierarchical government system in the world, granting local governments an informational advantage when facing the central government, and lower-level governments when facing higher-level authorities. In China’s judicial system, the police have a dominant role as the coercive force that local and lower-level governments can directly mobilize and rely on. If unchecked, this could pose a serious challenge to the authoritarian regime. Furthermore, unbridled police behavior, as the direct manifestation of state power experienced by ordinary citizens, could severely damage the state’s legitimacy.</p>
-<p>As a result, China has been promoting “police transparency” by disclosing the processes and outcomes of various administrative actions to the public. A representative example is the public documentation of administrative penalties. However, there is significant heterogeneity within China, and the platforms used by each province differ. Some use websites, while others use apps, posing a significant challenge to data collection.</p>
-<p>By combining R and JavaScript, I developed web scrapers and decryption functions for each province, ultimately obtaining over 10 million records of administrative penalties imposed by Chinese police, making it the largest dataset of its kind to date.</p>
+<section id="overview" class="level2 unnumbered unlisted g-col-12 g-col-md-8" style="text-align: left;"><h2 class="unnumbered unlisted anchored" data-anchor-id="overview">Overview</h2>
+<p>Using <code>httr2</code> and <code>V8</code>, data collection can be made easier with functional programming, allowing for seamless multithreading and efficient error handling.</p>
 </section><div class="g-col-15 g-col-md-4" style="text-align: center;">
 <p><br><br><img src="web_crawler.png" width="180"></p>
 </div>
@@ -265,8 +276,8 @@ body {text-align: justify}
 <span>  theme <span class="op">=</span> <span class="st">"gridlight"</span></span>
 <span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details><div class="cell-output-display">
-<div id="htmlwidget-d5d98e718b7e1ffb0cc9" style="width:100%;height:788px;" class="hchinamap html-widget "></div>
-<script type="application/json" data-for="htmlwidget-d5d98e718b7e1ffb0cc9">{"x":{"name":["吉林","辽宁","湖南","重庆","广东","江苏","广西","云南","湖北","山东","浙江","河北","青海","北京","上海","陕西","宁夏"],"value":[237537,376848,1104600,82265,1945643,623432,824542,733935,536745,795689,1876714,739280,61968,325531,85425,223478,123043],"itermName":"Count","title":"Distribution of the number of administrative penalty documents","titleAlign":"center","titleSize":"20px","titleColor":"#333333","subtitle":"","subtitleAlign":"center","subtitleSize":"","subtitleColor":"#666666","min":0,"minColor":"#f1eef6","maxColor":"#980043","legendLayout":"horizontal","legendAlign":"center","legendTitle":"","legendVerticalAlign":"bottom","region":"China","hoverColor":"#f6acf5","theme":"gridlight"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-3196aff5ed0907ec7cc3" style="width:100%;height:788px;" class="hchinamap html-widget "></div>
+<script type="application/json" data-for="htmlwidget-3196aff5ed0907ec7cc3">{"x":{"name":["吉林","辽宁","湖南","重庆","广东","江苏","广西","云南","湖北","山东","浙江","河北","青海","北京","上海","陕西","宁夏"],"value":[237537,376848,1104600,82265,1945643,623432,824542,733935,536745,795689,1876714,739280,61968,325531,85425,223478,123043],"itermName":"Count","title":"Distribution of the number of administrative penalty documents","titleAlign":"center","titleSize":"20px","titleColor":"#333333","subtitle":"","subtitleAlign":"center","subtitleSize":"","subtitleColor":"#666666","min":0,"minColor":"#f1eef6","maxColor":"#980043","legendLayout":"horizontal","legendAlign":"center","legendTitle":"","legendVerticalAlign":"bottom","region":"China","hoverColor":"#f6acf5","theme":"gridlight"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 
