@@ -2,6 +2,8 @@
   {
     "listing": "/blog/index.html",
     "items": [
+      "/blog/web crawling/index.html",
+      "/blog/run R code in the browser/index.html",
       "/blog/sentiment analysis/index.html",
       "/blog/causal inference/index.html"
     ]
@@ -19,7 +21,9 @@
   {
     "listing": "/project/index.html",
     "items": [
-      "/project/Geocoding/index.html"
+      "/project/Geocoding/index.html",
+      "/project/RconnectPy/index.html",
+      "/project/sentimentRPy/index.html"
     ]
   }
 ]

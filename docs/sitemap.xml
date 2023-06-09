@@ -6,15 +6,15 @@
   </url>
   <url>
     <loc>https://xinzhuo.work/blog/index.html</loc>
-    <lastmod>2023-05-16T05:43:34.585Z</lastmod>
+    <lastmod>2023-06-09T20:26:22.529Z</lastmod>
   </url>
   <url>
     <loc>https://xinzhuo.work/blog/sentiment analysis/index.html</loc>
-    <lastmod>2023-05-16T02:42:12.188Z</lastmod>
+    <lastmod>2023-05-30T21:13:39.742Z</lastmod>
   </url>
   <url>
     <loc>https://xinzhuo.work/index.html</loc>
-    <lastmod>2023-05-22T23:12:00.627Z</lastmod>
+    <lastmod>2023-06-09T18:44:53.011Z</lastmod>
   </url>
   <url>
     <loc>https://xinzhuo.work/cv_rmd/cv.html</loc>
@@ -26,11 +26,11 @@
   </url>
   <url>
     <loc>https://xinzhuo.work/blog/causal inference/index.html</loc>
-    <lastmod>2023-05-15T14:01:00.201Z</lastmod>
+    <lastmod>2023-05-30T21:30:29.977Z</lastmod>
   </url>
   <url>
     <loc>https://xinzhuo.work/cv/index.html</loc>
-    <lastmod>2023-05-22T23:11:21.044Z</lastmod>
+    <lastmod>2023-06-09T18:28:47.988Z</lastmod>
   </url>
   <url>
     <loc>https://xinzhuo.work/cv/index copy.html</loc>
@@ -38,18 +38,34 @@
   </url>
   <url>
     <loc>https://xinzhuo.work/data/index.html</loc>
-    <lastmod>2023-05-22T20:35:59.767Z</lastmod>
+    <lastmod>2023-06-09T20:24:03.433Z</lastmod>
   </url>
   <url>
     <loc>https://xinzhuo.work/data/penality/index.html</loc>
-    <lastmod>2023-05-22T20:37:17.409Z</lastmod>
+    <lastmod>2023-06-09T19:55:37.269Z</lastmod>
   </url>
   <url>
     <loc>https://xinzhuo.work/project/index.html</loc>
-    <lastmod>2023-05-22T23:12:19.289Z</lastmod>
+    <lastmod>2023-06-09T18:30:17.919Z</lastmod>
   </url>
   <url>
     <loc>https://xinzhuo.work/project/Geocoding/index.html</loc>
-    <lastmod>2023-05-22T23:12:32.538Z</lastmod>
+    <lastmod>2023-05-23T10:01:42.883Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xinzhuo.work/project/RconnectPy/index.html</loc>
+    <lastmod>2023-06-09T17:35:06.139Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xinzhuo.work/project/sentimentRPy/index.html</loc>
+    <lastmod>2023-06-09T18:30:26.516Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xinzhuo.work/blog/run R code in the browser/index.html</loc>
+    <lastmod>2023-06-09T20:24:53.635Z</lastmod>
+  </url>
+  <url>
+    <loc>https://xinzhuo.work/blog/web crawling/index.html</loc>
+    <lastmod>2023-06-09T20:26:27.458Z</lastmod>
   </url>
 </urlset>

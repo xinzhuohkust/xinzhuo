@@ -11,7 +11,7 @@
     "href": "blog/index.html",
     "title": "Social Science",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Updated - Oldest\n        \n         \n          Updated - Newest\n        \n     \n  \n\n\n\n\n\n\n\n\nSentence Level Sentiment Analysis\n\n\n4 min\n\n\nby calling Python in R\n\n\n\nMay 16, 2023\n\n\n\n\n\nMay 16, 2023\n\n\n\n\n\n\n\n\n\n\n\nCausal Inference Practical Methods\n\n\n16 min\n\n\nwith R\n\n\n\nMay 15, 2023\n\n\n\n\n\nMay 15, 2023\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n         \n          Updated - Oldest\n        \n         \n          Updated - Newest\n        \n     \n  \n\n\n\n\n\n\n\n\nPractical Techniques for Web Crawling\n\n\n3 min\n\n\nwith R and Python\n\n\n\nJun 10, 2023\n\n\n\n\n\nJun 10, 2023\n\n\n\n\n\n\n\n\n\n\n\nRun R code In the Browser\n\n\n2 min\n\n\nwithout the need for an R server to execute the code\n\n\n\nJun 10, 2023\n\n\n\n\n\nJun 10, 2023\n\n\n\n\n\n\n\n\n\n\n\nSentence Level Sentiment Analysis\n\n\n4 min\n\n\nby calling Python in R\n\n\n\nMay 16, 2023\n\n\n\n\n\nMay 16, 2023\n\n\n\n\n\n\n\n\n\n\n\nCausal Inference Practical Methods\n\n\n16 min\n\n\nwith R\n\n\n\nMay 15, 2023\n\n\n\n\n\nMay 15, 2023\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "blog/sentiment analysis/index.html",
@@ -249,14 +249,14 @@
     "href": "cv/index.html#education",
     "title": "Xinzhuo Huang",
     "section": "Education",
-    "text": "Education\n\nMPhil in Social Science, currently enrolled\nHong Kong University of Science and Technology, HongKong\nFull Scholarships\nMSc in Global China Studies, 2022\nHong Kong University of Science and Technology, HongKong\nDean’s Award\nLLB in Political Science and Law, 2020\nEast China University of Political Science and Law, China\nOutstanding Graduation Thesis Award\nOutstanding Graduate Award"
+    "text": "Education\n\nMPhil in Social Science, currently enrolled\nHong Kong University of Science and Technology, HongKong\nUnder the guidance of Prof. Cai Yongshun and Prof. Zhang Han\nFull Scholarships\nMSc in Global China Studies, 2022\nHong Kong University of Science and Technology, HongKong\nDean’s Award\nLLB in Political Science and Law, 2020\nEast China University of Political Science and Law, China\nOutstanding Graduation Thesis Award\nOutstanding Graduate Award"
   },
   {
     "objectID": "cv/index.html#research",
     "href": "cv/index.html#research",
     "title": "Xinzhuo Huang",
     "section": "Research",
-    "text": "Research\n\nHow Global Media React to Scandal in China, In Progress\n\nCo-author with Prof Jean Hong from University of Michigan and Prof Yusaku Horiuchi from Dartmouth College.\n\n\nPropaganda and Petition in China’s Zero-Covid Campaign, In Progress\n\nCo-author with Dr Hongshen Zhu from University of Pennsylvania and Prof Haibing Yan from ECUPL."
+    "text": "Research\n\nHow Global Media React to Scandal in China, In Progress\n\nCo-author with Prof Jean Hong from University of Michigan and Prof Yusaku Horiuchi from Dartmouth College.\n\n\n\n\nPropaganda and Petition in China’s Zero-Covid Campaign, In Progress\n\nCo-author with Dr Hongshen Zhu from University of Pennsylvania and Prof Haibing Yan from ECUPL."
   },
   {
     "objectID": "cv/index.html#programming-language",
@@ -298,21 +298,21 @@
     "href": "data/index.html",
     "title": "China Dataverse",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Modified - Oldest\n        \n         \n          Modified - Newest\n        \n     \n  \n\n\n\n\n\n\n\n\nTitle\n\n\nVolume\n\n\nModified\n\n\n\n\n\n\n\n\n\nAdministrative Penalties Imposed by Chinese Police\n\n\n100 Million (2017 ~ 2023)\n\n\nMay 16, 2023\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Modified - Oldest\n        \n         \n          Modified - Newest\n        \n     \n  \n\n\n\n\n\n\n\n\nTitle\n\n\nVolume\n\n\nModified\n\n\n\n\n\n\n\n\n\nAdministrative Penalties Imposed by Chinese Police\n\n\n100 Million (2017 ~ 2023)\n\n\nJun 10, 2023\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "data/penality/index.html",
     "href": "data/penality/index.html",
     "title": "Administrative Penalties Imposed by Chinese Police",
     "section": "",
-    "text": "China has the most hierarchical government system in the world, granting local governments an informational advantage when facing the central government, and lower-level governments when facing higher-level authorities. In China’s judicial system, the police have a dominant role as the coercive force that local and lower-level governments can directly mobilize and rely on. If unchecked, this could pose a serious challenge to the authoritarian regime. Furthermore, unbridled police behavior, as the direct manifestation of state power experienced by ordinary citizens, could severely damage the state’s legitimacy.\nAs a result, China has been promoting “police transparency” by disclosing the processes and outcomes of various administrative actions to the public. A representative example is the public documentation of administrative penalties. However, there is significant heterogeneity within China, and the platforms used by each province differ. Some use websites, while others use apps, posing a significant challenge to data collection.\nBy combining R and JavaScript, I developed web scrapers and decryption functions for each province, ultimately obtaining over 10 million records of administrative penalties imposed by Chinese police, making it the largest dataset of its kind to date."
+    "text": "Data Compliance\n\n\n\nAll of the data is publicly available and any sensitive personal inforamtion has been removed. This data is solely for my research purposes."
   },
   {
     "objectID": "data/penality/index.html#data-distribution",
     "href": "data/penality/index.html#data-distribution",
     "title": "Administrative Penalties Imposed by Chinese Police",
     "section": "Data distribution",
-    "text": "Data distribution\n\nCodehchinamap(\n  name = c(\"吉林\", \"辽宁\", \"湖南\", \"重庆\", \"广东\", \"江苏\", \"广西\", \"云南\", \"湖北\", \"山东\", \"浙江\", \"河北\", \"青海\", \"北京\", \"上海\", \"陕西\", \"宁夏\"),\n  value = c(237537, 376848, 1104600, 82265, 1945643, 623432, 824542, 733935, 536745, 795689, 1876714, 739280, 61968, 325531, 85425, 223478, 123043),\n  width = \"100%\",\n  height = \"788px\",\n  title = \"Distribution of the number of administrative penalty documents\",\n  region = \"China\",\n  minColor = \"#f1eef6\",\n  maxColor = \"#980043\",\n  itermName = \"Count\",\n  hoverColor = \"#f6acf5\",\n  theme = \"gridlight\"\n)"
+    "text": "Data distribution"
   },
   {
     "objectID": "data/penality/index.html#co-author",
@@ -333,7 +333,7 @@
     "href": "project/index.html",
     "title": "Research",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n\n\n\n\n  \n\n\n\n\nGeocoding R Package\n\n\n\n\n\nA R package that provides geocoding, reverse geocoding, route planning, and advanced geographic visualization. Moreover, this package provides economic and social information such as nighttime lights and population based on geographic coding.\n\n\n\n\n\n\nMay 23, 2023\n\n\n\n\n\n\nNo matching items"
+    "text": "Order By\n       Default\n         \n          Date - Oldest\n        \n         \n          Date - Newest\n        \n     \n  \n\n\n\n\n  \n\n\n\n\nGeocoding R Package\n\n\n\n\n\nAn R package that provides geocoding, reverse geocoding, route planning, and advanced geographic visualization. Moreover, this package provides economic and social information such as nighttime lights and population based on geographic coding.\n\n\n\n\n\n\nMay 23, 2023\n\n\n\n\n\n\n  \n\n\n\n\nRconnectPy Package\n\n\n\n\n\nAn R package for easy installation and importing of python modules.\n\n\n\n\n\n\nMay 23, 2023\n\n\n\n\n\n\n  \n\n\n\n\nsentimentRPy Package\n\n\n\n\n\nAn R package for sentence-level and word-level sentiment analysis.\n\n\n\n\n\n\nJun 10, 2023\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "project/Geocoding/index.html",
@@ -404,5 +404,110 @@
     "title": "Geocoding R Package",
     "section": "Visualization",
     "text": "Visualization\nggplot2 integration\n\nGeocoding::plot_geocoding(\n  data = \"night\",\n  label = \"jilin\",\n  year = \"2022\"\n)\n\n\ninteractive map and 3D map (coming soon)"
+  },
+  {
+    "objectID": "project/RconnectPy/index.html",
+    "href": "project/RconnectPy/index.html",
+    "title": "RconnectPy Package",
+    "section": "",
+    "text": "An R package for easy installation and importing of python modules."
+  },
+  {
+    "objectID": "project/RconnectPy/index.html#overview",
+    "href": "project/RconnectPy/index.html#overview",
+    "title": "RconnectPy Package",
+    "section": "",
+    "text": "An R package for easy installation and importing of python modules."
+  },
+  {
+    "objectID": "project/RconnectPy/index.html#installation",
+    "href": "project/RconnectPy/index.html#installation",
+    "title": "RconnectPy Package",
+    "section": "Installation",
+    "text": "Installation\n\nremotes::install_github(\"xinzhuohkust/RconnectPy\")"
+  },
+  {
+    "objectID": "project/RconnectPy/index.html#usage",
+    "href": "project/RconnectPy/index.html#usage",
+    "title": "RconnectPy Package",
+    "section": "Usage",
+    "text": "Usage\n\nRconnectPy::where_py()\n\n\nRconnectPy::install_py_packages(python, \"pandas\")\n\n\npackages &lt;- RconnectPy::import_py_packages(\"pandas\", \"selenium\", \"asent\")"
+  },
+  {
+    "objectID": "cv/index.html#working-paper",
+    "href": "cv/index.html#working-paper",
+    "title": "Xinzhuo Huang",
+    "section": "Working Paper",
+    "text": "Working Paper\n\nThe Temporal and Spatial Heterogeneity of State Repression: Evidence from Causal Tree\n\nUtilized a causal tree to estimate heterogeneous effects.\n\n\nUpward Targeting and Authoritarian Responsiveness in China, In Progress\n\nCreated Word Embeddings based on massive peition data in China."
+  },
+  {
+    "objectID": "cv/index.html#research-project",
+    "href": "cv/index.html#research-project",
+    "title": "Xinzhuo Huang",
+    "section": "Research Project",
+    "text": "Research Project\n\nHow Global Media React to Scandal in China, In Progress\n\nCo-author with Prof Jean Hong from University of Michigan and Prof Yusaku Horiuchi from Dartmouth College.\n\n\nPropaganda and Petition in China’s Zero-Covid Campaign, In Progress\n\nCo-author with Dr Hongshen Zhu from University of Pennsylvania and Prof Haibing Yan from ECUPL."
+  },
+  {
+    "objectID": "project/sentimentRPy/index.html",
+    "href": "project/sentimentRPy/index.html",
+    "title": "sentimentRPy Package",
+    "section": "",
+    "text": "An R package for sentence-level and word-level sentiment analysis. Support vectorization, multithreading and is robust to errors."
+  },
+  {
+    "objectID": "project/sentimentRPy/index.html#overview",
+    "href": "project/sentimentRPy/index.html#overview",
+    "title": "sentimentRPy Package",
+    "section": "",
+    "text": "An R package for sentence-level and word-level sentiment analysis. Support vectorization, multithreading and is robust to errors."
+  },
+  {
+    "objectID": "project/sentimentRPy/index.html#installation",
+    "href": "project/sentimentRPy/index.html#installation",
+    "title": "sentimentRPy Package",
+    "section": "Installation",
+    "text": "Installation\n\nremotes::install_github(\"xinzhuohkust/sentimentRPy\")"
+  },
+  {
+    "objectID": "project/sentimentRPy/index.html#usage",
+    "href": "project/sentimentRPy/index.html#usage",
+    "title": "sentimentRPy Package",
+    "section": "Usage",
+    "text": "Usage\nR\nword level\n\nsentimentRPy::get_sentimentR(\n    text = c(\"I am happy\", \"I am sad\"),\n    method = \"word\"\n    )\n\n\n\n  \n\n\n\nSentence level which will take the contrast and negation into account. sd will be provided when there are multiple sentences. The underlying function is from sentimentr.\n\nsentimentRPy::get_sentimentR(\n    text = \"I am not happy, but I am also not unhappy.\",\n    method = \"sentence\"\n    )\n\n\n\n  \n\n\n\nMultithreading model using all available CPU cores.\n\nsentimentRPy::get_sentimentR(\n    text = a large corpus,\n    method = \"sentence\", # or word\n    multisession = TRUE\n    )\n\nPython\nPython setup\n\nasent &lt;- sentimentRPy::asent_setup(python = \"C:\\\\Users\\\\xhuangcb\\\\anaconda3\\\\envs\\\\pytorch_gpu\\\\python.exe\")\n\nSentence level sentiment analysis using asent in Python\n\nsentimentRPy::get_sentimentPy(\"I am not happy, but I am also not unhappy.\")"
+  },
+  {
+    "objectID": "data/penality/index.html#overview",
+    "href": "data/penality/index.html#overview",
+    "title": "Administrative Penalties Imposed by Chinese Police",
+    "section": "Overview",
+    "text": "Overview\nUsing httr2 and V8, data collection can be made easier with functional programming, allowing for seamless multithreading and efficient error handling."
+  },
+  {
+    "objectID": "blog/run R code in the browser/index.html",
+    "href": "blog/run R code in the browser/index.html",
+    "title": "Run R code In the Browser",
+    "section": "",
+    "text": "Sample\n\nCodelibrary(ggplot2)\n\nmtcars |&gt;\n    ggplot(aes(hp, mpg, colour = as.factor(am))) +\n    geom_point() +\n    geom_smooth(\n        method = \"lm\", \n        linetype = \"dashed\",\n        formula = y ~ x\n    ) +\n    theme_bw() +\n    theme(\n        panel.border = element_blank(),\n        legend.position = \"none\"\n    )+\n    scale_color_manual(values = c(\"#0870A5\", \"#DB444B\"))\n\n\n\n\nInteractive R code editor\nLet’s replicate the figure by running the code online. You can try different parameters yourself.\n\nBase R\nLoading\n  webR...\n\n\n  \n\n\nTidy R\nLoading\n  webR...\n\n\n  \n\nLoading\n  webR...\n\n\n  \n\n\nData Manipulation with dplyr\nLoading\n  webR...\n\n\n  \n\nLoading\n  webR..."
+  },
+  {
+    "objectID": "blog/web crawling/index.html",
+    "href": "blog/web crawling/index.html",
+    "title": "Practical Techniques for Web Crawling",
+    "section": "",
+    "text": "User Agent Switcher\nBased on the Python project fake-useragent.\n\nCodeuser_agents &lt;- \"https://raw.githubusercontent.com/fake-useragent/fake-useragent/master/src/fake_useragent/data/browsers.json\" %&gt;% \n  read_lines() %&gt;% \n  map(fromJSON) %&gt;% \n  unlist()\n\nlength(user_agents) # there are 4702 user agents in total\n\n[1] 4702\n\n\n Get a fake user agent randomly.\n\nCodesample(user_agents, 1)\n\n                                                                            firefox1585 \n\"Mozilla/5.0 (X11; U; FreeBSD amd64; en-US; rv:1.8.0.8) Gecko/20061116 Firefox/1.5.0.8\" \n\n\n\nApplication: web crawler for the landchina.com\n\nCodeextract_land_info &lt;- possibly(\n    function(id) {\n        info &lt;- \"https://api.landchina.com/tGdxm/result/detail\" %&gt;%\n            request() %&gt;%\n            req_headers(\n                \"user-agent\" = sample(user_agents, 1) # user agent switcher\n            ) %&gt;%\n            req_timeout(12) %&gt;%\n            req_proxy(\"yourproxy\", 2023) %&gt;%\n            req_retry(\n              max_tries = 5,\n              max_seconds = 30,\n              is_transient = ~5\n            ) %&gt;%\n            req_body_json(\n                list(\"gdGuid\" = id),\n                unbox = TRUE\n            ) %&gt;%\n            req_perform() %&gt;%\n            pluck(\"body\") %&gt;% \n            read_html() %&gt;%\n            html_text()\n\n        if (str_detect(info, id)) {\n            return(info)\n        } else {\n            return(\"error!\")\n        }\n    },\n    otherwise = \"error!\"\n) # web crawler using httr2\n\n\n\nCodeextract_land_info(\"48BF016EBDD6409FA4622466C964D869\")\n\n\n\n\n[1] \"{\\\"msg\\\":\\\"操作成功\\\",\\\"code\\\":200,\\\"relate\\\":[{\\\"stage\\\":3,\\\"showStage\\\":3,\\\"gdGuid\\\":\\\"48BF016EBDD6409FA4622466C964D869\\\",\\\"zdZl\\\":\\\"台北路1号\\\\n\\\",\\\"cjJg\\\":2100,\\\"gyFs\\\":\\\"协议出让\\\"}],\\\"data\\\":{\\\"province\\\":\\\"山东省\\\",\\\"city\\\":\\\"青岛市本级\\\",\\\"xzqFullName\\\":\\\"山东省青岛市本级\\\",\\\"tdLy\\\":\\\"新增建设用地(来自存量库)\\\",\\\"gdGuid\\\":\\\"48BF016EBDD6409FA4622466C964D869\\\",\\\"xzqDm\\\":\\\"370200000\\\",\\\"tdJb\\\":\\\"二级\\\",\\\"tdZl\\\":\\\"台北路1号\\\\n\\\",\\\"gdZmj\\\":0.2613,\\\"gyFs\\\":\\\"协议出让\\\",\\\"xzMj\\\":0,\\\"clMj\\\":0.2613,\\\"je\\\":2100,\\\"qdRq\\\":1169568000000,\\\"pzJg\\\":\\\"07-7\\\\n\\\",\\\"xmCj\\\":0},\\\"payAgree\\\":[]}\""
+  },
+  {
+    "objectID": "blog/web crawling/index.html#user-agent-switcher-for-httr2",
+    "href": "blog/web crawling/index.html#user-agent-switcher-for-httr2",
+    "title": "Practical Techniques for Web Crawling",
+    "section": "User Agent Switcher for httr2\n",
+    "text": "User Agent Switcher for httr2\n\nBased on the Python project fake-useragent.\n\nCodeuser_agents &lt;- \"https://raw.githubusercontent.com/fake-useragent/fake-useragent/master/src/fake_useragent/data/browsers.json\" %&gt;% \n  read_lines() %&gt;% \n  map(fromJSON) %&gt;% \n  unlist()\n\nlength(user_agents) # there are 4702 user agents in total\n\n[1] 4702\n\n\n Get a fake user agent randomly.\n\nCodesample(user_agents, 1)\n\n                                                             opera746 \n\"Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1) Opera 7.11  [ru]\""
+  },
+  {
+    "objectID": "blog/web crawling/index.html#application-web-crawler-for-landchina.com",
+    "href": "blog/web crawling/index.html#application-web-crawler-for-landchina.com",
+    "title": "Practical Techniques for Web Crawling",
+    "section": "Application: web crawler for landchina.com",
+    "text": "Application: web crawler for landchina.com\n\nCodeextract_land_info &lt;- possibly(\n    function(id) {\n        info &lt;- \"https://api.landchina.com/tGdxm/result/detail\" %&gt;%\n            request() %&gt;%\n            req_headers(\n                \"user-agent\" = sample(user_agents, 1) # user agent switcher\n            ) %&gt;%\n            req_timeout(12) %&gt;%\n            req_proxy(\"yourproxy\", 2023) %&gt;%\n            req_retry(\n              max_tries = 5,\n              max_seconds = 30,\n              is_transient = ~5\n            ) %&gt;%\n            req_body_json(\n                list(\"gdGuid\" = id),\n                unbox = TRUE\n            ) %&gt;%\n            req_perform() %&gt;%\n            pluck(\"body\") %&gt;% \n            read_html() %&gt;%\n            html_text()\n\n        if (str_detect(info, id)) {\n            return(info)\n        } else {\n            return(\"error!\")\n        }\n    },\n    otherwise = \"error!\"\n) # web crawler using httr2\n\n\n\nCodeextract_land_info(\"48BF016EBDD6409FA4622466C964D869\")\n\n\n\n\n[1] \"{\\\"msg\\\":\\\"操作成功\\\",\\\"code\\\":200,\\\"relate\\\":[{\\\"stage\\\":3,\\\"showStage\\\":3,\\\"gdGuid\\\":\\\"48BF016EBDD6409FA4622466C964D869\\\",\\\"zdZl\\\":\\\"台北路1号\\\\n\\\",\\\"cjJg\\\":2100,\\\"gyFs\\\":\\\"协议出让\\\"}],\\\"data\\\":{\\\"province\\\":\\\"山东省\\\",\\\"city\\\":\\\"青岛市本级\\\",\\\"xzqFullName\\\":\\\"山东省青岛市本级\\\",\\\"tdLy\\\":\\\"新增建设用地(来自存量库)\\\",\\\"gdGuid\\\":\\\"48BF016EBDD6409FA4622466C964D869\\\",\\\"xzqDm\\\":\\\"370200000\\\",\\\"tdJb\\\":\\\"二级\\\",\\\"tdZl\\\":\\\"台北路1号\\\\n\\\",\\\"gdZmj\\\":0.2613,\\\"gyFs\\\":\\\"协议出让\\\",\\\"xzMj\\\":0,\\\"clMj\\\":0.2613,\\\"je\\\":2100,\\\"qdRq\\\":1169568000000,\\\"pzJg\\\":\\\"07-7\\\\n\\\",\\\"xmCj\\\":0},\\\"payAgree\\\":[]}\""
   }
 ]
