@@ -77,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-date','listing-title','listing-reading-time','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] }],
+      valueNames: ['listing-image','listing-date','listing-title','listing-reading-time','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-reading-time-sort'] }],
       
       searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
     };
@@ -228,6 +228,54 @@ cookieconsent.run({
 
 
 
+<script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
+
+<script>
+        (function () {
+            var a_idx = 0;
+            window.onclick = function (event) {
+                var a = new Array("Political Science", "China Studies", "R", "Python", "JavaScript", "Causal Inference", "Social Protest", "Governmental Responsiveness", "HKUST", "Web Crawling", "Computational Text Analysis");
+ 
+                var heart = document.createElement("b"); //创建b元素
+                heart.onselectstart = new Function('event.returnValue=false'); //防止拖动
+ 
+                document.body.appendChild(heart).innerHTML = a[a_idx]; //将b元素添加到页面上
+                a_idx = (a_idx + 1) % a.length;
+                heart.style.cssText = "position: fixed;left:-100%;"; //给p元素设置样式
+ 
+                var f = 16, // 字体大小
+                    x = event.clientX - f / 2, // 横坐标
+                    y = event.clientY - f, // 纵坐标
+                    c = randomColor(), // 随机颜色
+                    a = 1, // 透明度
+                    s = 1.2; // 放大缩小
+ 
+                var timer = setInterval(function () { //添加定时器
+                    if (a <= 0) {
+                        document.body.removeChild(heart);
+                        clearInterval(timer);
+                    } else {
+                        heart.style.cssText = "font-family:Georgia;font-size:16px;cursor: default;position: fixed;color:" +
+                            c + ";left:" + x + "px;top:" + y + "px;opacity:" + a + ";transform:scale(" +
+                            s + ");";
+ 
+                        y--;
+                        a -= 0.016;
+                        s += 0.002;
+                    }
+                }, 15)
+ 
+            }
+            // 随机颜色
+            function randomColor() {
+ 
+                var colors = ['#2e4057', '#00798c', '#6e675f', '#edae49', '#d1495b'];
+                return colors[Math.floor(Math.random() * colors.length)];
+ 
+            }
+        }());
+    </script>
+
 <div id="listing-listing" class="quarto-listing quarto-listing-container-grid">
 <div class="listing-actions-group">
    <div class="input-group input-group-sm quarto-listing-sort">
@@ -241,11 +289,17 @@ cookieconsent.run({
          <option value="listing-date-sort" data-direction="desc">
           Date - Newest
         </option>
+         <option value="listing-reading-time-sort" data-direction="asc">
+          Reading Time (Low to High)
+        </option>
+         <option value="listing-reading-time-sort" data-direction="desc">
+          Reading Time (High to Low)
+        </option>
      </select>
   </div>
 </div>
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Web Crawling,Javascript" data-listing-date-sort="1687363200000" data-listing-file-modified-sort="1687440742824" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="list grid quarto-listing-cols-4">
+<div class="g-col-1" data-index="0" data-categories="Web Crawling,Javascript" data-listing-date-sort="1687363200000" data-listing-file-modified-sort="1687466473476" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
 <a href="../blog/reverse_js/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="reverse_js\reverse.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
@@ -257,7 +311,7 @@ Reverse Engineering for China Judgement Online
 2 min
 </div>
 <div class="card-text listing-description">
-by calling Javascript in R
+by calling JavaScript in R
 </div>
 <div class="card-attribution card-text-small end">
 <div class="listing-date">
