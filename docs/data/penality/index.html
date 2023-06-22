@@ -2,10 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.58">
+<meta name="generator" content="quarto-1.3.361">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 <meta name="author" content="Xinzhuo HUANG">
-<meta name="dcterms.date" content="2023-05-31">
+<meta name="dcterms.date" content="2023-06-10">
 <meta name="description" content="100 Million (2017 ~ 2023)">
 <title>Xinzhuo Huang - Administrative Penalties Imposed by Chinese Police</title>
 <style>
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -92,7 +58,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-7HHBQV7LX3"></script><script type="text/plain" cookie-consent="tracking">
 
@@ -229,7 +196,7 @@ cookieconsent.run({
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">May 31, 2023</p>
+      <p class="date">June 10, 2023</p>
     </div>
   </div>
   
@@ -262,22 +229,9 @@ body {text-align: justify}
 </div>
 <section id="data-distribution" class="level2"><h2 class="anchored" data-anchor-id="data-distribution">Data distribution</h2>
 <div class="cell">
-<details><summary>Code</summary><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">hchinamap</span><span class="op">(</span></span>
-<span>  name <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"吉林"</span>, <span class="st">"辽宁"</span>, <span class="st">"湖南"</span>, <span class="st">"重庆"</span>, <span class="st">"广东"</span>, <span class="st">"江苏"</span>, <span class="st">"广西"</span>, <span class="st">"云南"</span>, <span class="st">"湖北"</span>, <span class="st">"山东"</span>, <span class="st">"浙江"</span>, <span class="st">"河北"</span>, <span class="st">"青海"</span>, <span class="st">"北京"</span>, <span class="st">"上海"</span>, <span class="st">"陕西"</span>, <span class="st">"宁夏"</span><span class="op">)</span>,</span>
-<span>  value <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">237537</span>, <span class="fl">376848</span>, <span class="fl">1104600</span>, <span class="fl">82265</span>, <span class="fl">1945643</span>, <span class="fl">623432</span>, <span class="fl">824542</span>, <span class="fl">733935</span>, <span class="fl">536745</span>, <span class="fl">795689</span>, <span class="fl">1876714</span>, <span class="fl">739280</span>, <span class="fl">61968</span>, <span class="fl">325531</span>, <span class="fl">85425</span>, <span class="fl">223478</span>, <span class="fl">123043</span><span class="op">)</span>,</span>
-<span>  width <span class="op">=</span> <span class="st">"100%"</span>,</span>
-<span>  height <span class="op">=</span> <span class="st">"788px"</span>,</span>
-<span>  title <span class="op">=</span> <span class="st">"Distribution of the number of administrative penalty documents"</span>,</span>
-<span>  region <span class="op">=</span> <span class="st">"China"</span>,</span>
-<span>  minColor <span class="op">=</span> <span class="st">"#f1eef6"</span>,</span>
-<span>  maxColor <span class="op">=</span> <span class="st">"#980043"</span>,</span>
-<span>  itermName <span class="op">=</span> <span class="st">"Count"</span>,</span>
-<span>  hoverColor <span class="op">=</span> <span class="st">"#f6acf5"</span>,</span>
-<span>  theme <span class="op">=</span> <span class="st">"gridlight"</span></span>
-<span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details><div class="cell-output-display">
-<div id="htmlwidget-3196aff5ed0907ec7cc3" style="width:100%;height:788px;" class="hchinamap html-widget "></div>
-<script type="application/json" data-for="htmlwidget-3196aff5ed0907ec7cc3">{"x":{"name":["吉林","辽宁","湖南","重庆","广东","江苏","广西","云南","湖北","山东","浙江","河北","青海","北京","上海","陕西","宁夏"],"value":[237537,376848,1104600,82265,1945643,623432,824542,733935,536745,795689,1876714,739280,61968,325531,85425,223478,123043],"itermName":"Count","title":"Distribution of the number of administrative penalty documents","titleAlign":"center","titleSize":"20px","titleColor":"#333333","subtitle":"","subtitleAlign":"center","subtitleSize":"","subtitleColor":"#666666","min":0,"minColor":"#f1eef6","maxColor":"#980043","legendLayout":"horizontal","legendAlign":"center","legendTitle":"","legendVerticalAlign":"bottom","region":"China","hoverColor":"#f6acf5","theme":"gridlight"},"evals":[],"jsHooks":[]}</script>
+<div class="cell-output-display">
+<div id="htmlwidget-c032593abd079b0f6c35" style="width:100%;height:788px;" class="hchinamap html-widget "></div>
+<script type="application/json" data-for="htmlwidget-c032593abd079b0f6c35">{"x":{"name":["吉林","辽宁","湖南","重庆","广东","江苏","广西","云南","湖北","山东","浙江","河北","青海","北京","上海","陕西","宁夏"],"value":[237537,376848,1104600,82265,1945643,623432,824542,733935,536745,795689,1876714,739280,61968,325531,85425,223478,123043],"itermName":"Count","title":"Distribution of the number of administrative penalty documents","titleAlign":"center","titleSize":"20px","titleColor":"#333333","subtitle":"","subtitleAlign":"center","subtitleSize":"","subtitleColor":"#666666","min":0,"minColor":"#f1eef6","maxColor":"#980043","legendLayout":"horizontal","legendAlign":"center","legendTitle":"","legendVerticalAlign":"bottom","region":"China","hoverColor":"#f6acf5","theme":"gridlight"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 
@@ -323,33 +277,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       } else {
         el.classList.add('notransition');
       }
-    }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
-      }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
-        }
-      });
-    }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
     }
   }
   const toggleColorMode = (alternate) => {
@@ -418,15 +345,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  const darkModeDefault = false;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  let localAlternateSentinel = 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -532,34 +457,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, function() {
-      let href = xref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note !== null) {
-        if (id.startsWith('sec-')) {
-          // Special case sections, only their first couple elements
-          const container = document.createElement("div");
-          if (note.children && note.children.length > 2) {
-            for (let i = 0; i < 2; i++) {
-              container.appendChild(note.children[i].cloneNode(true));
-            }
-            return container.innerHTML
-          } else {
-            return note.innerHTML;
-          }
-        } else {
-          return note.innerHTML;
-        }
-      } else {
-        return "";
-      }
     });
   }
       let selectedAnnoteEl;
@@ -701,7 +598,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
 });
 </script><script src="https://giscus.app/client.js" data-repo="xinzhuohkust/comments" data-repo-id="R_kgDOIfEW2g" data-category="General" data-category-id="DIC_kwDOIfEW2s4CStOg" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
-</script><input type="hidden" id="giscus-base-theme" value="light"><input type="hidden" id="giscus-alt-theme" value="light">
+</script>
 </div> <!-- /content -->
 <footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">
