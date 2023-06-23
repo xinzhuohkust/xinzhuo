@@ -20,7 +20,7 @@
 </figure>
 </div>
 <section id="real-world-sample-china-judgement-online" class="level1"><h1>Real-world sample: China Judgement Online</h1>
-<p>Assuming we have captured network traffic using <strong>Fiddler</strong> and discovered that the data is encrypted, we have also determined the encryption method through reverse engineering with Javascript. How can we utilize JS within R to decrypt the data directly?</p>
+<p>Assuming we have captured network traffic using <strong>Fiddler</strong> and discovered that the data is encrypted, we have also determined the encryption method through reverse engineering with JavaScript. How can we utilize JS within R to decrypt the data directly?</p>
 <p>Encrypted data:</p>
 <div class="cell">
 <details open=""><summary>Code</summary><div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va" style="color: #111111;
@@ -383,8 +383,8 @@ font-style: inherit;">1</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 </details><div class="cell-output cell-output-stdout">
-<pre><code>                                                                                                      firefox1482 
-"Mozilla/5.0 (X11; U; Linux i686 (x86_64); en-US; rv:1.8.1.10) Gecko/20071015 SUSE/2.0.0.10-0.2 Firefox/2.0.0.10" </code></pre>
+<pre><code>                                                                                                                  safari88 
+"Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_4_11; de-de) AppleWebKit/533.16 (KHTML, like Gecko) Version/4.1 Safari/533.16" </code></pre>
 </div>
 </div>
 <p><br></p>
@@ -657,7 +657,7 @@ font-style: inherit;">)</span></span></code></pre></div>
   <category>Python</category>
   <category>Web Crawling</category>
   <guid>https://xinzhuo.work/blog/web crawling/index.html</guid>
-  <pubDate>Tue, 13 Jun 2023 19:44:51 GMT</pubDate>
+  <pubDate>Mon, 19 Jun 2023 16:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Run R code In the Browser</title>

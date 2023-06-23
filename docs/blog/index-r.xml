@@ -10,7 +10,7 @@
 <atom:link href="https://xinzhuo.work/blog/index-r.xml" rel="self" type="application/rss+xml"/>
 <description>Xinzhuo&#39;s Personal Website</description>
 <generator>quarto-1.3.361</generator>
-<lastBuildDate>Tue, 13 Jun 2023 19:44:51 GMT</lastBuildDate>
+<lastBuildDate>Mon, 19 Jun 2023 16:00:00 GMT</lastBuildDate>
 <item>
   <title>Practical Techniques for Web Crawling</title>
   <dc:creator>Xinzhuo HUANG</dc:creator>
@@ -88,8 +88,8 @@ font-style: inherit;">1</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 </details><div class="cell-output cell-output-stdout">
-<pre><code>                                                                                                      firefox1482 
-"Mozilla/5.0 (X11; U; Linux i686 (x86_64); en-US; rv:1.8.1.10) Gecko/20071015 SUSE/2.0.0.10-0.2 Firefox/2.0.0.10" </code></pre>
+<pre><code>                                                                                                                  safari88 
+"Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_4_11; de-de) AppleWebKit/533.16 (KHTML, like Gecko) Version/4.1 Safari/533.16" </code></pre>
 </div>
 </div>
 <p><br></p>
@@ -362,7 +362,7 @@ font-style: inherit;">)</span></span></code></pre></div>
   <category>Python</category>
   <category>Web Crawling</category>
   <guid>https://xinzhuo.work/blog/web crawling/index.html</guid>
-  <pubDate>Tue, 13 Jun 2023 19:44:51 GMT</pubDate>
+  <pubDate>Mon, 19 Jun 2023 16:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Causal Inference Practical Methods</title>
