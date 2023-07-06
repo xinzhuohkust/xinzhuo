@@ -9,8 +9,8 @@
 <link>https://xinzhuo.work/data/index.html</link>
 <atom:link href="https://xinzhuo.work/data/index.xml" rel="self" type="application/rss+xml"/>
 <description>Xinzhuo&#39;s Personal Website</description>
-<generator>quarto-1.3.361</generator>
-<lastBuildDate>Fri, 09 Jun 2023 17:38:37 GMT</lastBuildDate>
+<generator>quarto-1.4.169</generator>
+<lastBuildDate>Wed, 05 Jul 2023 21:07:24 GMT</lastBuildDate>
 <item>
   <title>Administrative Penalties Imposed by Chinese Police</title>
   <dc:creator>Xinzhuo HUANG</dc:creator>
@@ -41,8 +41,8 @@ body {text-align: justify}
 <section id="data-distribution" class="level2"><h2 class="anchored" data-anchor-id="data-distribution">Data distribution</h2>
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-c032593abd079b0f6c35" style="width:100%;height:788px;" class="hchinamap html-widget "></div>
-<script type="application/json" data-for="htmlwidget-c032593abd079b0f6c35">{"x":{"name":["吉林","辽宁","湖南","重庆","广东","江苏","广西","云南","湖北","山东","浙江","河北","青海","北京","上海","陕西","宁夏"],"value":[237537,376848,1104600,82265,1945643,623432,824542,733935,536745,795689,1876714,739280,61968,325531,85425,223478,123043],"itermName":"Count","title":"Distribution of the number of administrative penalty documents","titleAlign":"center","titleSize":"20px","titleColor":"#333333","subtitle":"","subtitleAlign":"center","subtitleSize":"","subtitleColor":"#666666","min":0,"minColor":"#f1eef6","maxColor":"#980043","legendLayout":"horizontal","legendAlign":"center","legendTitle":"","legendVerticalAlign":"bottom","region":"China","hoverColor":"#f6acf5","theme":"gridlight"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-78c95c5ff21774234126" style="width:100%;height:788px;" class="hchinamap html-widget "></div>
+<script type="application/json" data-for="htmlwidget-78c95c5ff21774234126">{"x":{"name":["吉林","辽宁","湖南","重庆","广东","江苏","广西","云南","湖北","山东","浙江","河北","青海","北京","上海","陕西","宁夏"],"value":[237537,376848,1104600,82265,1945643,623432,824542,733935,536745,795689,1876714,739280,61968,325531,85425,223478,123043],"itermName":"Count","title":"Distribution of the number of administrative penalty documents","titleAlign":"center","titleSize":"20px","titleColor":"#333333","subtitle":"","subtitleAlign":"center","subtitleSize":"","subtitleColor":"#666666","min":0,"minColor":"#f1eef6","maxColor":"#980043","legendLayout":"horizontal","legendAlign":"center","legendTitle":"","legendVerticalAlign":"bottom","region":"China","hoverColor":"#f6acf5","theme":"gridlight"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 
@@ -51,7 +51,7 @@ body {text-align: justify}
   <category>Web Crawling</category>
   <category>Administrative Penalties</category>
   <guid>https://xinzhuo.work/data/penality/index.html</guid>
-  <pubDate>Fri, 09 Jun 2023 17:38:37 GMT</pubDate>
+  <pubDate>Wed, 05 Jul 2023 21:07:24 GMT</pubDate>
 </item>
 </channel>
 </rss>
