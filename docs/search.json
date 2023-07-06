@@ -669,7 +669,7 @@
     "href": "index.html",
     "title": "Xinzhuo Huang",
     "section": "",
-    "text": "Hi, I’m Xinzhuo. I am currently a MPhil student at the Hong Kong University of Science and Technology, under the guidance of Prof. Cai Yongshun and Prof. Zhang Han.\nMy research interests lie in the Chinese government and politics. I have worked in multiple levels of the Chinese government, providing me with a firsthand understanding of its operations.\nI am proficient in utilizing R and Python throughout all stages of data analysis, which is attributed to my participation and leadership in several real-world research projects.\nI have collected over one hundred million data points pertaining to China by web crawling from various websites and apps, including the largest collection of Chinese police administrative penalty documents to date, as well as petition and legal document data.\nWelcome to browse my resume, recent blog posts, datasets, research projects, and R packages."
+    "text": "```{=html}"
   },
   {
     "objectID": "project/packages/Geocoding/index.html#what-is-nutshell",
