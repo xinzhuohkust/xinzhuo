@@ -2,13 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.58">
+<meta name="generator" content="quarto-1.4.169">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="">
 
-<title>Xinzhuo Huang - Research</title>
+<title>Xinzhuo Huang -</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../icon.png" rel="icon" type="image/png">
+<link href="../icon_sun.png" rel="icon" type="image/png">
 <script src="../site_libs/quarto-listing/list.min.js"></script>
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/cookie-consent/cookie-consent.js"></script>
@@ -47,6 +46,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -54,6 +55,11 @@ ul.task-list li input[type="checkbox"] {
   "panel-placement": "end",
   "type": "overlay",
   "limit": 20,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -63,13 +69,14 @@ ul.task-list li input[type="checkbox"] {
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
     "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
   }
 }</script>
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-packages .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -78,11 +85,11 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-image','listing-title','listing-description','listing-date',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-packages'] = new List('listing-packages', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -116,21 +123,29 @@ cookieconsent.run({
   "notice_banner_reject_button_hide":false,
   "preferences_center_close_button_hide":false,
   "website_name":""
+  ,
+"language":"en"
   });
 });
 </script> 
   
 <style>html{ scroll-behavior: smooth; }</style>
+<style>
+
+      .quarto-title-block .quarto-title-banner {
+        background: #CF4446;
+      }
+</style>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../scss/styles.css">
-<link rel="alternate" type="application/rss+xml" title="Xinzhuo Huang" href="index.xml"><meta property="og:title" content="Xinzhuo Huang - Research">
-<meta property="og:description" content="Research Projects and R packages">
-<meta property="og:site-name" content="Xinzhuo Huang">
-<meta name="twitter:title" content="Xinzhuo Huang - Research">
-<meta name="twitter:description" content="Research Projects and R packages">
+<link rel="alternate" type="application/rss+xml" title="Xinzhuo Huang" href="index.xml" data-external="1"><meta property="og:title" content="Xinzhuo Huang -">
+<meta property="og:description" content="Xinzhuo’s Personal Website">
+<meta property="og:site_name" content="Xinzhuo Huang">
+<meta name="twitter:title" content="Xinzhuo Huang -">
+<meta name="twitter:description" content="Xinzhuo’s Personal Website">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -140,9 +155,9 @@ cookieconsent.run({
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../icon.png" alt="" class="navbar-logo">
+    <img src="../icon_sun_revised.png" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -190,48 +205,40 @@ cookieconsent.run({
     </ul>
   </li>
 </ul>
-            <div class="quarto-navbar-tools">
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page-left">
-      <h1 class="title">Research</h1>
-            <p class="subtitle lead">Research Projects and R packages</p>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-page-left">
-
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
     <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="Geocoding">Geocoding <span class="quarto-category-count">(1)</span></div><div class="category" data-category="R Package">R Package <span class="quarto-category-count">(3)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
+<section id="research" class="level1">
+<h1>Research</h1>
+<div id="research">
 
-<div id="listing-listing" class="quarto-listing quarto-listing-container-default">
+</div>
+<p><i class="fa-solid fa-fa" aria-label="fa"></i></p>
+
+
+
+</section>
+
+<div class="quarto-listing quarto-listing-container-table" id="listing-packages">
 <div class="listing-actions-group">
    <div class="input-group input-group-sm quarto-listing-sort">
      <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
-     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+     <select id="listing-packages-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-packages'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
        <option value="" disabled="" selected="" hidden="">Order By</option>
        <option value="index" data-direction="asc">Default</option>
          <option value="listing-date-sort" data-direction="asc">
@@ -243,92 +250,74 @@ cookieconsent.run({
      </select>
   </div>
 </div>
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="R Package,Geocoding" data-listing-date-sort="1684836086000" data-listing-file-modified-sort="1684836086352" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
-<div class="thumbnail">
-<p><a href="../project/Geocoding/index.html"> <p class="card-img-top"><img src="Geocoding\geo_icon.png"  class="thumbnail-image card-img"/></p> </a></p>
-</div>
-<div class="body">
-<a href="../project/Geocoding/index.html">
-<h3 class="no-anchor listing-title">
-Geocoding R Package
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-<p>An R package that provides geocoding, reverse geocoding, route planning, and advanced geographic visualization. Moreover, this package provides economic and social information such as nighttime lights and population based on geographic coding.</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="../project/Geocoding/index.html">
-<div class="listing-date">
-May 23, 2023
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="R Package" data-listing-date-sort="1684836112000" data-listing-file-modified-sort="1684836112157" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="../project/RconnectPy/index.html"> <p class="card-img-top"><img src="RconnectPy\RconnectPy.png"  class="thumbnail-image card-img"/></p> </a></p>
-</div>
-<div class="body">
-<a href="../project/RconnectPy/index.html">
-<h3 class="no-anchor listing-title">
-RconnectPy Package
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-<p>An R package for easy installation and importing of python modules.</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="../project/RconnectPy/index.html">
-<div class="listing-date">
-May 23, 2023
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="R Package" data-listing-date-sort="1685271850000" data-listing-file-modified-sort="1685271850527" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1">
-<div class="thumbnail">
-<p><a href="../project/sentimentRPy/index.html"> <p class="card-img-top"><img src="sentimentRPy\sentiment.png"  class="thumbnail-image card-img"/></p> </a></p>
-</div>
-<div class="body">
-<a href="../project/sentimentRPy/index.html">
-<h3 class="no-anchor listing-title">
-sentimentRPy Package
-</h3>
-<div class="listing-subtitle">
-
-</div>
-<div class="listing-description">
-<p>An R package for sentence-level and word-level sentiment analysis.</p>
-</div>
-</a>
-</div>
-<div class="metadata">
-<a href="../project/sentimentRPy/index.html">
-<div class="listing-date">
-May 28, 2023
-</div>
-</a>
-</div>
-</div>
-</div>
+<table class="quarto-listing-table table table-hover">
+<thead>
+<tr>
+<th>
+</th>
+<th>
+Name
+</th>
+<th>
+Description
+</th>
+<th>
+<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
+</th>
+</tr>
+</thead>
+<tbody class="list">
+<tr data-index="0" data-categories="R Package,Geocoding" data-listing-date-sort="1685030400000" data-listing-file-modified-sort="1687684364984" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-title-sort="Geocoding" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-image"><p class="card-img-top"><img src="packages\Geocoding\geo_icon.png" style="height: 20%;"  class="thumbnail-image card-img"/></p></span>
+</td>
+<td>
+<a href="../project/packages/Geocoding/index.html" class="title listing-title">Geocoding</a>
+</td>
+<td>
+<span class="listing-description">An R package that provides geocoding, reverse geocoding, route planning, and advanced geographic visualization. Moreover, this package provides economic and social information such as nighttime lights and population based on geographic coding.</span>
+</td>
+<td>
+<span class="listing-date">May 2023</span>
+</td>
+</tr>
+<tr data-index="1" data-categories="R Package" data-listing-date-sort="1687474132000" data-listing-file-modified-sort="1687474132282" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="RconnectPy" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-image"><p class="card-img-top"><img src="packages\RconnectPy\RconnectPy.png" style="height: 20%;"  class="thumbnail-image card-img"/></p></span>
+</td>
+<td>
+<a href="../project/packages/RconnectPy/index.html" class="title listing-title">RconnectPy</a>
+</td>
+<td>
+<span class="listing-description">An R package for easy installation and importing of python modules.</span>
+</td>
+<td>
+<span class="listing-date">June 2023</span>
+</td>
+</tr>
+<tr data-index="2" data-categories="R Package" data-listing-date-sort="1687474139000" data-listing-file-modified-sort="1687474139187" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-title-sort="sentimentRPy" data-listing-filename-sort="index.qmd" onclick="href = this.querySelector('a').getAttribute('href');
+ if (href) { window.location=href ; return false; }">
+<td>
+<span class="listing-image"><p class="card-img-top"><img src="packages\sentimentRPy\sentiment.png" style="height: 20%;"  class="thumbnail-image card-img"/></p></span>
+</td>
+<td>
+<a href="../project/packages/sentimentRPy/index.html" class="title listing-title">sentimentRPy</a>
+</td>
+<td>
+<span class="listing-description">An R package for sentence-level and word-level sentiment analysis.</span>
+</td>
+<td>
+<span class="listing-date">June 2023</span>
+</td>
+</tr>
+</tbody>
+</table>
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div>
-
-
-
-
-</main> <!-- /main -->
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -552,10 +541,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -565,8 +553,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -582,31 +579,57 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    if (id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        for (let i = 0; i < 2; i++) {
+          container.appendChild(note.children[i].cloneNode(true));
+        }
+        return container.innerHTML
+      } else {
+        return note.innerHTML;
+      }
+    } else {
+      return note.innerHTML;
+    }
+  }
   for (var i=0; i<xrefs.length; i++) {
     const xref = xrefs[i];
-    tippyHover(xref, function() {
-      let href = xref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      try { hash = new URL(url).hash; } catch {}
+      const id = hash.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       if (note !== null) {
-        if (id.startsWith('sec-')) {
-          // Special case sections, only their first couple elements
-          const container = document.createElement("div");
-          if (note.children && note.children.length > 2) {
-            for (let i = 0; i < 2; i++) {
-              container.appendChild(note.children[i].cloneNode(true));
-            }
-            return container.innerHTML
-          } else {
-            return note.innerHTML;
-          }
-        } else {
-          return note.innerHTML;
+        try {
+          const html = processXRef(id, note);
+          instance.setContent(html);
+        } finally {
+          instance.enable();
+          instance.show();
         }
       } else {
-        return "";
+        // See if we can fetch this
+        fetch(url.split('#')[0])
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.getElementById(id);
+          if (note !== null) {
+            const html = processXRef(id, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
       }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -650,6 +673,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -754,12 +778,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center">Powered by <a href="https://quarto.org">Quarto</a> | © 2023 <a href="../cv/">Xinzhuo Huang</a><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-center">
+<p>Powered by <a href="https://quarto.org">Quarto</a> | © 2023 <a href="..\cv/">Xinzhuo Huang</a></p>
+<div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
   </div>
 </footer>
+
 
 
 

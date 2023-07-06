@@ -9,12 +9,12 @@
 <link>https://xinzhuo.work/project/index.html</link>
 <atom:link href="https://xinzhuo.work/project/index.xml" rel="self" type="application/rss+xml"/>
 <description>Xinzhuo&#39;s Personal Website</description>
-<generator>quarto-1.4.58</generator>
-<lastBuildDate>Sun, 28 May 2023 11:04:10 GMT</lastBuildDate>
+<generator>quarto-1.4.169</generator>
+<lastBuildDate>Thu, 22 Jun 2023 22:48:59 GMT</lastBuildDate>
 <item>
-  <title>sentimentRPy Package</title>
+  <title>sentimentRPy</title>
   <dc:creator>Xinzhuo HUANG</dc:creator>
-  <link>https://xinzhuo.work/project/sentimentRPy/index.html</link>
+  <link>https://xinzhuo.work/project/packages/sentimentRPy/index.html</link>
   <description><![CDATA[ <style>
 body {text-align: justify}
 </style>
@@ -22,7 +22,7 @@ body {text-align: justify}
 <section id="overview" class="level2 unnumbered unlisted g-col-12 g-col-md-8" style="text-align: left;"><h2 class="unnumbered unlisted anchored" data-anchor-id="overview">Overview</h2>
 <p>An R package for sentence-level and word-level sentiment analysis. Support vectorization, multithreading and is robust to errors.</p>
 </section><div class="g-col-15 g-col-md-4" style="text-align: center;">
-<p><br><br><img src="https://xinzhuo.work/project/sentimentRPy/sentiment.png" width="180"></p>
+<p><br><br><img src="https://xinzhuo.work/project/packages/sentimentRPy/sentiment.png" width="180"></p>
 </div>
 </div>
 <section id="installation" class="level2"><h2 class="anchored" data-anchor-id="installation">Installation</h2>
@@ -72,15 +72,30 @@ background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"word"</span></span>
-<span><span class="op" style="color: #5E5E5E;
+<span>    <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell-output-display">
-
-<div data-pagedtable="false">
-  <script data-pagedtable-source="" type="application/json">
-{"columns":[{"label":["neu"],"name":[1],"type":["chr"],"align":["left"]},{"label":["pos"],"name":[2],"type":["chr"],"align":["left"]},{"label":["neg"],"name":[3],"type":["chr"],"align":["left"]}],"data":[{"1":"0","2":"3","3":"0"},{"1":"0","2":"0","3":"-2"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  </script>
+<div class="kable-table">
+<table class="table table-sm table-striped small">
+<thead><tr class="header">
+<th style="text-align: left;">neu</th>
+<th style="text-align: left;">pos</th>
+<th style="text-align: left;">neg</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">-2</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
@@ -105,15 +120,21 @@ background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
 font-style: inherit;">"sentence"</span></span>
-<span><span class="op" style="color: #5E5E5E;
+<span>    <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell-output-display">
-
-<div data-pagedtable="false">
-  <script data-pagedtable-source="" type="application/json">
-{"columns":[{"label":["sentiment"],"name":[1],"type":["chr"],"align":["left"]},{"label":["sd"],"name":[2],"type":["chr"],"align":["left"]}],"data":[{"1":"0.296463530640786","2":"NA"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  </script>
+<div class="kable-table">
+<table class="table table-sm table-striped small">
+<thead><tr class="header">
+<th style="text-align: left;">sentiment</th>
+<th style="text-align: left;">sd</th>
+</tr></thead>
+<tbody><tr class="odd">
+<td style="text-align: left;">0.296463530640786</td>
+<td style="text-align: left;">NA</td>
+</tr></tbody>
+</table>
 </div>
 </div>
 </div>
@@ -139,7 +160,7 @@ background-color: null;
 font-style: inherit;">multisession =</span> <span class="cn" style="color: #8f5902;
 background-color: null;
 font-style: inherit;">TRUE</span></span>
-<span id="cb4-5">)</span></code></pre></div>
+<span id="cb4-5">    )</span></code></pre></div>
 </div>
 </section><section id="python" class="level3"><h3 class="anchored" data-anchor-id="python">Python</h3>
 <p>Python setup</p>
@@ -180,11 +201,21 @@ font-style: inherit;">"I am not happy, but I am also not unhappy."</span><span c
 background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell-output-display">
-
-<div data-pagedtable="false">
-  <script data-pagedtable-source="" type="application/json">
-{"columns":[{"label":["neg"],"name":[1],"type":["chr"],"align":["left"]},{"label":["neu"],"name":[2],"type":["chr"],"align":["left"]},{"label":["pos"],"name":[3],"type":["chr"],"align":["left"]},{"label":["compound"],"name":[4],"type":["chr"],"align":["left"]}],"data":[{"1":"0","2":"0.652","3":"0.348","4":"0.652"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  </script>
+<div class="kable-table">
+<table class="table table-sm table-striped small">
+<thead><tr class="header">
+<th style="text-align: left;">neg</th>
+<th style="text-align: left;">neu</th>
+<th style="text-align: left;">pos</th>
+<th style="text-align: left;">compound</th>
+</tr></thead>
+<tbody><tr class="odd">
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0.652</td>
+<td style="text-align: left;">0.348</td>
+<td style="text-align: left;">0.652</td>
+</tr></tbody>
+</table>
 </div>
 </div>
 </div>
@@ -192,13 +223,13 @@ font-style: inherit;">)</span></span></code></pre></div>
 
 </section></section> ]]></description>
   <category>R Package</category>
-  <guid>https://xinzhuo.work/project/sentimentRPy/index.html</guid>
-  <pubDate>Sun, 28 May 2023 11:04:10 GMT</pubDate>
+  <guid>https://xinzhuo.work/project/packages/sentimentRPy/index.html</guid>
+  <pubDate>Thu, 22 Jun 2023 22:48:59 GMT</pubDate>
 </item>
 <item>
-  <title>RconnectPy Package</title>
+  <title>RconnectPy</title>
   <dc:creator>Xinzhuo HUANG</dc:creator>
-  <link>https://xinzhuo.work/project/RconnectPy/index.html</link>
+  <link>https://xinzhuo.work/project/packages/RconnectPy/index.html</link>
   <description><![CDATA[ <style>
 body {text-align: justify}
 </style>
@@ -206,7 +237,7 @@ body {text-align: justify}
 <section id="overview" class="level2 unnumbered unlisted g-col-12 g-col-md-8" style="text-align: left;"><h2 class="unnumbered unlisted anchored" data-anchor-id="overview">Overview</h2>
 <p>An R package for easy installation and importing of python modules.</p>
 </section><div class="g-col-15 g-col-md-4" style="text-align: center;">
-<p><br><br><img src="https://xinzhuo.work/project/RconnectPy/RconnectPy.png" width="180"></p>
+<p><br><br><img src="https://xinzhuo.work/project/packages/RconnectPy/RconnectPy.png" width="180"></p>
 </div>
 </div>
 <section id="installation" class="level2"><h2 class="anchored" data-anchor-id="installation">Installation</h2>
@@ -283,13 +314,13 @@ font-style: inherit;">)</span></span></code></pre></div>
 
 </section> ]]></description>
   <category>R Package</category>
-  <guid>https://xinzhuo.work/project/RconnectPy/index.html</guid>
-  <pubDate>Tue, 23 May 2023 10:01:52 GMT</pubDate>
+  <guid>https://xinzhuo.work/project/packages/RconnectPy/index.html</guid>
+  <pubDate>Thu, 22 Jun 2023 22:48:52 GMT</pubDate>
 </item>
 <item>
-  <title>Geocoding R Package</title>
+  <title>Geocoding</title>
   <dc:creator>Xinzhuo HUANG</dc:creator>
-  <link>https://xinzhuo.work/project/Geocoding/index.html</link>
+  <link>https://xinzhuo.work/project/packages/Geocoding/index.html</link>
   <description><![CDATA[ <style>
 body {text-align: justify}
 </style>
@@ -298,55 +329,12 @@ body {text-align: justify}
 <p>The Geocoding package provides functions for geocoding Chinese addresses.</p>
 <p>The package is designed for researchers, analysts, and other users who need to work with Chinese address data.</p>
 </section><div class="g-col-15 g-col-md-4" style="text-align: center;">
-<p><br><br><img src="https://xinzhuo.work/project/Geocoding/geo_icon.png" width="180"></p>
+<p><br><br><img src="https://xinzhuo.work/project/packages/Geocoding/geo_icon.png" width="180"></p>
 </div>
 </div>
 <section id="installation" class="level2"><h2 class="anchored" data-anchor-id="installation">Installation</h2>
-<div class="cell">
-<div class="sourceCode" id="cb1" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">remotes</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;"><a href="https://remotes.r-lib.org/reference/install_github.html">install_github</a></span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"xinzhuohkust/Geocoding"</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">)</span></span></code></pre></div>
-</div>
 </section><section id="usage" class="level2"><h2 class="anchored" data-anchor-id="usage">Usage</h2>
 <section id="geocoding" class="level3"><h3 class="anchored" data-anchor-id="geocoding">geocoding</h3>
-<div class="cell">
-<div class="sourceCode" id="cb2" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">Geocoding</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/Geocoding/man/get_MCT.html">get_MCT</a></span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"国家信访局"</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span>  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">Geocoding</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/Geocoding/man/convert_MCT.html">convert_MCT</a></span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">)</span></span></code></pre></div>
-</div>
 <div class="cell">
 <div class="cell-output-display">
 <table class="lightable-paper lightable-hover table table-sm table-striped small" data-quarto-postprocess="true">
@@ -362,38 +350,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 </div>
 </div>
 </section><section id="reverse-geocoding" class="level3"><h3 class="anchored" data-anchor-id="reverse-geocoding">reverse geocoding</h3>
-<div class="cell">
-<div class="sourceCode" id="cb3" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">Geocoding</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/Geocoding/man/get_MCT.html">get_MCT</a></span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"国家信访局"</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span></span>
-<span>  <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">Geocoding</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/Geocoding/man/get_admin_info.html">get_admin_info</a></span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span>uid <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="cn" style="color: #8f5902;
-background-color: null;
-font-style: inherit;">TRUE</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">)</span></span></code></pre></div>
-</div>
 <div class="cell">
 <div class="cell-output-display">
 <table class="lightable-paper lightable-hover table table-sm table-striped small" data-quarto-postprocess="true">
@@ -413,84 +369,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 </div>
 </div>
 </section><section id="train-planning" class="level3"><h3 class="anchored" data-anchor-id="train-planning">train planning</h3>
-<div class="cell">
-<div class="sourceCode" id="cb4" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">Geocoding</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/Geocoding/man/train_plan.html">train_plan</a></span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span></span>
-<span>  origin <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">Geocoding</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/Geocoding/man/get_MCT.html">get_MCT</a></span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"安徽省六安市裕安区"</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">Geocoding</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/Geocoding/man/convert_MCT.html">convert_MCT</a></span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">)</span>,</span>
-<span>  destination <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">Geocoding</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/Geocoding/man/get_MCT.html">get_MCT</a></span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span><span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"国家信访局"</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">|&gt;</span> <span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">Geocoding</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;"><a href="https://rdrr.io/pkg/Geocoding/man/convert_MCT.html">convert_MCT</a></span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">)</span>,</span>
-<span>  sleep <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="fl" style="color: #AD0000;
-background-color: null;
-font-style: inherit;">0.5</span>,</span>
-<span>  ak <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"your ak"</span></span>
-<span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">)</span></span></code></pre></div>
-</div>
 <div class="cell">
 <div class="cell-output-display">
 <table class="lightable-paper lightable-hover table table-sm table-striped small" data-quarto-postprocess="true">
@@ -525,44 +403,15 @@ font-style: inherit;">)</span></span></code></pre></div>
 </div>
 </section></section><section id="visualization" class="level2"><h2 class="anchored" data-anchor-id="visualization">Visualization</h2>
 <section id="ggplot2-integration" class="level3"><h3 class="anchored" data-anchor-id="ggplot2-integration">ggplot2 integration</h3>
-<div class="cell">
-<div class="sourceCode" id="cb5" style="background: #f1f3f5;"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">Geocoding</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
-background-color: null;
-font-style: inherit;">plot_geocoding</span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">(</span></span>
-<span>  data <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"night"</span>,</span>
-<span>  label <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"jilin"</span>,</span>
-<span>  year <span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">=</span> <span class="st" style="color: #20794D;
-background-color: null;
-font-style: inherit;">"2022"</span></span>
-<span><span class="op" style="color: #5E5E5E;
-background-color: null;
-font-style: inherit;">)</span></span></code></pre></div>
-</div>
-<p><img src="https://xinzhuo.work/project/Geocoding/light.png" width="1000"></p>
+<p><img src="https://xinzhuo.work/project/packages/Geocoding/light.png" width="1000"></p>
 </section><section id="interactive-map-and-3d-map-coming-soon" class="level3"><h3 class="anchored" data-anchor-id="interactive-map-and-3d-map-coming-soon">interactive map and 3D map (coming soon)</h3>
-<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=fdfdfd&amp;w=70&amp;t=n&amp;d=xZ5N7O41jb8FCtvQIiC0y_H6QbZgte9z9WlfHIbXC9w&amp;co=fdfdfd&amp;ct=fdfdfd&amp;cmo=fdfdfd&amp;cmn=fdfdfd"></script>
+<script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=fdfdfd&amp;w=70&amp;t=n&amp;d=xZ5N7O41jb8FCtvQIiC0y_H6QbZgte9z9WlfHIbXC9w&amp;co=fdfdfd&amp;ct=fdfdfd&amp;cmo=fdfdfd&amp;cmn=fdfdfd"></script><script type="text/javascript" id="clustrmaps" src="//cdn.clustrmaps.com/map_v2.js?cl=fdfdfd&amp;w=70&amp;t=n&amp;d=xZ5N7O41jb8FCtvQIiC0y_H6QbZgte9z9WlfHIbXC9w&amp;co=fdfdfd&amp;ct=fdfdfd&amp;cmo=fdfdfd&amp;cmn=fdfdfd"></script>
 
 </section></section> ]]></description>
   <category>R Package</category>
   <category>Geocoding</category>
-  <guid>https://xinzhuo.work/project/Geocoding/index.html</guid>
-  <pubDate>Tue, 23 May 2023 10:01:26 GMT</pubDate>
+  <guid>https://xinzhuo.work/project/packages/Geocoding/index.html</guid>
+  <pubDate>Thu, 25 May 2023 16:00:00 GMT</pubDate>
 </item>
 </channel>
 </rss>
