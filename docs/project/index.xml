@@ -13,7 +13,6 @@
 <lastBuildDate>Wed, 31 May 2023 16:00:00 GMT</lastBuildDate>
 <item>
   <title>sentimentRPy</title>
-  <dc:creator>Xinzhuo HUANG</dc:creator>
   <link>https://xinzhuo.work/project/packages/sentimentRPy/index.html</link>
   <description><![CDATA[ <style>
 body {text-align: justify}
@@ -53,8 +52,7 @@ font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;"><a href="https://rdrr.io/pkg/sentimentRPy/man/get_sentimentR.html">get_sentimentR</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">(</span></span>
-<span>    text <span class="op" style="color: #5E5E5E;
+font-style: inherit;">(</span>text <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -66,13 +64,11 @@ font-style: inherit;">"I am happy"</span>, <span class="st" style="color: #20794
 background-color: null;
 font-style: inherit;">"I am sad"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">)</span>,</span>
-<span>    method <span class="op" style="color: #5E5E5E;
+font-style: inherit;">)</span>, method <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"word"</span></span>
-<span>    <span class="op" style="color: #5E5E5E;
+font-style: inherit;">"word"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell-output-display">
@@ -109,8 +105,7 @@ font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;"><a href="https://rdrr.io/pkg/sentimentRPy/man/get_sentimentR.html">get_sentimentR</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">(</span></span>
-<span>    text <span class="op" style="color: #5E5E5E;
+font-style: inherit;">(</span>text <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
@@ -119,8 +114,7 @@ font-style: inherit;">"I am not happy, but I am also not unhappy."</span>,</span
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"sentence"</span></span>
-<span>    <span class="op" style="color: #5E5E5E;
+font-style: inherit;">"sentence"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 <div class="cell-output-display">
@@ -181,7 +175,7 @@ font-style: inherit;">(</span>python <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"C:\\Users\\xhuangcb\\anaconda3\\envs\\pytorch_gpu"</span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">"C:/Users/xhuangcb/anaconda3/envs/pytorch_gpu/python.exe"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 </div>
@@ -200,6 +194,24 @@ background-color: null;
 font-style: inherit;">"I am not happy, but I am also not unhappy."</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
+<div class="cell-output-display">
+<div class="kable-table">
+<table class="table table-sm table-striped small">
+<thead><tr class="header">
+<th style="text-align: left;">neg</th>
+<th style="text-align: left;">neu</th>
+<th style="text-align: left;">pos</th>
+<th style="text-align: left;">compound</th>
+</tr></thead>
+<tbody><tr class="odd">
+<td style="text-align: left;">0</td>
+<td style="text-align: left;">0.652</td>
+<td style="text-align: left;">0.348</td>
+<td style="text-align: left;">0.652</td>
+</tr></tbody>
+</table>
+</div>
+</div>
 </div>
 
 
@@ -210,7 +222,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 </item>
 <item>
   <title>RconnectPy</title>
-  <dc:creator>Xinzhuo HUANG</dc:creator>
   <link>https://xinzhuo.work/project/packages/RconnectPy/index.html</link>
   <description><![CDATA[ <style>
 body {text-align: justify}
@@ -301,7 +312,6 @@ font-style: inherit;">)</span></span></code></pre></div>
 </item>
 <item>
   <title>Geocoding</title>
-  <dc:creator>Xinzhuo HUANG</dc:creator>
   <link>https://xinzhuo.work/project/packages/Geocoding/index.html</link>
   <description><![CDATA[ <style>
 body {text-align: justify}
@@ -435,8 +445,7 @@ font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;"><a href="https://rdrr.io/pkg/Geocoding/man/train_plan.html">train_plan</a></span><span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">(</span></span>
-<span>  origin <span class="op" style="color: #5E5E5E;
+font-style: inherit;">(</span>origin <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -452,7 +461,8 @@ font-style: inherit;">"安徽省六安市裕安区"</span><span class="op" style
 background-color: null;
 font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">|&gt;</span> <span class="fu" style="color: #4758AB;
+font-style: inherit;">|&gt;</span></span>
+<span>    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">Geocoding</span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -462,8 +472,7 @@ font-style: inherit;"><a href="https://rdrr.io/pkg/Geocoding/man/convert_MCT.htm
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">)</span>,</span>
-<span>  destination <span class="op" style="color: #5E5E5E;
+font-style: inherit;">)</span>, destination <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="fu" style="color: #4758AB;
 background-color: null;
@@ -479,7 +488,8 @@ font-style: inherit;">"国家信访局"</span><span class="op" style="color: #5E
 background-color: null;
 font-style: inherit;">)</span> <span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">|&gt;</span> <span class="fu" style="color: #4758AB;
+font-style: inherit;">|&gt;</span></span>
+<span>    <span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">Geocoding</span><span class="fu" style="color: #4758AB;
 background-color: null;
@@ -489,18 +499,15 @@ font-style: inherit;"><a href="https://rdrr.io/pkg/Geocoding/man/convert_MCT.htm
 background-color: null;
 font-style: inherit;">(</span><span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">)</span>,</span>
-<span>  sleep <span class="op" style="color: #5E5E5E;
+font-style: inherit;">)</span>, sleep <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="fl" style="color: #AD0000;
 background-color: null;
-font-style: inherit;">0.5</span>,</span>
-<span>  ak <span class="op" style="color: #5E5E5E;
+font-style: inherit;">0.5</span>, ak <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"your ak"</span></span>
-<span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">"your ak"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 </div>
@@ -547,23 +554,19 @@ font-style: inherit;">::</span><span class="fu" style="color: #4758AB;
 background-color: null;
 font-style: inherit;">plot_geocoding</span><span class="op" style="color: #5E5E5E;
 background-color: null;
-font-style: inherit;">(</span></span>
-<span>  data <span class="op" style="color: #5E5E5E;
+font-style: inherit;">(</span>data <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"night"</span>,</span>
-<span>  label <span class="op" style="color: #5E5E5E;
+font-style: inherit;">"night"</span>, label <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"jilin"</span>,</span>
-<span>  year <span class="op" style="color: #5E5E5E;
+font-style: inherit;">"jilin"</span>, year <span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">=</span> <span class="st" style="color: #20794D;
 background-color: null;
-font-style: inherit;">"2022"</span></span>
-<span><span class="op" style="color: #5E5E5E;
+font-style: inherit;">"2022"</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 </div>

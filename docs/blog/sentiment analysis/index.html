@@ -2,9 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.361">
+<meta name="generator" content="quarto-1.4.169">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="author" content="Xinzhuo HUANG">
+<meta name="author" content="Xinzhuo Huang">
 <meta name="dcterms.date" content="2023-02-20">
 <meta name="description" content="by calling Python in R">
 <title>Xinzhuo Huang - Sentence Level Sentiment Analysis</title>
@@ -63,7 +63,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../icon.png" rel="icon" type="image/png">
+<link href="../../icon_sun.png" rel="icon" type="image/png">
 <script src="../../site_libs/cookie-consent/cookie-consent.js"></script>
 <link href="../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
 <script src="../../site_libs/quarto-html/quarto.js"></script>
@@ -83,6 +83,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   "panel-placement": "end",
   "type": "overlay",
   "limit": 20,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -112,6 +117,8 @@ cookieconsent.run({
   "notice_banner_reject_button_hide":false,
   "preferences_center_close_button_hide":false,
   "website_name":""
+  ,
+"language":"en"
   });
 });
 </script><style>html{ scroll-behavior: smooth; }</style>
@@ -119,29 +126,26 @@ cookieconsent.run({
 {
   "theme": "clean"
 }
-</script><script async="" src="https://hypothes.is/embed.js"></script><script src="../../site_libs/kePrint-0.0.1/kePrint.js"></script><link href="../../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
-<link href="../../site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet">
-<script src="../../site_libs/pagedtable-1.1/js/pagedtable.js"></script><link rel="stylesheet" href="../../scss/styles.css">
+</script><script async="" src="https://hypothes.is/embed.js"></script><script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script><script src="../../site_libs/kePrint-0.0.1/kePrint.js"></script><link href="../../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+<link rel="stylesheet" href="../../scss/styles.css">
 <meta property="og:title" content="Xinzhuo Huang - Sentence Level Sentiment Analysis">
 <meta property="og:description" content="by calling Python in R">
-<meta property="og:image" content="https://xinzhuo.work/blog/sentiment analysis/images/sentiment.png">
-<meta property="og:site-name" content="Xinzhuo Huang">
-<meta property="og:image:height" content="397">
-<meta property="og:image:width" content="599">
+<meta property="og:site_name" content="Xinzhuo Huang">
 <meta name="twitter:title" content="Xinzhuo Huang - Sentence Level Sentiment Analysis">
 <meta name="twitter:description" content="by calling Python in R">
-<meta name="twitter:image" content="https://xinzhuo.work/blog/sentiment analysis/images/sentiment.png">
-<meta name="twitter:image-height" content="397">
-<meta name="twitter:image-width" content="599">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 </head>
 <body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../icon.png" alt="" class="navbar-logo"></a>
+    <img src="../../icon_sun.png" alt="" class="navbar-logo"></a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -188,10 +192,10 @@ cookieconsent.run({
     </ul>
 </li>
 </ul>
-<div class="quarto-navbar-tools">
+</div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
-          </div> <!-- /navcollapse -->
       </div> <!-- /container-fluid -->
     </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
@@ -231,16 +235,23 @@ cookieconsent.run({
   </div>
 </div>
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Xinzhuo Huang <a href="https://orcid.org/0009-0007-6448-5114" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            HKUST SOSC
+          </p>
+      </div>
+    </div>
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Xinzhuo HUANG </p>
-          </div>
-  </div>
-    
+      
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
@@ -264,7 +275,8 @@ body {text-align: justify}
 <p>Using <code>pacman</code> to manage package dependencies.</p>
 <div class="cell">
 <details open=""><summary>Code</summary><div class="sourceCode" id="cb1"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">require</a></span><span class="op">(</span><span class="va"><a href="https://github.com/trinker/pacman">pacman</a></span><span class="op">)</span></span>
-<span><span class="fu"><a href="https://rdrr.io/pkg/pacman/man/p_load.html">p_load</a></span><span class="op">(</span><span class="va">dplyr</span>, <span class="va">magrittr</span>, <span class="va">furrr</span>, <span class="va">purrr</span>, <span class="va">DT</span>, <span class="va">readr</span>, <span class="va">stringr</span>, <span class="va">furrr</span>, <span class="va">purrr</span>, <span class="va">sentimentr</span>, <span class="va">tidyfst</span>, <span class="va">tidyr</span>, <span class="va">textclean</span>, <span class="va">tidytext</span>, <span class="va">tibble</span>, <span class="va">kableExtra</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span><span class="fu"><a href="https://rdrr.io/pkg/pacman/man/p_load.html">p_load</a></span><span class="op">(</span><span class="va">dplyr</span>, <span class="va">magrittr</span>, <span class="va">furrr</span>, <span class="va">purrr</span>, <span class="va">DT</span>, <span class="va">readr</span>, <span class="va">stringr</span>, <span class="va">furrr</span>, <span class="va">purrr</span>, <span class="va">sentimentr</span>,</span>
+<span>    <span class="va">tidyfst</span>, <span class="va">tidyr</span>, <span class="va">textclean</span>, <span class="va">tidytext</span>, <span class="va">tibble</span>, <span class="va">kableExtra</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 </section><section id="load-data" class="level1"><h1>Load Data</h1>
@@ -285,7 +297,7 @@ $ cleaned_text &lt;chr&gt; "the head of the women tennis association says that h
 <section id="install-python-packages" class="level2"><h2 class="anchored" data-anchor-id="install-python-packages">install python packages:</h2>
 <p>Call python in R.</p>
 <div class="cell">
-<details open=""><summary>Code</summary><div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">reticulate</span><span class="fu">::</span><span class="fu"><a href="https://rstudio.github.io/reticulate/reference/use_python.html">use_python</a></span><span class="op">(</span><span class="st">"C:\\Users\\xhuangcb\\anaconda3\\envs\\pytorch_gpu\\python.exe"</span><span class="op">)</span> <span class="co"># call python in R</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<details open=""><summary>Code</summary><div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">reticulate</span><span class="fu">::</span><span class="fu"><a href="https://rstudio.github.io/reticulate/reference/use_python.html">use_python</a></span><span class="op">(</span><span class="st">"C:\\Users\\xhuangcb\\anaconda3\\envs\\pytorch_gpu\\python.exe"</span><span class="op">)</span>  <span class="co"># call python in R</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
 <p>Then:</p>
@@ -317,19 +329,19 @@ $ cleaned_text &lt;chr&gt; "the head of the women tennis association says that h
 </section><section id="from-oop-to-fp" class="level2"><h2 class="anchored" data-anchor-id="from-oop-to-fp">from OOP to FP</h2>
 <p>Python is an object-oriented programming (OOP) language, and it is possible to convert Python classes into functions in R, which mainly support functional programming (FP).</p>
 <div class="cell">
-<details open=""><summary>Code</summary><div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">spacy</span> <span class="op">&lt;-</span> <span class="fu">reticulate</span><span class="fu">::</span><span class="fu"><a href="https://rstudio.github.io/reticulate/reference/import.html">import</a></span><span class="op">(</span><span class="st">"spacy"</span><span class="op">)</span> <span class="co"># load spacy</span></span>
+<details open=""><summary>Code</summary><div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">spacy</span> <span class="op">&lt;-</span> <span class="fu">reticulate</span><span class="fu">::</span><span class="fu"><a href="https://rstudio.github.io/reticulate/reference/import.html">import</a></span><span class="op">(</span><span class="st">"spacy"</span><span class="op">)</span>  <span class="co"># load spacy</span></span>
 <span></span>
-<span><span class="va">asent</span> <span class="op">&lt;-</span> <span class="fu">reticulate</span><span class="fu">::</span><span class="fu"><a href="https://rstudio.github.io/reticulate/reference/import.html">import</a></span><span class="op">(</span><span class="st">"asent"</span><span class="op">)</span> <span class="co"># load asent</span></span>
+<span><span class="va">asent</span> <span class="op">&lt;-</span> <span class="fu">reticulate</span><span class="fu">::</span><span class="fu"><a href="https://rstudio.github.io/reticulate/reference/import.html">import</a></span><span class="op">(</span><span class="st">"asent"</span><span class="op">)</span>  <span class="co"># load asent</span></span>
 <span></span>
-<span><span class="va">nlp</span> <span class="op">&lt;-</span> <span class="va">spacy</span><span class="op">$</span><span class="fu">load</span><span class="op">(</span><span class="st">"en_core_web_lg"</span><span class="op">)</span> <span class="co"># load pre-trained model</span></span>
+<span><span class="va">nlp</span> <span class="op">&lt;-</span> <span class="va">spacy</span><span class="op">$</span><span class="fu">load</span><span class="op">(</span><span class="st">"en_core_web_lg"</span><span class="op">)</span>  <span class="co"># load pre-trained model</span></span>
 <span></span>
-<span><span class="va">nlp</span><span class="op">$</span><span class="fu">add_pipe</span><span class="op">(</span><span class="st">"asent_en_v1"</span><span class="op">)</span> <span class="co"># add asent pipe</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span><span class="va">nlp</span><span class="op">$</span><span class="fu">add_pipe</span><span class="op">(</span><span class="st">"asent_en_v1"</span><span class="op">)</span>  <span class="co"># add asent pipe</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details><div class="cell-output cell-output-stdout">
-<pre><code>&lt;asent.component.Asent object at 0x000001B1A26A5940&gt;</code></pre>
+<pre><code>&lt;asent.component.Asent object at 0x000002A191E53970&gt;</code></pre>
 </div>
-<details open=""><summary>Code</summary><div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">nlp_safe</span> <span class="op">&lt;-</span> <span class="fu">possibly</span><span class="op">(</span>.f <span class="op">=</span> <span class="va">nlp</span>, otherwise <span class="op">=</span> <span class="st">"error!"</span><span class="op">)</span> <span class="co"># error handling</span></span>
+<details open=""><summary>Code</summary><div class="sourceCode" id="cb7"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">nlp_safe</span> <span class="op">&lt;-</span> <span class="fu">possibly</span><span class="op">(</span>.f <span class="op">=</span> <span class="va">nlp</span>, otherwise <span class="op">=</span> <span class="st">"error!"</span><span class="op">)</span>  <span class="co"># error handling</span></span>
 <span></span>
-<span><span class="va">get_polarity</span> <span class="op">&lt;-</span> <span class="fu">nlp_safe</span><span class="op">(</span><span class="st">"sentiment"</span><span class="op">)</span><span class="op">$</span><span class="fu">get_extension</span><span class="op">(</span><span class="st">"polarity"</span><span class="op">)</span><span class="op">[[</span><span class="fl">3</span><span class="op">]</span><span class="op">]</span> <span class="co"># load python function</span></span>
+<span><span class="va">get_polarity</span> <span class="op">&lt;-</span> <span class="fu">nlp_safe</span><span class="op">(</span><span class="st">"sentiment"</span><span class="op">)</span><span class="op">$</span><span class="fu">get_extension</span><span class="op">(</span><span class="st">"polarity"</span><span class="op">)</span><span class="op">[[</span><span class="fl">3</span><span class="op">]</span><span class="op">]</span>  <span class="co"># load python function</span></span>
 <span></span>
 <span><span class="va">get_sentiment_asent</span> <span class="op">&lt;-</span> \<span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">{</span></span>
 <span>    <span class="va">result</span> <span class="op">&lt;-</span> <span class="fu">nlp_safe</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
@@ -359,9 +371,9 @@ $ cleaned_text &lt;chr&gt; "the head of the women tennis association says that h
 </section></section><section id="using-sentimentr" class="level1"><h1>Using sentimentr</h1>
 <p>Our function using <code>sentimentr</code>.</p>
 <div class="cell">
-<details open=""><summary>Code</summary><div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">get_sentences_safe</span> <span class="op">&lt;-</span> <span class="fu">possibly</span><span class="op">(</span>.f <span class="op">=</span> <span class="va">get_sentences</span>, otherwise <span class="op">=</span> <span class="st">"error!"</span><span class="op">)</span> <span class="co"># sentences cutter</span></span>
+<details open=""><summary>Code</summary><div class="sourceCode" id="cb10"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">get_sentences_safe</span> <span class="op">&lt;-</span> <span class="fu">possibly</span><span class="op">(</span>.f <span class="op">=</span> <span class="va">get_sentences</span>, otherwise <span class="op">=</span> <span class="st">"error!"</span><span class="op">)</span>  <span class="co"># sentences cutter</span></span>
 <span></span>
-<span><span class="va">sentiment_by_safe</span> <span class="op">&lt;-</span> <span class="fu">possibly</span><span class="op">(</span>.f <span class="op">=</span> <span class="va">sentiment_by</span>, otherwise <span class="op">=</span> <span class="st">"error!"</span><span class="op">)</span> <span class="co"># sentiment classifier</span></span>
+<span><span class="va">sentiment_by_safe</span> <span class="op">&lt;-</span> <span class="fu">possibly</span><span class="op">(</span>.f <span class="op">=</span> <span class="va">sentiment_by</span>, otherwise <span class="op">=</span> <span class="st">"error!"</span><span class="op">)</span>  <span class="co"># sentiment classifier</span></span>
 <span></span>
 <span><span class="va">get_sentiemnt_sentimentr</span> <span class="op">&lt;-</span> \<span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">{</span></span>
 <span>    <span class="va">x</span> <span class="op">%&gt;%</span></span>
@@ -479,6 +491,33 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       }
     }
   }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
   const toggleColorMode = (alternate) => {
     // Switch the stylesheets
     const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
@@ -545,13 +584,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       return localAlternateSentinel;
     }
   }
-  let localAlternateSentinel = 'default';
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
   // Dark / light mode switch
   window.quartoToggleColorScheme = () => {
     // Read the current dark / light value 
     let toAlternate = !hasAlternateSentinel();
     toggleColorMode(toAlternate);
     setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
   };
   // Ensure there is a toggle, if there isn't float one in the top right
   if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
@@ -630,10 +671,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -643,8 +683,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -657,6 +706,60 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    if (id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        for (let i = 0; i < 2; i++) {
+          container.appendChild(note.children[i].cloneNode(true));
+        }
+        return container.innerHTML
+      } else {
+        return note.innerHTML;
+      }
+    } else {
+      return note.innerHTML;
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      try { hash = new URL(url).hash; } catch {}
+      const id = hash.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note !== null) {
+        try {
+          const html = processXRef(id, note);
+          instance.setContent(html);
+        } finally {
+          instance.enable();
+          instance.show();
+        }
+      } else {
+        // See if we can fetch this
+        fetch(url.split('#')[0])
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.getElementById(id);
+          if (note !== null) {
+            const html = processXRef(id, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -700,6 +803,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -798,13 +902,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
 });
 </script><script src="https://giscus.app/client.js" data-repo="xinzhuohkust/comments" data-repo-id="R_kgDOIfEW2g" data-category="General" data-category-id="DIC_kwDOIfEW2s4CStOg" data-mapping="title" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="top" data-theme="light" data-lang="en" crossorigin="anonymous" async="">
-</script>
+</script><input type="hidden" id="giscus-base-theme" value="light"><input type="hidden" id="giscus-alt-theme" value="light">
 </div> <!-- /content -->
 <footer class="footer"><div class="nav-footer">
     <div class="nav-footer-left">
       &nbsp;
     </div>   
-    <div class="nav-footer-center">Powered by <a href="https://quarto.org">Quarto</a> | © 2023 <a href="../../cv/">Xinzhuo Huang</a><div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-center">
+<p>Powered by <a href="https://quarto.org">Quarto</a> | © 2023 <a href="../..\cv/">Xinzhuo Huang</a></p>
+<div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

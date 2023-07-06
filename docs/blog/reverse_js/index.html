@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.169">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="author" content="Xinzhuo HUANG">
+<meta name="author" content="Xinzhuo Huang">
 <meta name="dcterms.date" content="2023-06-22">
 <meta name="description" content="by calling JavaScript in R">
 <title>Xinzhuo Huang - Reverse Engineering for China Judgement Online</title>
@@ -144,7 +144,7 @@ cookieconsent.run({
   <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../icon_sun_revised.png" alt="" class="navbar-logo"></a>
+    <img src="../../icon_sun.png" alt="" class="navbar-logo"></a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -221,16 +221,23 @@ cookieconsent.run({
   </div>
 </div>
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Xinzhuo Huang <a href="https://orcid.org/0009-0007-6448-5114" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            HKUST SOSC
+          </p>
+      </div>
+    </div>
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Xinzhuo HUANG </p>
-          </div>
-  </div>
-    
+      
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
@@ -269,12 +276,12 @@ cookieconsent.run({
 </div>
 <p>Let’s use the <code>jsonlite</code> to parse <strong>JSON</strong> data and then invoke JavaScript to decrypt the parsed data using <code>V8</code>.</p>
 <div class="cell">
-<details open=""><summary>Code</summary><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">result</span> <span class="op">&lt;-</span> <span class="va">encrypted_string</span> <span class="op">%&gt;%</span> </span>
-<span>    <span class="fu">fromJSON</span><span class="op">(</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
+<details open=""><summary>Code</summary><div class="sourceCode" id="cb3"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">result</span> <span class="op">&lt;-</span> <span class="va">encrypted_string</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">fromJSON</span><span class="op">(</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
 <span>    <span class="fu">pluck</span><span class="op">(</span><span class="st">"result"</span><span class="op">)</span></span>
 <span></span>
-<span><span class="va">secretKey</span> <span class="op">&lt;-</span> <span class="va">encrypted_string</span> <span class="op">%&gt;%</span> </span>
-<span>    <span class="fu">fromJSON</span><span class="op">(</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
+<span><span class="va">secretKey</span> <span class="op">&lt;-</span> <span class="va">encrypted_string</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">fromJSON</span><span class="op">(</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
 <span>    <span class="fu">pluck</span><span class="op">(</span><span class="st">"secretKey"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
@@ -284,22 +291,22 @@ cookieconsent.run({
 <span></span>
 <span><span class="va">engine</span><span class="op">$</span><span class="fu">eval</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/readLines.html">readLines</a></span><span class="op">(</span><span class="st">"C:/node_global/node_modules/crypto-js/crypto-js.js"</span><span class="op">)</span><span class="op">)</span></span>
 <span></span>
-<span><span class="va">jscode</span> <span class="op">&lt;-</span> <span class="st">'const decrypt = function(b, c, date){</span></span>
+<span><span class="va">jscode</span> <span class="op">&lt;-</span> <span class="st">"const decrypt = function(b, c, date){</span></span>
 <span><span class="st">    result = CryptoJS.enc.Utf8.stringify(CryptoJS.TripleDES.decrypt(b, CryptoJS.enc.Utf8.parse(c), {</span></span>
 <span><span class="st">        iv:CryptoJS.enc.Utf8.parse(date),</span></span>
 <span><span class="st">        mode:CryptoJS.mode.CBC,</span></span>
 <span><span class="st">        padding: CryptoJS.pad.Pkcs7</span></span>
 <span><span class="st">    })).toString()</span></span>
 <span><span class="st">    return(result)</span></span>
-<span><span class="st">}'</span></span>
+<span><span class="st">}"</span></span>
 <span></span>
 <span><span class="va">engine</span><span class="op">$</span><span class="fu">eval</span><span class="op">(</span><span class="va">jscode</span><span class="op">)</span></span>
 <span></span>
-<span><span class="va">engine</span><span class="op">$</span><span class="fu">call</span><span class="op">(</span><span class="st">"decrypt"</span>, <span class="va">result</span>, <span class="va">secretKey</span>, <span class="st">"20220622"</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
-<span>    <span class="fu">fromJSON</span><span class="op">(</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
-<span>    <span class="fu">pluck</span><span class="op">(</span><span class="st">"queryResult"</span>, <span class="st">"resultList"</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
-<span>    <span class="fu">tibble</span><span class="op">(</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
-<span>    <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fl">1</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
+<span><span class="va">engine</span><span class="op">$</span><span class="fu">call</span><span class="op">(</span><span class="st">"decrypt"</span>, <span class="va">result</span>, <span class="va">secretKey</span>, <span class="st">"20220622"</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">fromJSON</span><span class="op">(</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">pluck</span><span class="op">(</span><span class="st">"queryResult"</span>, <span class="st">"resultList"</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu">tibble</span><span class="op">(</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
+<span>    <span class="fu"><a href="https://rdrr.io/r/utils/head.html">head</a></span><span class="op">(</span><span class="fl">1</span><span class="op">)</span> <span class="op">%&gt;%</span></span>
 <span>    <span class="fu">pull</span><span class="op">(</span><span class="va">`26`</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details><div class="cell-output cell-output-stdout">
 <pre><code>[1] "本院经审查认为，本案系当事人申请再审案件，应当依据《中华人民共和国民事诉讼法》第二百零七条的规定对再审申请人汇杰公司的申请再审理由进行审查。本案审查的主要问题是，本案是否属于人民法院民事诉讼的受理范围。\n第一，本案争议的黄田农场强制拆除行为系其受十三师有关行政主管部门委托施行的行政行为，不属于民事诉讼的受理范围。首先，2016年12月29日新疆生产建设兵团农业建设第十三师办公室（以下简称十三师办公室）下发《关于对十三师工业企业实施关停的通知》（师办发〔2016〕334号），因环保违法违规、污染物排放超标且治理无望对汇杰公司实施关停，十三师师国土局亦于2017年8月22日向汇杰公司送达了《责令改正违法行为通知书》，责令汇杰公司立即停工并在3日内自行拆除建设的房屋，恢复土地原状。2017年8月24日十三师办公室向兵团保障中央环境督查协调联络工作组&lt;span style=\"color:red\"&gt;信访&lt;/span&gt;督办组反馈的整改措施载明，“由黄田农场成立农场环保整治领导小组……对拒不执行环保整改要求的企业一律采取强制停产和强制拆除设施”。上述通知书和整改措施均为黄田农场强制拆除汇杰公司煤场的地上建筑物、构筑物、选矿设备等设施的行为依据，黄田农场的行为是在中央环境保护督查组的监督和十三师有关行政主管部门的主导下，为管理辖区内国土资源、保护生态环境、贯彻落实国家环境保护决策部署进行的集中整治，是执行十三师办公室、十三师国土局有关行政决定的行为，内容上具有履行行政管理职责的性质。其次，黄田农场依据上述决定组织人员强制拆除汇杰公司煤场的地上建筑物、构筑物、选矿设备等设施，系实现公共环保目标的需要，受益主体惠及社会公众，具有维护公共利益的性质，并非出于企业法人利益而作出的民事侵权行为。司法实践中，人民法院认定是否存在行政委托关系，一是要看行为的内容是否具有履行行政管理职责的性质；二是要看受益主体是否惠及社会公众，具有维护公共利益的性质，两者同时具备即属于行政委托，并不以行政机关以书面或口头明确表示委托为必要条件。综上，黄田农场的强制拆除行为虽无行政机关以书面文件明确表示委托授权，但足以认定其行为系受行政机关委托实施，存在事实上的行政委托关系。汇杰公司认为原裁定认定黄田农场强拆汇杰公司煤场系执行国家有关环保法律、政策的行为缺乏证据证明的再审理由不成立，本院不予支持。汇杰公司认为黄田农场依据行政委托而实施的强制拆除行为给其造成财产损失，不属于人民法院民事诉讼的受理范围，其可以通过其他途径进行救济。\n第二，汇杰公司申请再审提出其与黄田农场存在土地租赁关系而主张本案属于民事诉讼受案范围的理由不能成立。根据原审法院查明的事实，2012年4月28日汇杰公司与农十三师黄田农场国有资产经营有限责任公司签订《土地租赁合同》，租赁合同的相对人为农十三师黄田农场国有资产经营有限责任公司，而非黄田农场，汇杰公司与黄田农场不存在民事合同法律关系，且该租赁合同关系和本案的具体行政行为属于不同的法律关系。《中华人民共和国民事诉讼法》第三条规定：“人民法院受理公民之间、法人之间、其他组织之间以及他们相互之间因财产关系和人身关系提起的民事诉讼，适用本法的规定。”第一百二十二条规定：“起诉必须符合下列条件：（一）原告是与本案有直接利害关系的公民、法人和其他组织；（二）有明确的被告；（三）有具体的诉讼请求和事实、理由；（四）属于人民法院受理民事诉讼的范围和受诉人民法院管辖。”本案中，因黄田农场系受行政机关委托实施强制拆除行为，案涉纠纷不属于平等民事主体之间的民事权益纠纷，不属于人民法院民事诉讼的受理范围。原审裁定驳回汇杰公司的起诉，并无不当。汇杰公司申请再审提出其与黄田农场存在土地租赁关系而主张本案属于民事诉讼受案范围的理由不能成立，本院不予支持。至于汇杰公司主张的二审法院两次裁判结果不同，不属于《中华人民共和国民事诉讼法》第二百零七条规定的再审审查情形，本院不予审查。\n综上，汇杰公司的再审申请不符合《中华人民共和国民事诉讼法》第二百零七条规定的情形。依照《中华人民共和国民事诉讼法》第二百一十一条第一款，《最高人民法院关于适用〈中华人民共和国民事诉讼法〉的解释》第三百九十三条第二款规定，裁定如下"</code></pre>

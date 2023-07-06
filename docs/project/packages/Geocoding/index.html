@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.169">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<meta name="author" content="Xinzhuo HUANG">
+<meta name="author" content="Xinzhuo Huang">
 <meta name="dcterms.date" content="2023-05-26">
 <meta name="description" content="An R package that provides geocoding, reverse geocoding, route planning, and advanced geographic visualization. Moreover, this package provides economic and social information such as nighttime lights and population based on geographic coding.">
 <title>Xinzhuo Huang - Geocoding</title>
@@ -145,7 +145,7 @@ cookieconsent.run({
   <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg navbar-dark "><div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../../icon_sun_revised.png" alt="" class="navbar-logo"></a>
+    <img src="../../../icon_sun.png" alt="" class="navbar-logo"></a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -237,16 +237,23 @@ cookieconsent.run({
   </div>
 </div>
 
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author">Xinzhuo Huang <a href="https://orcid.org/0009-0007-6448-5114" class="quarto-title-author-orcid"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg=="></a></p>
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            HKUST SOSC
+          </p>
+      </div>
+    </div>
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Xinzhuo HUANG </p>
-          </div>
-  </div>
-    
+      
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
@@ -318,12 +325,9 @@ body {text-align: justify}
 </div>
 </section><section id="train-planning" class="level3"><h3 class="anchored" data-anchor-id="train-planning">train planning</h3>
 <div class="cell">
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">Geocoding</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/Geocoding/man/train_plan.html">train_plan</a></span><span class="op">(</span></span>
-<span>  origin <span class="op">=</span> <span class="fu">Geocoding</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/Geocoding/man/get_MCT.html">get_MCT</a></span><span class="op">(</span><span class="st">"安徽省六安市裕安区"</span><span class="op">)</span> <span class="op">|&gt;</span> <span class="fu">Geocoding</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/Geocoding/man/convert_MCT.html">convert_MCT</a></span><span class="op">(</span><span class="op">)</span>,</span>
-<span>  destination <span class="op">=</span> <span class="fu">Geocoding</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/Geocoding/man/get_MCT.html">get_MCT</a></span><span class="op">(</span><span class="st">"国家信访局"</span><span class="op">)</span> <span class="op">|&gt;</span> <span class="fu">Geocoding</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/Geocoding/man/convert_MCT.html">convert_MCT</a></span><span class="op">(</span><span class="op">)</span>,</span>
-<span>  sleep <span class="op">=</span> <span class="fl">0.5</span>,</span>
-<span>  ak <span class="op">=</span> <span class="st">"your ak"</span></span>
-<span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">Geocoding</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/Geocoding/man/train_plan.html">train_plan</a></span><span class="op">(</span>origin <span class="op">=</span> <span class="fu">Geocoding</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/Geocoding/man/get_MCT.html">get_MCT</a></span><span class="op">(</span><span class="st">"安徽省六安市裕安区"</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>    <span class="fu">Geocoding</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/Geocoding/man/convert_MCT.html">convert_MCT</a></span><span class="op">(</span><span class="op">)</span>, destination <span class="op">=</span> <span class="fu">Geocoding</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/Geocoding/man/get_MCT.html">get_MCT</a></span><span class="op">(</span><span class="st">"国家信访局"</span><span class="op">)</span> <span class="op">|&gt;</span></span>
+<span>    <span class="fu">Geocoding</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/Geocoding/man/convert_MCT.html">convert_MCT</a></span><span class="op">(</span><span class="op">)</span>, sleep <span class="op">=</span> <span class="fl">0.5</span>, ak <span class="op">=</span> <span class="st">"your ak"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
 <div class="cell-output-display">
@@ -360,11 +364,7 @@ body {text-align: justify}
 </section></section><section id="visualization" class="level2"><h2 class="anchored" data-anchor-id="visualization">Visualization</h2>
 <section id="ggplot2-integration" class="level3"><h3 class="anchored" data-anchor-id="ggplot2-integration">ggplot2 integration</h3>
 <div class="cell">
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">Geocoding</span><span class="fu">::</span><span class="fu">plot_geocoding</span><span class="op">(</span></span>
-<span>  data <span class="op">=</span> <span class="st">"night"</span>,</span>
-<span>  label <span class="op">=</span> <span class="st">"jilin"</span>,</span>
-<span>  year <span class="op">=</span> <span class="st">"2022"</span></span>
-<span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu">Geocoding</span><span class="fu">::</span><span class="fu">plot_geocoding</span><span class="op">(</span>data <span class="op">=</span> <span class="st">"night"</span>, label <span class="op">=</span> <span class="st">"jilin"</span>, year <span class="op">=</span> <span class="st">"2022"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p><img src="light.png" width="1000"></p>
 </section><section id="interactive-map-and-3d-map-coming-soon" class="level3"><h3 class="anchored" data-anchor-id="interactive-map-and-3d-map-coming-soon">interactive map and 3D map (coming soon)</h3>
