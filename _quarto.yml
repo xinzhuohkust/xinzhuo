@@ -5,18 +5,28 @@ project:
 execute:
   freeze: auto
 
+preview: 
+  port: 5555
+  browser: true
+  watch-inputs: true
+  navigate: true
+
+bibliography: bib/references.bib
+csl: bib/chicago-author-date.csl
+
 website:
+  #back-to-top-navigation: true
   cookie-consent: true
   title: "Xinzhuo Huang"
   google-analytics:
     tracking-id: "G-7HHBQV7LX3"
-  favicon: icon.png
+  favicon: icon_sun.png
   site-url: https://xinzhuo.work
   description: "Xinzhuo's Personal Website"
   twitter-card: true
   open-graph: true
   navbar:
-    logo: icon.png
+    logo: icon_sun_revised.png
     title: false
     right:
       - text: CV
@@ -50,7 +60,7 @@ format:
     link-external-newwindow: true
     smooth-scroll: true
     highlight-style: gruvbox
-    df-print: paged
+    df-print: kable
     code-fold: true
     code-block-bg: "#f5f5f5"
     code-block-border-left: "#E0E0E0"
