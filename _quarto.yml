@@ -26,7 +26,7 @@ website:
   twitter-card: true
   open-graph: true
   navbar:
-    logo: icon_sun_revised.png
+    logo: icon_sun.png
     title: false
     right:
       - text: CV
