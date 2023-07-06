@@ -9,7 +9,7 @@
 <link>https://xinzhuo.work/blog/index.html#category=R</link>
 <atom:link href="https://xinzhuo.work/blog/index-r.xml" rel="self" type="application/rss+xml"/>
 <description>Xinzhuo&#39;s Personal Website</description>
-<generator>quarto-1.3.361</generator>
+<generator>quarto-1.4.169</generator>
 <lastBuildDate>Mon, 19 Jun 2023 16:00:00 GMT</lastBuildDate>
 <item>
   <title>Practical Techniques for Web Crawling</title>
@@ -88,8 +88,8 @@ font-style: inherit;">1</span><span class="op" style="color: #5E5E5E;
 background-color: null;
 font-style: inherit;">)</span></span></code></pre></div>
 </details><div class="cell-output cell-output-stdout">
-<pre><code>                                                                                                                  safari88 
-"Mozilla/5.0 (Macintosh; U; PPC Mac OS X 10_4_11; de-de) AppleWebKit/533.16 (KHTML, like Gecko) Version/4.1 Safari/533.16" </code></pre>
+<pre><code>                                                                                                                         safari141 
+"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_5_8; en-us) AppleWebKit/531.21.8 (KHTML, like Gecko) Version/4.0.3 Safari/531.21.10" </code></pre>
 </div>
 </div>
 <p><br></p>
@@ -357,7 +357,7 @@ font-style: inherit;">)</span></span></code></pre></div>
 </div>
 
 
-</section> ]]></description>
+</section><a onclick="window.scrollTo(0, 0); return false;" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a> ]]></description>
   <category>R</category>
   <category>Python</category>
   <category>Web Crawling</category>
